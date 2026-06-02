@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/policy.schema.json",
+  "title": "OpenAutonomyX Policy",
+  "allOf": [
+    { "$ref": "thing.schema.json" },
+    {
+      "type": "object",
+      "required": ["policyType", "effect", "scope", "enforcementLevel"],
+      "properties": {
+        "policyType": {
+          "type": "string",
+          "enum": ["access", "authorization", "privacy", "consent", "security", "safety", "compliance", "governance", "reliability", "trust", "data", "retention", "approval", "exception", "audit", "publication"]
+        },
+        "effect": {
+          "type": "string",
+          "enum": ["allow", "deny", "require-review", "require-approval", "require-escalation", "require-evidence", "advisory"]
+        },
+        "scope": { "type": "string", "minLength": 1 },
+        "appliesTo": { "type": "array", "items": { "type": "string" } },
+        "conditions": { "type": "array", "items": { "type": "object" } },
+        "obligations": { "type": "array", "items": { "type": "string" } },
+        "exceptions": { "type": "array", "items": { "type": "string" } },
+        "enforcementLevel": {
+          "type": "string",
+          "enum": ["advisory", "review-required", "approval-required", "enforced", "blocking"]
+        },
+        "priority": { "type": "integer", "minimum": 0 },
+        "validFrom": { "type": "string", "format": "date-time" },
+        "validUntil": { "type": "string", "format": "date-time" },
+        "reviewDate": { "type": "string", "format": "date-time" },
+        "owner": { "type": "string" },
+        "approver": { "type": "string" },
+        "evidenceRequired": { "type": "boolean" }
+      }
+    }
+  ]
+}
