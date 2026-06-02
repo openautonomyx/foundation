@@ -1,0 +1,160 @@
+name: Validate Foundation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate-foundation:
+    name: Validate foundation structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_files=(
+            "README.md"
+            "MANIFESTO.md"
+            "PRINCIPLES.md"
+            "GOVERNANCE.md"
+            "OPERATING-MODEL.md"
+            "ARCHITECTURE.md"
+            "META-MODEL.md"
+            "IDENTITY-MODEL.md"
+            "TRUST-MODEL.md"
+            "ENTITY-MODEL.md"
+            "ARTIFACT-MODEL.md"
+            "ACTION-MODEL.md"
+            "EVENT-MODEL.md"
+            "DECISION-MODEL.md"
+            "ENTERPRISE-ANCHOR.md"
+            "ENTERPRISE-OPERATING-MODEL.md"
+            "ENTERPRISE-CAPABILITY-MODEL.md"
+            "ENTERPRISE-REFERENCE-ARCHITECTURE.md"
+            "ENTERPRISE-CONTROL-FRAMEWORK.md"
+            "ENTERPRISE-VALUE-REALIZATION.md"
+            "ENTERPRISE-AGENT-OPERATING-MODEL.md"
+            "ENTERPRISE-RISK-MODEL.md"
+            "ENTERPRISE-WORKSPACE-MODEL.md"
+            "ENTERPRISE-DECISION-MODEL.md"
+            "ENTERPRISE-KNOWLEDGE-MODEL.md"
+            "ENTERPRISE-MEMORY-MODEL.md"
+            "registry/README.md"
+            "taxonomies/README.md"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required file: $file"
+              exit 1
+            fi
+          done
+
+      - name: Validate required schemas
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_schemas=(
+            "schemas/thing.schema.json"
+            "schemas/identity.schema.json"
+            "schemas/trust.schema.json"
+            "schemas/entity.schema.json"
+            "schemas/artifact.schema.json"
+            "schemas/action.schema.json"
+            "schemas/event.schema.json"
+            "schemas/decision.schema.json"
+            "schemas/policy.schema.json"
+          )
+
+          for file in "${required_schemas[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required schema: $file"
+              exit 1
+            fi
+            python -m json.tool "$file" > /dev/null
+          done
+
+      - name: Validate required policies
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_policies=(
+            "policies/separation-of-duty.md"
+            "policies/human-approval.md"
+            "policies/traceability.md"
+            "policies/auditability.md"
+            "policies/privacy-consent.md"
+            "policies/reliability.md"
+            "policies/trust-review.md"
+            "policies/exception-management.md"
+          )
+
+          for file in "${required_policies[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required policy: $file"
+              exit 1
+            fi
+          done
+
+      - name: Validate ADR sequence
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_adrs=(
+            "adr/0001-foundation-repository.md"
+            "adr/0002-meta-model.md"
+            "adr/0003-governance-model.md"
+            "adr/0004-identity-model.md"
+            "adr/0005-trust-model.md"
+          )
+
+          for file in "${required_adrs[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required ADR: $file"
+              exit 1
+            fi
+            grep -q "## Status" "$file"
+            grep -q "## Context" "$file"
+            grep -q "## Decision" "$file"
+            grep -q "## Consequences" "$file"
+          done
+
+      - name: Generate foundation report
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          {
+            echo "# Foundation Validation Report"
+            echo
+            echo "Generated: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            echo "## Counts"
+            echo
+            echo "- Markdown files: $(find . -name '*.md' | wc -l)"
+            echo "- JSON schemas: $(find schemas -name '*.json' | wc -l)"
+            echo "- Policies: $(find policies -name '*.md' | wc -l)"
+            echo "- ADRs: $(find adr -name '*.md' | wc -l)"
+            echo
+            echo "## Status"
+            echo
+            echo "Foundation structure validation passed."
+          } > reports/foundation-validation-report.md
+
+      - name: Upload foundation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-validation-report
+          path: reports/foundation-validation-report.md
