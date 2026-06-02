@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/identity.schema.json",
+  "title": "OpenAutonomyX Identity",
+  "allOf": [
+    { "$ref": "thing.schema.json" },
+    {
+      "type": "object",
+      "required": ["identityType", "verificationState"],
+      "properties": {
+        "identityType": {
+          "type": "string",
+          "enum": ["human", "agent", "organization", "team", "tenant", "workspace", "service", "application", "device", "integration", "external-system"]
+        },
+        "issuer": { "type": "string" },
+        "subject": { "type": "string" },
+        "credentials": { "type": "array", "items": { "type": "string" } },
+        "capabilities": { "type": "array", "items": { "type": "string" } },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "permissions": { "type": "array", "items": { "type": "string" } },
+        "verificationState": {
+          "type": "string",
+          "enum": ["unverified", "pending", "verified", "rejected", "expired", "revoked"]
+        }
+      }
+    }
+  ]
+}
