@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/action.schema.json",
+  "title": "OpenAutonomyX Action",
+  "allOf": [
+    { "$ref": "thing.schema.json" },
+    {
+      "type": "object",
+      "required": ["actionType", "actor", "target", "timestamp", "executionState"],
+      "properties": {
+        "actionType": {
+          "type": "string",
+          "enum": ["create", "read", "update", "delete", "approve", "reject", "review", "publish", "archive", "execute", "delegate", "escalate", "reconcile", "evaluate", "certify", "revoke", "notify", "transform", "import", "export"]
+        },
+        "actor": { "type": "string", "minLength": 1 },
+        "target": { "type": "string", "minLength": 1 },
+        "tool": { "type": "string" },
+        "interface": { "type": "string" },
+        "input": { "type": "object" },
+        "output": { "type": "object" },
+        "authorizationContext": { "type": "object" },
+        "policyContext": { "type": "object" },
+        "approvalState": {
+          "type": "string",
+          "enum": ["not-required", "pending", "approved", "denied", "expired"]
+        },
+        "executionState": {
+          "type": "string",
+          "enum": ["proposed", "pending-approval", "approved", "denied", "scheduled", "running", "completed", "failed", "rolled-back", "cancelled", "expired"]
+        },
+        "result": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "durationMs": { "type": "integer", "minimum": 0 },
+        "error": { "type": "object" }
+      }
+    }
+  ]
+}
