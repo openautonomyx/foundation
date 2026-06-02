@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/decision.schema.json",
+  "title": "OpenAutonomyX Decision",
+  "allOf": [
+    { "$ref": "thing.schema.json" },
+    {
+      "type": "object",
+      "required": ["decisionType", "owner", "context", "problemStatement", "decisionStatus"],
+      "properties": {
+        "decisionType": {
+          "type": "string",
+          "enum": ["strategic", "tactical", "operational", "policy", "architecture", "security", "privacy", "compliance", "financial", "product", "program", "project", "incident", "access", "trust", "model-selection", "automation-approval", "exception-approval"]
+        },
+        "decisionMaker": { "type": "string" },
+        "affectedStakeholders": { "type": "array", "items": { "type": "string" } },
+        "context": { "type": "string", "minLength": 1 },
+        "problemStatement": { "type": "string", "minLength": 1 },
+        "objectives": { "type": "array", "items": { "type": "string" } },
+        "optionsConsidered": { "type": "array", "items": { "type": "object" } },
+        "constraints": { "type": "array", "items": { "type": "string" } },
+        "assumptions": { "type": "array", "items": { "type": "string" } },
+        "risks": { "type": "array", "items": { "type": "string" } },
+        "tradeoffs": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "recommendation": { "type": "string" },
+        "approvalState": {
+          "type": "string",
+          "enum": ["not-required", "pending", "approved", "rejected", "expired"]
+        },
+        "decisionStatus": {
+          "type": "string",
+          "enum": ["proposed", "under-review", "approved", "rejected", "implemented", "validated", "superseded", "revoked", "archived"]
+        },
+        "implementationPlan": { "type": "string" },
+        "reviewDate": { "type": "string", "format": "date-time" },
+        "outcome": { "type": "string" },
+        "rollbackPath": { "type": "string" }
+      }
+    }
+  ]
+}
