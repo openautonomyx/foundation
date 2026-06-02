@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/thing.schema.json",
+  "title": "OpenAutonomyX Thing",
+  "type": "object",
+  "required": ["id", "type", "name", "lifecycleState", "createdAt", "updatedAt"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "owner": { "type": "string" },
+    "lifecycleState": {
+      "type": "string",
+      "enum": ["proposed", "draft", "review", "approved", "active", "deprecated", "suspended", "revoked", "archived"]
+    },
+    "version": { "type": "string" },
+    "source": { "type": "string" },
+    "provenance": { "type": "array", "items": { "type": "string" } },
+    "relationships": { "type": "array", "items": { "type": "object" } },
+    "policyBindings": { "type": "array", "items": { "type": "string" } },
+    "accessRules": { "type": "array", "items": { "type": "string" } },
+    "trustState": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "auditTrail": { "type": "array", "items": { "type": "string" } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}
