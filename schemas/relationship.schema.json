@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/relationship.schema.json",
+  "title": "OpenAutonomyX Relationship",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["relationshipType", "source", "target"],
+      "properties": {
+        "relationshipType": {
+          "type": "string",
+          "enum": [
+            "owns",
+            "belongs-to",
+            "depends-on",
+            "governs",
+            "constrains",
+            "enables",
+            "approves",
+            "reviews",
+            "audits",
+            "implements",
+            "supersedes",
+            "replaces",
+            "maps-to",
+            "derived-from",
+            "evidences",
+            "mitigates",
+            "controls",
+            "risks",
+            "uses",
+            "produces",
+            "relates-to"
+          ]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "target": { "type": "string", "minLength": 1 },
+        "validFrom": { "type": "string", "format": "date-time" },
+        "validUntil": { "type": "string", "format": "date-time" },
+        "strength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence": { "type": "array", "items": { "type": "string" } },
+        "bidirectional": { "type": "boolean" }
+      }
+    }
+  ]
+}
