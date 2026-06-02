@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/event.schema.json",
+  "title": "OpenAutonomyX Event",
+  "allOf": [
+    { "$ref": "thing.schema.json" },
+    {
+      "type": "object",
+      "required": ["eventType", "timestamp", "source", "target"],
+      "properties": {
+        "eventType": {
+          "type": "string",
+          "enum": ["created", "updated", "deleted", "approved", "rejected", "reviewed", "published", "archived", "executed", "failed", "delegated", "escalated", "reconciled", "evaluated", "certified", "revoked", "imported", "exported", "policy-evaluated", "access-granted", "access-denied", "trust-changed"]
+        },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "source": { "type": "string", "minLength": 1 },
+        "actor": { "type": "string" },
+        "target": { "type": "string", "minLength": 1 },
+        "actionReference": { "type": "string" },
+        "correlationId": { "type": "string" },
+        "causationId": { "type": "string" },
+        "stateBefore": { "type": "object" },
+        "stateAfter": { "type": "object" },
+        "policyContext": { "type": "object" },
+        "authorizationContext": { "type": "object" },
+        "trustImpact": { "type": "object" },
+        "reliabilityImpact": { "type": "object" }
+      }
+    }
+  ]
+}
