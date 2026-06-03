@@ -1,0 +1,526 @@
+# Foundation Registry Index
+
+Auto-generated catalog of all governed registry objects. Every object validates against its schema with no dangling relationship edges.
+
+**Total: 434 governed nodes**
+
+| Type | Count |
+|---|---|
+| Capabilities | 1 |
+| Agents | 1 |
+| Identities | 1 |
+| Workspaces | 1 |
+| Decisions | 1 |
+| Risks | 3 |
+| Controls | 2 |
+| Protocols | 8 |
+| Skills | 26 |
+| Standards | 379 |
+| Knowledge Assets | 5 |
+| Digital Twins | 1 |
+| Taxonomies | 5 |
+
+## Capabilities (1)
+
+- `capability.enterprise-agent-governance` — Enterprise Agent Governance
+
+## Agents (1)
+
+- `agent.contract-review-assistant` — Contract Review Assistant
+
+## Identities (1)
+
+- `identity.agent.contract-review-assistant` — Contract Review Assistant Identity
+
+## Workspaces (1)
+
+- `workspace.contract-governance` — Contract Governance Workspace
+
+## Decisions (1)
+
+- `decision.approve-contract-review-assistant` — Approve Contract Review Assistant Deployment
+
+## Risks (3)
+
+- `risk.agent-memory-poisoning` — Agent Memory Poisoning
+- `risk.agent-tool-misuse` — Agent Tool Misuse
+- `risk.unauthorized-agent-execution` — Unauthorized Agent Execution
+
+## Controls (2)
+
+- `control.human-approval` — Human Approval
+- `control.separation-of-duty` — Separation of Duty
+
+## Protocols (8)
+
+- `protocol.agent-collaboration` — Agent Collaboration Protocol
+- `protocol.agent-identity` — Agent Identity Protocol
+- `protocol.authorization-decision` — Authorization Decision Protocol
+- `protocol.capability-discovery` — Capability Discovery Protocol
+- `protocol.orchestration` — Orchestration Protocol
+- `protocol.policy-evaluation` — Policy Evaluation Protocol
+- `protocol.reconciliation` — Reconciliation Protocol
+- `protocol.relationship-authorization` — Relationship Authorization Protocol
+
+## Skills (26)
+
+- `skill.adverse-selection-mitigation` — Adverse Selection Mitigation
+- `skill.agency-cost-reduction` — Agency Cost Reduction
+- `skill.commission` — Commission
+- `skill.deferred-compensation` — Deferred Compensation
+- `skill.efficiency-wages` — Efficiency Wages
+- `skill.equal-compensation-principle` — Equal Compensation Principle
+- `skill.incentive-alignment` — Incentive Alignment
+- `skill.incentive-intensity-principle` — Incentive Intensity Principle
+- `skill.information-asymmetry-reduction` — Information Asymmetry Reduction
+- `skill.informativeness-principle` — Informativeness Principle
+- `skill.monitoring-intensity-principle` — Monitoring Intensity Principle
+- `skill.monitoring` — Monitoring
+- `skill.moral-hazard-mitigation` — Moral Hazard Mitigation
+- `skill.multiple-principal-resolution` — Multiple-Principal Resolution
+- `skill.negotiation-delegation` — Negotiation Delegation
+- `skill.non-financial-recognition` — Non-Financial Recognition
+- `skill.objective-performance-evaluation` — Objective Performance Evaluation
+- `skill.piece-rates` — Piece Rates
+- `skill.posting-a-bond` — Bonding
+- `skill.profit-sharing` — Profit Sharing
+- `skill.promotion-based-incentives` — Promotion-Based Incentives
+- `skill.relative-performance-evaluation` — Relative Performance Evaluation
+- `skill.subjective-performance-evaluation` — Subjective Performance Evaluation
+- `skill.termination-threat` — Termination Threat
+- `skill.tournament-incentives` — Tournament Incentives
+- `skill.trust-and-reciprocity` — Trust and Reciprocity
+
+## Standards (379)
+
+### agent (120)
+
+- `standard.adk` — Agent Development Kit (evaluating)
+- `standard.agennext-helper` — AGenNext-Helper (experimental)
+- `standard.agent-aeft` — Agent-AEFT (experimental)
+- `standard.agent-assistant` — Agent-Assistant (experimental)
+- `standard.agent-awareness` — Agent-Awareness (experimental)
+- `standard.agent-belief` — Agent-Belief (experimental)
+- `standard.agent-blueprint` — Agent-Blueprint (experimental)
+- `standard.agent-book` — Agent-Book (experimental)
+- `standard.agent-browser` — Agent-Browser (experimental)
+- `standard.agent-builder` — Agent-Builder (evaluating)
+- `standard.agent-business` — Agent-Business (experimental)
+- `standard.agent-care` — Agent-Care (experimental)
+- `standard.agent-code` — Agent-Code (experimental)
+- `standard.agent-commerce` — Agent-Commerce (evaluating)
+- `standard.agent-commit` — Agent-Commit (experimental)
+- `standard.agent-content` — Agent-Content (experimental)
+- `standard.agent-control` — Agent-Control (AGenNext) (experimental)
+- `standard.agent-coral` — AGENT-CORAL (experimental)
+- `standard.agent-cortex` — Agent-Cortex (experimental)
+- `standard.agent-courses` — Agent-Courses (experimental)
+- `standard.agent-crawl` — Agent-Crawl (experimental)
+- `standard.agent-decisions` — Agent-Decisions (evaluating)
+- `standard.agent-devices` — Agent-Devices (experimental)
+- `standard.agent-draw` — Agent-Draw (experimental)
+- `standard.agent-economy` — Agent-Economy (AGenNext) (experimental)
+- `standard.agent-estate` — Agent-Estate (experimental)
+- `standard.agent-evolve` — Agent-Evolve (experimental)
+- `standard.agent-extensions` — Agent-Extensions (experimental)
+- `standard.agent-features` — Agent-Features (experimental)
+- `standard.agent-foundation` — Agent-Foundation (evaluating)
+- `standard.agent-framework` — Agent-Framework (evaluating)
+- `standard.agent-frameworks` — Agent-Frameworks (evaluating)
+- `standard.agent-grammar` — Agent-Grammar (evaluating)
+- `standard.agent-gtm` — Agent-GTM (experimental)
+- `standard.agent-home` — Agent-Home (experimental)
+- `standard.agent-hooks` — Agent-Hooks (experimental)
+- `standard.agent-ide` — Agent-IDE (experimental)
+- `standard.agent-image` — Agent-Image (experimental)
+- `standard.agent-improvement` — Agent-Improvement (experimental)
+- `standard.agent-input` — Agent-Input (experimental)
+- `standard.agent-instructor` — Agent-Instructor (experimental)
+- `standard.agent-intelligence` — Agent-Intelligence (experimental)
+- `standard.agent-intent` — Agent-Intent (experimental)
+- `standard.agent-itsm` — Agent-ITSM (experimental)
+- `standard.agent-kit` — Agent-Kit (experimental)
+- `standard.agent-labs` — Agent-Labs (experimental)
+- `standard.agent-language` — Agent-Language (AGenNext) (evaluating)
+- `standard.agent-lcm` — Agent-LCM (evaluating)
+- `standard.agent-letters` — Agent-Letters (experimental)
+- `standard.agent-library` — Agent-Library (experimental)
+- `standard.agent-llm` — Agent-LLM (experimental)
+- `standard.agent-memory-agennext` — Agent-Memory (AGenNext) (evaluating)
+- `standard.agent-mind` — Agent-Mind (experimental)
+- `standard.agent-ml` — Agent-ML (experimental)
+- `standard.agent-objective` — Agent-Objective (experimental)
+- `standard.agent-ocr` — Agent-Ocr (experimental)
+- `standard.agent-office` — Agent-Office (experimental)
+- `standard.agent-operating-model` — Agent-Operating-Model (evaluating)
+- `standard.agent-output` — Agent-Output (experimental)
+- `standard.agent-parcel` — Agent-Parcel (experimental)
+- `standard.agent-pay` — Agent-Pay (evaluating)
+- `standard.agent-ppt` — Agent-PPT (experimental)
+- `standard.agent-pro` — Agent-Pro (experimental)
+- `standard.agent-projects` — Agent-Projects (evaluating)
+- `standard.agent-research` — Agent-Research (evaluating)
+- `standard.agent-review` — Agent-Review (evaluating)
+- `standard.agent-sales` — Agent-Sales (experimental)
+- `standard.agent-sdk` — Agent-SDK (evaluating)
+- `standard.agent-search` — Agent-Search (experimental)
+- `standard.agent-seed` — Agent-Seed (experimental)
+- `standard.agent-services` — Agent-Services (experimental)
+- `standard.agent-sight` — Agent-Sight (experimental)
+- `standard.agent-skills` — Agent-Skills (evaluating)
+- `standard.agent-space` — Agent-Space (evaluating)
+- `standard.agent-speech` — Agent-Speech (experimental)
+- `standard.agent-theories` — Agent-Theories (experimental)
+- `standard.agent-tools` — Agent-Tools (experimental)
+- `standard.agent-travel` — Agent-Travel (experimental)
+- `standard.agent-trigger` — Agent-Trigger (experimental)
+- `standard.agent-ui` — Agent-UI (experimental)
+- `standard.agent-vision` — Agent-Vision (evaluating)
+- `standard.agent-wallet` — Agent-Wallet (experimental)
+- `standard.agent-web` — Agent-Web (experimental)
+- `standard.agent-world` — Agent-World (experimental)
+- `standard.agentcservices` — AgentcServices (experimental)
+- `standard.agno` — Agno (evaluating)
+- `standard.autogen` — AutoGen (evaluating)
+- `standard.aws-security-agent` — AWS Security Agent (evaluating)
+- `standard.browser-agent` — Browser-Agent (experimental)
+- `standard.browser-use` — Browser Use (evaluating)
+- `standard.camel` — CAMEL (evaluating)
+- `standard.code-assist` — Code-Assist (experimental)
+- `standard.code-review` — Code-Review (evaluating)
+- `standard.composio` — Composio (evaluating)
+- `standard.crew-ai` — CrewAI (evaluating)
+- `standard.deep-agents` — Deep-Agents (evaluating)
+- `standard.demo-repository` — Demo-Repository (experimental)
+- `standard.design-agent` — Design-Agent (experimental)
+- `standard.firecrawl` — Firecrawl (evaluating)
+- `standard.github-agent` — GitHub-Agent (evaluating)
+- `standard.guidance` — Guidance (evaluating)
+- `standard.instructor` — Instructor (evaluating)
+- `standard.jina-reader` — Jina Reader (evaluating)
+- `standard.kagent` — kagent (evaluating)
+- `standard.langchain` — LangChain (evaluating)
+- `standard.langgraph` — LangGraph (evaluating)
+- `standard.llama-stack` — Llama Stack (evaluating)
+- `standard.lmql` — LMQL (evaluating)
+- `standard.model-recommender` — Model-Recommender (experimental)
+- `standard.model-router` — Model-Router (experimental)
+- `standard.model-runner` — Model-Runner (evaluating)
+- `standard.nvidia-nemo` — NVIDIA NeMo (evaluating)
+- `standard.outlines` — Outlines (evaluating)
+- `standard.personal-assist` — Personal-Assist (experimental)
+- `standard.pydantic-ai` — Pydantic AI (evaluating)
+- `standard.selenium-grid` — Selenium Grid (evaluating)
+- `standard.semantic-kernel` — Semantic Kernel (evaluating)
+- `standard.smolagents` — Smolagents (evaluating)
+- `standard.strands` — Strands (evaluating)
+- `standard.ui-tool-kit` — UI-Tool-Kit (experimental)
+
+### authentication (2)
+
+- `standard.agent-auth` — Agent-Auth (evaluating)
+- `standard.agent-secrets` — Agent-Secrets (evaluating)
+
+### authorization (6)
+
+- `standard.agent-access` — Agent-Access (evaluating)
+- `standard.agent-pam` — Agent-PAM (evaluating)
+- `standard.openfga` — OpenFGA (canonical)
+- `standard.openid-authzen` — OpenID AuthZEN Authorization API (canonical)
+- `standard.permify` — Permify (evaluating)
+- `standard.spicedb` — SpiceDB (evaluating)
+
+### data (84)
+
+- `standard.agent-context` — Agent-Context (evaluating)
+- `standard.agent-data` — Agent-Data (evaluating)
+- `standard.agent-dictionary` — Agent-Dictionary (experimental)
+- `standard.agent-drive` — Agent-Drive (experimental)
+- `standard.agent-knowledge` — Agent-Knowledge (evaluating)
+- `standard.agent-rag` — Agent-Rag (evaluating)
+- `standard.agent-vocabulary` — Agent-Vocabulary (evaluating)
+- `standard.agentql` — AgentQL (evaluating)
+- `standard.alluxio` — Alluxio (evaluating)
+- `standard.apache-age` — Apache AGE (evaluating)
+- `standard.apache-druid` — Apache Druid (evaluating)
+- `standard.apache-flink` — Apache Flink (evaluating)
+- `standard.apache-hbase` — Apache HBase (evaluating)
+- `standard.apache-pinot` — Apache Pinot (evaluating)
+- `standard.apache-spark` — Apache Spark (evaluating)
+- `standard.apache-zeppelin` — Apache Zeppelin (evaluating)
+- `standard.axolotl` — Axolotl (evaluating)
+- `standard.cann` — CANN (evaluating)
+- `standard.cassandra` — Apache Cassandra (evaluating)
+- `standard.ceph` — Ceph (evaluating)
+- `standard.chroma` — Chroma (evaluating)
+- `standard.clickhouse` — ClickHouse (evaluating)
+- `standard.container-storage-interface` — Container Storage Interface (CSI) (evaluating)
+- `standard.cubefs` — CubeFS (integration)
+- `standard.deepspeed` — DeepSpeed (evaluating)
+- `standard.docling` — Docling (evaluating)
+- `standard.falkordb` — FalkorDB (evaluating)
+- `standard.feast` — Feast (evaluating)
+- `standard.fluid` — Fluid (integration)
+- `standard.hadoop-hdfs` — Hadoop HDFS (evaluating)
+- `standard.haystack` — Haystack (evaluating)
+- `standard.horovod` — Horovod (evaluating)
+- `standard.hyperopt` — Hyperopt (evaluating)
+- `standard.juicefs` — JuiceFS (evaluating)
+- `standard.kafka` — Apache Kafka (evaluating)
+- `standard.kubeflow-katib` — Kubeflow Katib (evaluating)
+- `standard.kubeflow-mpi-operator` — Kubeflow MPI Operator (evaluating)
+- `standard.kubeflow-notebooks` — Kubeflow Notebooks (evaluating)
+- `standard.kubeflow-spark-operator` — Kubeflow Spark Operator (evaluating)
+- `standard.kubeflow-training-operator` — Kubeflow Training Operator (evaluating)
+- `standard.lancedb` — LanceDB (evaluating)
+- `standard.llama-cpp` — llama.cpp (evaluating)
+- `standard.llamafactory` — LlamaFactory (evaluating)
+- `standard.llamaindex` — LlamaIndex (evaluating)
+- `standard.marimo` — marimo (evaluating)
+- `standard.marqo` — Marqo (evaluating)
+- `standard.megatron-lm` — Megatron-LM (evaluating)
+- `standard.mem0` — Mem0 (evaluating)
+- `standard.memcached` — Memcached (evaluating)
+- `standard.milvus` — Milvus (evaluating)
+- `standard.nccl` — NCCL (evaluating)
+- `standard.neo4j` — Neo4j (evaluating)
+- `standard.nokv` — NoKV (evaluating)
+- `standard.numaflow` — Numaflow (evaluating)
+- `standard.nvidia-triton-lang` — Triton (language) (evaluating)
+- `standard.open-mpi` — Open MPI (evaluating)
+- `standard.opensearch` — OpenSearch (evaluating)
+- `standard.openvino` — OpenVINO (evaluating)
+- `standard.optuna` — Optuna (evaluating)
+- `standard.pgvector` — pgvector (evaluating)
+- `standard.presto` — Presto (evaluating)
+- `standard.project-jupyter` — Project Jupyter (evaluating)
+- `standard.pulsar` — Apache Pulsar (evaluating)
+- `standard.pytorch` — PyTorch (evaluating)
+- `standard.pytorch-ddp` — PyTorch DistributedDataParallel (DDP) (evaluating)
+- `standard.qdrant` — Qdrant (evaluating)
+- `standard.redis` — Redis (evaluating)
+- `standard.scylladb` — ScyllaDB (evaluating)
+- `standard.sglang` — SGLang (evaluating)
+- `standard.surreal-agent` — Surreal-Agent (experimental)
+- `standard.tensorflow` — TensorFlow (evaluating)
+- `standard.tensorflow-distributed` — TensorFlow Distributed (evaluating)
+- `standard.tgi` — Text Generation Inference (TGI) (evaluating)
+- `standard.the-graph` — The Graph (evaluating)
+- `standard.torchx` — TorchX (evaluating)
+- `standard.trino` — Trino (evaluating)
+- `standard.txtai` — txtai (evaluating)
+- `standard.unsloth` — Unsloth (evaluating)
+- `standard.unstructured` — Unstructured (evaluating)
+- `standard.valkey` — Valkey (evaluating)
+- `standard.verl` — verl (evaluating)
+- `standard.vllm` — vLLM (evaluating)
+- `standard.weaviate` — Weaviate (evaluating)
+- `standard.xgboost` — XGBoost (evaluating)
+
+### identity (5)
+
+- `standard.agent-identity-agennext` — Agent-Identity (AGenNext) (evaluating)
+- `standard.agent-iga` — Agent-IGA (evaluating)
+- `standard.agent-lifecycle-management` — Agent Lifecycle Management (evaluating)
+- `standard.keycloak` — Keycloak (integration)
+- `standard.spiffe` — SPIFFE / SPIRE (canonical)
+
+### interoperability (27)
+
+- `standard.agennext-blog` — AGenNext Blog (experimental)
+- `standard.agennext-com` — AGenNext.com (experimental)
+- `standard.agent-card` — Agent-Card (evaluating)
+- `standard.agent-channel` — Agent-Channel (experimental)
+- `standard.agent-chat` — Agent-Chat (experimental)
+- `standard.agent-community` — Agent-Community (experimental)
+- `standard.agent-connect` — Agent-Connect (experimental)
+- `standard.agent-feeds` — Agent-Feeds (experimental)
+- `standard.agent-mcps` — Agent-MCPs (evaluating)
+- `standard.agent-publications` — Agent-Publications (experimental)
+- `standard.agent-site` — Agent-Site (experimental)
+- `standard.agent-society` — Agent-Society (experimental)
+- `standard.agent-standard` — Agent-Standard (evaluating)
+- `standard.agent-tweets` — Agent-Tweets (experimental)
+- `standard.agent2agent` — Agent2Agent Protocol (A2A) (canonical)
+- `standard.agentgateway` — Agentgateway (evaluating)
+- `standard.cloud-native` — Cloud Native (CNCF Definition) (canonical)
+- `standard.cncf-ai-native-landscape` — CNCF AI-Native Landscape (integration)
+- `standard.envoy-ai-gateway` — Envoy AI Gateway (evaluating)
+- `standard.frontier-chat` — Frontier-Chat (experimental)
+- `standard.higress` — Higress (evaluating)
+- `standard.ioa-protocol-ietf` — IETF Internet of Agents Protocol (draft) (experimental)
+- `standard.kgateway` — Kgateway (evaluating)
+- `standard.mcp-gateway-registry` — MCP Gateway Registry (evaluating)
+- `standard.model-context-protocol` — Model Context Protocol (MCP) (canonical)
+- `standard.publishing-agent` — Publishing-Agent (experimental)
+- `standard.salesforce-agentforce` — Salesforce-Agentforce (experimental)
+
+### observability (38)
+
+- `standard.agent-analytics` — Agent-Analytics (experimental)
+- `standard.agent-bench` — Agent-Bench (evaluating)
+- `standard.agent-dashboard` — Agent-Dashboard (evaluating)
+- `standard.agent-drift` — Agent-Drift (experimental)
+- `standard.agent-eval` — Agent-Eval (evaluating)
+- `standard.agent-evaluation` — Agent Evaluation (evaluating)
+- `standard.agent-finops` — Agent-FinOps (evaluating)
+- `standard.agent-gpa` — Agent-GPA (evaluating)
+- `standard.agent-health` — Agent-Health (experimental)
+- `standard.agent-insights` — Agent-Insights (experimental)
+- `standard.agent-kpis` — Agent-KPIs (experimental)
+- `standard.agent-maturity` — Agent-Maturity (experimental)
+- `standard.agent-metrics` — Agent-Metrics (experimental)
+- `standard.agent-monitor` — Agent-Monitor (evaluating)
+- `standard.agent-optimize` — Agent-Optimize (experimental)
+- `standard.agent-runs` — Agent-Runs (experimental)
+- `standard.agent-traces` — Agent-Traces (evaluating)
+- `standard.agent-validate` — Agent-Validate (experimental)
+- `standard.deepchecks` — Deepchecks (evaluating)
+- `standard.deepeval` — DeepEval (evaluating)
+- `standard.deepflow` — DeepFlow (evaluating)
+- `standard.grafana` — Grafana (evaluating)
+- `standard.influxdb` — InfluxDB (evaluating)
+- `standard.kepler` — Kepler (evaluating)
+- `standard.langfuse` — Langfuse (evaluating)
+- `standard.lm-evaluation-harness` — lm-evaluation-harness (evaluating)
+- `standard.mlflow` — MLflow (evaluating)
+- `standard.okahu` — Okahu (evaluating)
+- `standard.opencompass` — OpenCompass (evaluating)
+- `standard.openlit` — OpenLIT (evaluating)
+- `standard.openllmetry` — OpenLLMetry (evaluating)
+- `standard.opentelemetry` — OpenTelemetry (canonical)
+- `standard.projectionbench` — ProjectionBench (experimental)
+- `standard.prometheus` — Prometheus (integration)
+- `standard.promptfoo` — Promptfoo (evaluating)
+- `standard.ragas` — Ragas (evaluating)
+- `standard.trulens` — TruLens (evaluating)
+- `standard.wandb` — Weights and Biases (evaluating)
+
+### orchestration (67)
+
+- `standard.agennext-devops` — AGenNext-DevOps (experimental)
+- `standard.agent-cloud` — Agent-Cloud (evaluating)
+- `standard.agent-crew` — Agent-Crew (evaluating)
+- `standard.agent-deploy` — Agent-Deploy (evaluating)
+- `standard.agent-environment` — Agent-Environment (experimental)
+- `standard.agent-fabric` — Agent-Fabric (evaluating)
+- `standard.agent-factory` — Agent-Factory (experimental)
+- `standard.agent-flow` — Agent-Flow (evaluating)
+- `standard.agent-form` — Agent-Form (experimental)
+- `standard.agent-handoff` — Agent-Handoff (evaluating)
+- `standard.agent-harness` — Agent-Harness (evaluating)
+- `standard.agent-kernel` — Agent-Kernel (evaluating)
+- `standard.agent-platform` — Agent-Platform (evaluating)
+- `standard.agent-runtime` — Agent-Runtime (evaluating)
+- `standard.agent-sandbox` — agent-sandbox (evaluating)
+- `standard.agent-swarm` — Agent-Swarm (evaluating)
+- `standard.agent-team` — Agent-Team (evaluating)
+- `standard.aibrix` — AIBrix (evaluating)
+- `standard.arks` — Arks (evaluating)
+- `standard.armada` — Armada (evaluating)
+- `standard.backend-ai` — Backend.AI (evaluating)
+- `standard.bentoml` — BentoML (evaluating)
+- `standard.containerd` — containerd (integration)
+- `standard.cozystack` — Cozystack (evaluating)
+- `standard.cri-o` — CRI-O (integration)
+- `standard.cubesandbox` — CubeSandbox (evaluating)
+- `standard.daytona` — Daytona (evaluating)
+- `standard.dify` — Dify (evaluating)
+- `standard.e2b` — E2B (evaluating)
+- `standard.firecracker` — Firecracker (evaluating)
+- `standard.gvisor` — gVisor (evaluating)
+- `standard.hami` — HAMi (evaluating)
+- `standard.hatchet` — Hatchet (evaluating)
+- `standard.inngest` — Inngest (evaluating)
+- `standard.isulad` — iSulad (evaluating)
+- `standard.kaito` — KAITO (evaluating)
+- `standard.karmada` — Karmada (integration)
+- `standard.kata-containers` — Kata Containers (evaluating)
+- `standard.keda` — KEDA (integration)
+- `standard.knative` — Knative (integration)
+- `standard.koordinator` — Koordinator (evaluating)
+- `standard.kserve` — KServe (integration)
+- `standard.kuasar` — Kuasar (evaluating)
+- `standard.kubeadmiral` — KubeAdmiral (evaluating)
+- `standard.kubeflow-pipelines` — Kubeflow Pipelines (evaluating)
+- `standard.kuberay` — KubeRay (evaluating)
+- `standard.kubernetes` — Kubernetes (canonical)
+- `standard.kueue` — Kueue (evaluating)
+- `standard.leaderworkerset` — LeaderWorkerSet (evaluating)
+- `standard.llm-d` — llm-d (evaluating)
+- `standard.llmaz` — llmaz (evaluating)
+- `standard.mlrun` — MLRun (evaluating)
+- `standard.opea` — OPEA (evaluating)
+- `standard.operator-agents` — Operator-Agents (experimental)
+- `standard.operator-framework` — Operator Framework (Operator SDK) (integration)
+- `standard.rbg` — RBG (evaluating)
+- `standard.runc` — runc (evaluating)
+- `standard.seldon` — Seldon (evaluating)
+- `standard.singularity` — Singularity (evaluating)
+- `standard.slurm` — Slurm (evaluating)
+- `standard.stratovirt` — StratoVirt (evaluating)
+- `standard.temporal` — Temporal (evaluating)
+- `standard.tfx` — TensorFlow Extended (TFX) (evaluating)
+- `standard.volcano` — Volcano (integration)
+- `standard.volcano-kthena` — Volcano Kthena (evaluating)
+- `standard.wasmedge` — WasmEdge (evaluating)
+- `standard.yunikorn` — YuniKorn (evaluating)
+
+### packaging (6)
+
+- `standard.agent-distro` — Agent-Distro (experimental)
+- `standard.agent-sign` — Agent-Sign (evaluating)
+- `standard.artifact-hub` — Artifact Hub (integration)
+- `standard.kubeflow-model-registry` — Kubeflow Model Registry (evaluating)
+- `standard.model-repository` — Model-Repository (experimental)
+- `standard.modelpack` — ModelPack (evaluating)
+
+### policy (22)
+
+- `standard.aagfe` — AAGFE (evaluating)
+- `standard.agent-cognitive-guard` — Agent-Cognitive-Guard (evaluating)
+- `standard.agent-compliance` — Agent-Compliance (evaluating)
+- `standard.agent-constitution-repo` — Agent-Constitution (evaluating)
+- `standard.agent-constraints` — Agent-Constraints (experimental)
+- `standard.agent-guard` — Agent-Guard (evaluating)
+- `standard.agent-policies` — Agent-Policies (evaluating)
+- `standard.agent-risk` — Agent-Risk (experimental)
+- `standard.agent-security` — Agent-Security (evaluating)
+- `standard.agent-sla` — Agent-SLA (evaluating)
+- `standard.agent-threat` — Agent-Threat (experimental)
+- `standard.agent-trust` — Agent-Trust (evaluating)
+- `standard.autonomous-governance-agent` — Autonomous-Governance-Agent (evaluating)
+- `standard.cloud-security-alliance` — Cloud Security Alliance (CSA) (canonical)
+- `standard.guardrails-ai` — Guardrails AI (evaluating)
+- `standard.kyverno-json` — Kyverno-JSON (evaluating)
+- `standard.llm-guard` — LLM Guard (evaluating)
+- `standard.nemo-guardrails` — NeMo Guardrails (evaluating)
+- `standard.opa-gatekeeper` — OPA/Gatekeeper (evaluating)
+- `standard.open-policy-agent` — Open Policy Agent (OPA) (canonical)
+- `standard.owasp-ai-agent-security` — OWASP AI Agent Security Cheat Sheet (canonical)
+- `standard.stacklock-minder` — Stacklok Minder (evaluating)
+
+### transport (2)
+
+- `standard.cilium` — Cilium (integration)
+- `standard.container-network-interface` — Container Network Interface (CNI) (integration)
+
+## Knowledge Assets (5)
+
+- `knowledge.ai-agent-orchestration` — AI Agent Orchestration (reference)
+- `knowledge.digital-twin` — Digital Twin (reference)
+- `knowledge.internet-of-agents-framework` — Internet of Agents framework (IoA, ICLR 2025 Spotlight)
+- `knowledge.internet-of-agents` — Internet of Agents (survey)
+- `knowledge.wikipedia` — Wikipedia
+
+## Digital Twins (1)
+
+- `twin.contract-review-assistant` — Contract Review Assistant Digital Twin
+
+## Taxonomies (5)
+
+- `taxonomy.agent-categories` — Agent Categories
+- `taxonomy.agent-grammar` — Agent Grammar
+- `taxonomy.agent-vocabulary` — Agent Vocabulary
+- `taxonomy.registry-object-types` — Registry Object Types
+- `taxonomy.standard-domains` — Standard Domains
