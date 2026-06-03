@@ -4,10 +4,8 @@ OpenAutonomyX defines a two-plane model that separates **enterprise governance**
 
 ## The Two Planes
 
-- **Enterprise Control Plane — OpenAutonomyX.** Governs the enterprise: capabilities, risks, controls, policies, identity, trust, decisions, and the governed registry. It defines *what is allowed, by whom, under what evidence*. It does not run agents.
-- **Agent Control Plane — AGenNext.** Runs and manages agents operationally; an agent builder platform and runtime. It executes work *within* the constraints the enterprise control plane sets.
-
-Bridging the two is the **Agent Operation Model — AutonomyX**: the model defining *how* agents operate (identity, autonomy levels, delegation, evaluation, reconciliation). OpenAutonomyX **defines** the operation model; AGenNext **implements** it.
+- **Enterprise Control Plane & Agent Operation Model — OpenAutonomyX** (a.k.a. **AutonomyX**, the same brand). Governs the enterprise — capabilities, risks, controls, policies, identity, trust, decisions, the governed registry — **and** defines *how* agents operate (autonomy levels, delegation, evaluation, reconciliation). It defines *what is allowed, by whom, under what evidence, and how agents run*. It does not itself run agents.
+- **Agent Control Plane — AGenNext.** Runs and manages agents operationally; an agent builder platform and runtime. It **implements** the OpenAutonomyX operation model and executes work *within* the constraints the enterprise control plane sets.
 
 ```text
 Enterprise Control Plane (OpenAutonomyX)   — governs —▶   Agent Control Plane (AGenNext)
@@ -38,8 +36,7 @@ The control planes sit within a five-pillar ecosystem, each registered as a gove
 
 | Pillar | Brand | Role |
 |---|---|---|
-| Enterprise Control Plane | **OpenAutonomyX** | Governs the enterprise: capabilities, risks, controls, policy, identity, trust |
-| Agent Operation Model | **AutonomyX** | Defines how agents operate (identity, autonomy, delegation, evaluation, reconciliation) |
+| Enterprise Control Plane + Agent Operation Model | **OpenAutonomyX** (= AutonomyX) | Governs the enterprise and defines how agents operate |
 | Agent Control Plane / Builder | **AGenNext** | Builds, deploys, runs, and reconciles agents |
 | Research & Innovation | — | Tracks research; matures candidate capabilities before they become doctrine |
 | Economy | — | Value creation, metering, settlement, and economic governance of agent work |
@@ -50,8 +47,8 @@ The ecosystem is anchored on two ends — **research** and the **realization of 
 
 ```text
 Research & Innovation ─▶ Operation Model ─▶ Agents (built & run) ─▶ Governed Economy ─▶ Realized Value
-        (AutonomyX research)     (AutonomyX)        (AGenNext)            (Economy)        (audited outcomes)
-                         └──────────── governed throughout by OpenAutonomyX ────────────┘
+                          (OpenAutonomyX)         (AGenNext)            (Economy)        (audited outcomes)
+                  └──────── governed throughout by OpenAutonomyX (= AutonomyX) ─────────┘
 ```
 
 Research turns ideas into candidate capabilities; the enterprise control plane governs their adoption; agents operate them; and value is realized as **measurable, audited outcomes** — not unaccountable activity. Every step is traceable from a research claim to realized, evidenced value.
