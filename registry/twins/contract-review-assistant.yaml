@@ -1,0 +1,55 @@
+id: twin.contract-review-assistant
+type: digital-twin
+name: Contract Review Assistant Digital Twin
+description: Two-way digital twin of the contract-review assistant pairing its approved definition (desired state) with a runtime snapshot (observed state).
+version: 1.0.0
+status: active
+owner: platform-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+twinType: agent
+twinFidelity: digital-twin
+subject: agent.contract-review-assistant
+desiredState: Approved registered definition (capabilities, tools, data scopes, autonomy level, bound controls).
+observedStateSource: Runtime agent snapshot emitted as governed events.
+dataBinding: two-way-automatic
+telemetrySources:
+  - opentelemetry-traces
+  - opentelemetry-metrics
+  - governed-audit-log
+syncCadence: continuous
+simulationCapabilities:
+  - policy-what-if
+  - autonomy-change-simulation
+  - blast-radius-estimation
+driftDetection: true
+reconciliation: Reconcile observed state to desired state via the reconciliation protocol; escalate material drift for approval.
+fidelityScore: 0.85
+classification: confidential
+
+governance:
+  policies:
+    - policies/traceability.md
+    - policies/auditability.md
+    - policies/human-approval.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  reviewCadence: quarterly
+
+relationships:
+  - type: twins
+    target: agent.contract-review-assistant
+  - type: observes-via
+    target: protocol.reconciliation
+  - type: telemetry-via
+    target: standard.opentelemetry
+  - type: drift-checked-by
+    target: standard.agent-control
+  - type: located-in
+    target: workspace.contract-governance
+
+trust:
+  level: monitored
+  score: 78
