@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/control.schema.json",
+  "title": "OpenAutonomyX Control",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["controlDomain", "controlObjective", "riskAddressed", "owner", "frequency", "testMethod"],
+      "properties": {
+        "controlDomain": {
+          "type": "string",
+          "enum": ["identity-access", "data-protection", "privacy-consent", "security", "reliability", "compliance", "auditability", "traceability", "agent-governance", "model-risk", "vendor-risk", "change-management", "incident-management", "business-continuity", "financial-authorization"]
+        },
+        "controlObjective": { "type": "string", "minLength": 1 },
+        "riskAddressed": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "policyReferences": { "type": "array", "items": { "type": "string" } },
+        "operator": { "type": "string" },
+        "reviewer": { "type": "string" },
+        "frequency": { "type": "string", "minLength": 1 },
+        "evidenceRequired": { "type": "array", "items": { "type": "string" } },
+        "testMethod": {
+          "type": "string",
+          "enum": ["automated-check", "manual-review", "sampling", "continuous-monitoring", "audit-procedure", "red-team", "incident-review", "policy-simulation"]
+        },
+        "controlStatus": {
+          "type": "string",
+          "enum": ["not-implemented", "designed", "implemented", "operating", "ineffective", "remediating", "retired"]
+        },
+        "exceptions": { "type": "array", "items": { "type": "string" } },
+        "findings": { "type": "array", "items": { "type": "string" } },
+        "remediationPlan": { "type": "string" },
+        "complianceMappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "framework": { "type": "string" },
+              "version": { "type": "string" },
+              "controlId": { "type": "string" },
+              "mappingConfidence": { "type": "number", "minimum": 0, "maximum": 1 }
+            },
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  ]
+}
