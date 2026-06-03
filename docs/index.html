@@ -1,71 +1,89 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenAutonomyX Foundation — Registry Catalog</title>
+<title>OpenAutonomyX Foundation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 0 1rem 3rem; max-width: 1000px; margin: 0 auto; }
-  h1 { margin: 1rem 0 .25rem; font-size: 1.4rem; }
-  .sub { opacity: .7; font-size: .85rem; margin-bottom: 1rem; }
-  .controls { position: sticky; top: 0; background: Canvas; padding: .75rem 0; display: flex; gap: .5rem; flex-wrap: wrap; border-bottom: 1px solid #8884; }
-  input, select { padding: .5rem .6rem; font-size: 1rem; border: 1px solid #8886; border-radius: 8px; background: Canvas; color: CanvasText; }
-  #q { flex: 1; min-width: 200px; }
-  #stats { font-size: .8rem; opacity: .7; margin: .6rem 0; }
-  .card { border: 1px solid #8884; border-radius: 10px; padding: .6rem .8rem; margin: .5rem 0; }
-  .card h3 { margin: 0 0 .2rem; font-size: .98rem; }
-  .id { font-family: ui-monospace, monospace; font-size: .8rem; opacity: .75; }
-  .badges { margin: .35rem 0 0; display: flex; gap: .35rem; flex-wrap: wrap; }
-  .b { font-size: .68rem; padding: .12rem .45rem; border-radius: 999px; border: 1px solid #8886; opacity: .85; }
-  .desc { font-size: .86rem; margin: .35rem 0 0; opacity: .9; }
-  a { color: inherit; }
+  .hero { padding: 2.5rem 0 1rem; }
+  .hero h1 { font-size: 2.2rem; margin: 0; }
+  .tagline { font-size: 1.1rem; opacity: .85; }
+  .beliefs { columns: 2; gap: 2rem; font-size: .95rem; }
+  @media (max-width: 640px){ .beliefs { columns: 1; } }
+  .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+  .stat { font-size: 2rem; font-weight: 700; }
+  .muted { opacity: .7; font-size: .85rem; }
+  article { margin: 0; }
 </style>
 </head>
 <body>
-<h1>OpenAutonomyX Foundation — Registry Catalog</h1>
-<div class="sub" id="meta">loading…</div>
-<div class="controls">
-  <input id="q" type="search" placeholder="Search id, name, description, organization…" autofocus>
-  <select id="type"><option value="">All types</option></select>
-  <select id="domain"><option value="">All standard domains</option></select>
-</div>
-<div id="stats"></div>
-<div id="list"></div>
+<main class="container">
+
+  <section class="hero">
+    <h1>OpenAutonomyX</h1>
+    <p class="tagline">A governed foundation for reliable, transparent, human-aligned autonomous systems.</p>
+    <p><a href="./catalog.html" role="button">Browse the Catalog</a>
+       <a href="./graph.html" role="button" class="secondary">Knowledge Graph</a>
+       <a href="https://github.com/openautonomyx/foundation" role="button" class="contrast outline">GitHub</a></p>
+  </section>
+
+  <section class="grid-cards" id="stats">
+    <article><div class="stat" id="s-nodes">—</div><div class="muted">governed nodes</div></article>
+    <article><div class="stat" id="s-standards">—</div><div class="muted">standards pinned</div></article>
+    <article><div class="stat" id="s-types">—</div><div class="muted">object types</div></article>
+    <article><div class="stat" id="s-valid">—</div><div class="muted">graph valid · no dangling edges</div></article>
+  </section>
+
+  <section>
+    <h2>Core beliefs</h2>
+    <div class="beliefs">
+      <p>Everything is data, temporal, governed, observable, traceable, replayable, composable.<br>
+      Everything interoperates through open protocols.</p>
+      <p>Current state is a projection, not truth.<br>
+      Time is a first-class primitive.<br>
+      Append over overwrite.<br>
+      Humans approve; systems reconcile.<br>
+      Governance is native, not bolted on.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <div class="grid-cards">
+      <article>
+        <hgroup><h3>Doctrine</h3><p class="muted">Models &amp; principles</p></hgroup>
+        <p>Agent protocol, lifecycle, evaluation, interaction, memory, constitution, control theory, principal–agent, digital twin, Internet of Agents, and more.</p>
+      </article>
+      <article>
+        <hgroup><h3>Registry</h3><p class="muted">Governed objects</p></hgroup>
+        <p>Capabilities, risks, controls, agents, identities, workspaces, decisions, protocols, skills, standards, taxonomies — each schema-validated.</p>
+        <p><a href="./catalog.html">Search the catalog →</a></p>
+      </article>
+      <article>
+        <hgroup><h3>Open standards</h3><p class="muted">Pinned &amp; versioned</p></hgroup>
+        <p>SPIFFE, OpenID AuthZEN, OPA, OpenFGA, MCP, A2A, Kubernetes, OpenTelemetry, the IETF IoA draft, and the full CNCF AI-native landscape.</p>
+      </article>
+      <article>
+        <hgroup><h3>Knowledge graph</h3><p class="muted">Typed nodes &amp; edges</p></hgroup>
+        <p>The registry is one typed graph: a vocabulary of node terms connected by a grammar of edge types.</p>
+        <p><a href="./graph.html">Explore the graph →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="muted">
+    <p>The catalog auto-updates on every push via GitHub Actions; every object is schema-validated with no dangling relationship edges.</p>
+  </footer>
+
+</main>
 <script>
-let DATA = [];
-const q = document.getElementById('q'), typeSel = document.getElementById('type'),
-      domSel = document.getElementById('domain'), list = document.getElementById('list'),
-      stats = document.getElementById('stats'), meta = document.getElementById('meta');
-function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
-function render(){
-  const term = q.value.trim().toLowerCase();
-  const t = typeSel.value, dom = domSel.value;
-  const out = DATA.filter(n => {
-    if (t && n.type !== t) return false;
-    if (dom && n.standardType !== dom) return false;
-    if (!term) return true;
-    return (n.id+' '+n.name+' '+n.description+' '+n.organization+' '+n.standardType).toLowerCase().includes(term);
-  });
-  stats.textContent = out.length + ' of ' + DATA.length + ' nodes';
-  list.innerHTML = out.slice(0, 600).map(n => {
-    const badges = [n.type, n.standardType, n.adoptionPosture, n.status].filter(Boolean)
-      .map(b => '<span class="b">'+esc(b)+'</span>').join('');
-    const link = n.specReference ? ' · <a href="'+esc(n.specReference)+'" target="_blank" rel="noopener">ref</a>' : '';
-    return '<div class="card"><h3>'+esc(n.name||n.id)+'</h3>'+
-      '<div class="id">'+esc(n.id)+link+'</div>'+
-      (n.description?'<div class="desc">'+esc(n.description)+'</div>':'')+
-      '<div class="badges">'+badges+'</div></div>';
-  }).join('') + (out.length>600?'<p class="sub">Showing first 600. Refine your search.</p>':'');
-}
 fetch('./catalog.json').then(r=>r.json()).then(c=>{
-  DATA = c.nodes;
-  meta.textContent = c.total + ' governed nodes · graph valid: ' + c.valid;
-  [...new Set(DATA.map(n=>n.type))].sort().forEach(t=>typeSel.add(new Option(t,t)));
-  [...new Set(DATA.map(n=>n.standardType).filter(Boolean))].sort().forEach(d=>domSel.add(new Option(d,d)));
-  render();
-});
-[q,typeSel,domSel].forEach(el=>el.addEventListener('input',render));
+  document.getElementById('s-nodes').textContent = c.total;
+  document.getElementById('s-standards').textContent = c.counts.standards;
+  document.getElementById('s-types').textContent = Object.values(c.counts).filter(v=>v>0).length;
+  document.getElementById('s-valid').textContent = c.valid ? '✓' : '✗';
+}).catch(()=>{});
 </script>
 </body>
 </html>

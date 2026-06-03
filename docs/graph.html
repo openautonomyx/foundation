@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAutonomyX — Knowledge Graph</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+<style>
+  body { margin: 0; }
+  header { padding: .6rem 1rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap; border-bottom:1px solid #8884; }
+  header h1 { font-size: 1rem; margin: 0; }
+  .muted { opacity:.7; font-size:.8rem; }
+  #cy { width: 100vw; height: calc(100vh - 56px); display:block; }
+  label { font-size:.8rem; }
+  #info { position: fixed; right: 12px; bottom: 12px; max-width: 340px; background: Canvas; border:1px solid #8886; border-radius:10px; padding:.6rem .8rem; font-size:.85rem; display:none; }
+  #info code { font-size:.75rem; }
+</style>
+</head>
+<body>
+<header>
+  <a href="./index.html">&larr; OpenAutonomyX</a>
+  <h1>Knowledge Graph</h1>
+  <label><input type="checkbox" id="landscape"> include CNCF landscape edges</label>
+  <span class="muted" id="stat"></span>
+</header>
+<div id="cy"></div>
+<div id="info"></div>
+<script>
+const palette = {
+  "Governance":"#e06666","Agent":"#6fa8dc","Identity & Access":"#93c47d",
+  "Governance & Policy":"#f6b26b","Observability":"#c27ba0","Orchestration & Runtime":"#76a5af",
+  "Data & Models":"#8e7cc3","Interoperability":"#ffd966","Packaging & Supply Chain":"#a2c4c9",
+  "Networking":"#999","Agent Ecosystem":"#666","Knowledge":"#d5a6bd","Taxonomy":"#b6d7a8","Standard":"#888"
+};
+let RAW, cy;
+function build(includeLandscape){
+  const nodeById = Object.fromEntries(RAW.nodes.map(n=>[n.id,n]));
+  const els = [];
+  const used = new Set();
+  const edges = [];
+  RAW.nodes.forEach(n=>{
+    (n.relationships||[]).forEach(r=>{
+      if(!r.target || !nodeById[r.target]) return;
+      if(!includeLandscape && r.type==='cataloged-in') return;
+      edges.push({data:{source:n.id, target:r.target, label:r.type}});
+      used.add(n.id); used.add(r.target);
+    });
+  });
+  RAW.nodes.forEach(n=>{
+    if(used.has(n.id)) els.push({data:{id:n.id, label:n.name||n.id, cat:n.category,
+      type:n.type, desc:n.description||'', tags:(n.tags||[]).join(', ')}});
+  });
+  edges.forEach(e=>els.push(e));
+  document.getElementById('stat').textContent = used.size+' connected nodes · '+edges.length+' edges';
+  return els;
+}
+function go(includeLandscape){
+  cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements: build(includeLandscape),
+    style: [
+      { selector:'node', style:{ 'background-color': e=>palette[e.data('cat')]||'#888',
+        'label':'data(label)','font-size':'7px','color':'#ddd','text-wrap':'wrap','text-max-width':'90px','width':14,'height':14 } },
+      { selector:'edge', style:{ 'width':1,'line-color':'#8885','target-arrow-color':'#8886',
+        'target-arrow-shape':'triangle','curve-style':'bezier','arrow-scale':.6,
+        'label':'data(label)','font-size':'5px','color':'#8889','text-rotation':'autorotate' } }
+    ],
+    layout: { name:'cose', animate:false, nodeRepulsion: 8000, idealEdgeLength: 60 }
+  });
+  const info = document.getElementById('info');
+  cy.on('tap','node', e=>{
+    const d=e.target.data();
+    info.style.display='block';
+    info.innerHTML = '<strong>'+d.label+'</strong><br><code>'+d.id+'</code><br><span class="muted">'+d.cat+' · '+d.type+'</span>'+
+      (d.desc?'<p style="margin:.4rem 0 0">'+d.desc+'</p>':'')+(d.tags?'<p class="muted" style="margin:.3rem 0 0">#'+d.tags+'</p>':'');
+  });
+  cy.on('tap', e=>{ if(e.target===cy) info.style.display='none'; });
+}
+fetch('./catalog.json').then(r=>r.json()).then(c=>{ RAW=c; go(false); });
+document.getElementById('landscape').addEventListener('change', e=>{ if(cy) cy.destroy(); go(e.target.checked); });
+</script>
+</body>
+</html>

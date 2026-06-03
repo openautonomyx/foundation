@@ -1,6 +1,6 @@
 {
  "generated": "auto",
- "total": 436,
+ "total": 437,
  "counts": {
   "capabilities": 1,
   "agents": 1,
@@ -14,7 +14,7 @@
   "standards": 381,
   "knowledge": 5,
   "twins": 1,
-  "taxonomies": 5
+  "taxonomies": 6
  },
  "valid": true,
  "nodes": [
@@ -22,6 +22,8 @@
    "id": "agent.contract-review-assistant",
    "dir": "agents",
    "type": "agent",
+   "category": "Agent",
+   "tags": [],
    "name": "Contract Review Assistant",
    "description": "Semi-autonomous agent that reviews contracts, drafts risk summaries, and routes consequential actions for human approval.",
    "status": "active",
@@ -84,6 +86,8 @@
    "id": "capability.enterprise-agent-governance",
    "dir": "capabilities",
    "type": "capability",
+   "category": "Governance",
+   "tags": [],
    "name": "Enterprise Agent Governance",
    "description": "Govern enterprise agent lifecycle, autonomy, trust, approvals, evidence, and accountability.",
    "status": "active",
@@ -110,6 +114,8 @@
    "id": "control.human-approval",
    "dir": "controls",
    "type": "control",
+   "category": "Governance",
+   "tags": [],
    "name": "Human Approval",
    "description": "Require authorized human approval for consequential actions, high-risk automation, policy exceptions, and irreversible operations.",
    "status": "active",
@@ -123,6 +129,8 @@
    "id": "control.separation-of-duty",
    "dir": "controls",
    "type": "control",
+   "category": "Governance",
+   "tags": [],
    "name": "Separation of Duty",
    "description": "Ensure consequential actions are not defined, approved, executed, and audited by the same actor without independent review.",
    "status": "active",
@@ -136,6 +144,8 @@
    "id": "decision.approve-contract-review-assistant",
    "dir": "decisions",
    "type": "decision",
+   "category": "Governance",
+   "tags": [],
    "name": "Approve Contract Review Assistant Deployment",
    "description": "Human-approval decision authorizing the contract-review assistant to operate at execute-with-approval autonomy within the contract governance workspace.",
    "status": "approved",
@@ -162,6 +172,8 @@
    "id": "identity.agent.contract-review-assistant",
    "dir": "identities",
    "type": "identity",
+   "category": "Identity & Access",
+   "tags": [],
    "name": "Contract Review Assistant Identity",
    "description": "Verified agent identity for the contract-review assistant operating under enterprise agent governance.",
    "status": "active",
@@ -180,6 +192,8 @@
    "id": "knowledge.ai-agent-orchestration",
    "dir": "knowledge",
    "type": "knowledge-asset",
+   "category": "Knowledge",
+   "tags": [],
    "name": "AI Agent Orchestration (reference)",
    "description": "Reference explainer on AI agent orchestration: coordinating multiple agents, tools, and workflows toward a goal; external source treated as reviewed guidance.",
    "status": "active",
@@ -198,6 +212,11 @@
    "id": "knowledge.digital-twin",
    "dir": "knowledge",
    "type": "knowledge-asset",
+   "category": "Knowledge",
+   "tags": [
+    "wikipedia",
+    "Digital twin"
+   ],
    "name": "Digital Twin (reference)",
    "description": "Reference knowledge on digital twins (virtual representation synchronized with a real entity; fidelity levels: digital model, digital shadow, digital twin); external source treated as claims.",
    "status": "active",
@@ -216,6 +235,10 @@
    "id": "knowledge.internet-of-agents",
    "dir": "knowledge",
    "type": "knowledge-asset",
+   "category": "Knowledge",
+   "tags": [
+    "arxiv"
+   ],
    "name": "Internet of Agents (survey)",
    "description": "Peer-reviewed survey framing the Internet of Agents: capability discovery, adaptive communication, dynamic task matching, consensus, and incentive models.",
    "status": "active",
@@ -238,6 +261,8 @@
    "id": "knowledge.internet-of-agents-framework",
    "dir": "knowledge",
    "type": "knowledge-asset",
+   "category": "Knowledge",
+   "tags": [],
    "name": "Internet of Agents framework (IoA, ICLR 2025 Spotlight)",
    "description": "Peer-reviewed framework for LLM multi-agent collaboration: agent integration protocol, instant-messaging-like architecture, nested team formation, and FSM-based conversation flow control.",
    "status": "active",
@@ -264,6 +289,10 @@
    "id": "knowledge.wikipedia",
    "dir": "knowledge",
    "type": "knowledge-asset",
+   "category": "Knowledge",
+   "tags": [
+    "wikipedia"
+   ],
    "name": "Wikipedia",
    "description": "Wikipedia as an external knowledge / retrieval-augmented-generation source; user-edited and treated as unverified claims requiring validation.",
    "status": "active",
@@ -282,6 +311,8 @@
    "id": "protocol.agent-collaboration",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Agent Collaboration Protocol",
    "description": "Internet-of-Agents collaboration protocol for heterogeneous, distributed agents \u2014 registration/discovery, autonomous nested team formation, FSM session control, and structured messaging. Grounded in the IETF IoA Protocol draft.",
    "status": "review",
@@ -312,6 +343,8 @@
    "id": "protocol.agent-identity",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Agent Identity Protocol",
    "description": "Mutual authentication and attestation of agent and workload identity before any consequential exchange.",
    "status": "active",
@@ -330,6 +363,8 @@
    "id": "protocol.authorization-decision",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Authorization Decision Protocol",
    "description": "Request and receive an authorization decision from a policy decision point, separated from enforcement.",
    "status": "active",
@@ -356,6 +391,8 @@
    "id": "protocol.capability-discovery",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Capability Discovery Protocol",
    "description": "Discover, publish, and verify agent capabilities and packaged artifacts from a governed catalog.",
    "status": "active",
@@ -374,6 +411,8 @@
    "id": "protocol.orchestration",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Orchestration Protocol",
    "description": "Agent-as-orchestrator coordination of sub-agents, tasks, and resources toward an objective.",
    "status": "active",
@@ -400,6 +439,8 @@
    "id": "protocol.policy-evaluation",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Policy Evaluation Protocol",
    "description": "Evaluate policy-as-code to produce governed, logged policy decisions for agent actions.",
    "status": "active",
@@ -418,6 +459,8 @@
    "id": "protocol.reconciliation",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Reconciliation Protocol",
    "description": "Agent-as-operator control loop that drives actual state toward declared desired state.",
    "status": "active",
@@ -436,6 +479,8 @@
    "id": "protocol.relationship-authorization",
    "dir": "protocols",
    "type": "protocol",
+   "category": "Interoperability",
+   "tags": [],
    "name": "Relationship Authorization Protocol",
    "description": "Check fine-grained relationship-based permissions for scoped agent access.",
    "status": "active",
@@ -454,6 +499,8 @@
    "id": "risk.agent-memory-poisoning",
    "dir": "risks",
    "type": "risk",
+   "category": "Governance",
+   "tags": [],
    "name": "Agent Memory Poisoning",
    "description": "Risk that malicious or false data is persisted in agent memory to influence future decisions, sessions, or other users (OWASP agentic threat T1).",
    "status": "active",
@@ -480,6 +527,8 @@
    "id": "risk.agent-tool-misuse",
    "dir": "risks",
    "type": "risk",
+   "category": "Governance",
+   "tags": [],
    "name": "Agent Tool Misuse",
    "description": "Risk that an agent is manipulated into abusing its integrated tools to perform unintended or destructive actions (OWASP agentic threat T2).",
    "status": "active",
@@ -510,6 +559,8 @@
    "id": "risk.unauthorized-agent-execution",
    "dir": "risks",
    "type": "risk",
+   "category": "Governance",
+   "tags": [],
    "name": "Unauthorized Agent Execution",
    "description": "Risk that an agent performs an action without valid authorization, approval, policy scope, or accountable ownership.",
    "status": "active",
@@ -536,6 +587,10 @@
    "id": "skill.adverse-selection-mitigation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "governance"
+   ],
    "name": "Adverse Selection Mitigation",
    "description": "Address hidden information about agent type via screening, verification, and trust assessment before engagement.",
    "status": "active",
@@ -558,6 +613,10 @@
    "id": "skill.agency-cost-reduction",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "governance"
+   ],
    "name": "Agency Cost Reduction",
    "description": "Minimize the deviation of agent actions from principal interest and the cost of controlling it.",
    "status": "active",
@@ -580,6 +639,10 @@
    "id": "skill.commission",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Commission",
    "description": "Tie compensation to outcomes (e.g. sales) to align agent effort with principal revenue.",
    "status": "active",
@@ -602,6 +665,10 @@
    "id": "skill.deferred-compensation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Deferred Compensation",
    "description": "Weight reward to later periods to encourage long-term commitment and reveal type over time.",
    "status": "active",
@@ -624,6 +691,10 @@
    "id": "skill.efficiency-wages",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Efficiency Wages",
    "description": "Pay above market to raise the cost of job loss and motivate effort and retention.",
    "status": "active",
@@ -646,6 +717,10 @@
    "id": "skill.equal-compensation-principle",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "contracting"
+   ],
    "name": "Equal Compensation Principle",
    "description": "Value equally-important activities equally so unmonitored tasks are not neglected (avoid multitasking distortion).",
    "status": "active",
@@ -668,6 +743,10 @@
    "id": "skill.incentive-alignment",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "alignment"
+   ],
    "name": "Incentive Alignment",
    "description": "Change the rules so the agent's rational self-interest coincides with the principal's intent.",
    "status": "active",
@@ -690,6 +769,10 @@
    "id": "skill.incentive-intensity-principle",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "contracting"
+   ],
    "name": "Incentive Intensity Principle",
    "description": "Set incentive strength based on profit sensitivity, measurement precision, agent risk tolerance, and responsiveness.",
    "status": "active",
@@ -712,6 +795,10 @@
    "id": "skill.information-asymmetry-reduction",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "governance"
+   ],
    "name": "Information Asymmetry Reduction",
    "description": "Close the knowledge gap between principal and agent through disclosure, traceability, and observability.",
    "status": "active",
@@ -734,6 +821,10 @@
    "id": "skill.informativeness-principle",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "contracting"
+   ],
    "name": "Informativeness Principle",
    "description": "Include in the agent's evaluation any signal that reveals information about its effort, filtering exogenous noise.",
    "status": "active",
@@ -756,6 +847,10 @@
    "id": "skill.monitoring",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "monitoring"
+   ],
    "name": "Monitoring",
    "description": "Reduce information asymmetry by observing agent actions and outcomes at justified cost.",
    "status": "active",
@@ -778,6 +873,10 @@
    "id": "skill.monitoring-intensity-principle",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "monitoring"
+   ],
    "name": "Monitoring Intensity Principle",
    "description": "Match the level of monitoring to the optimal intensity of incentives; monitor more where incentives are strong.",
    "status": "active",
@@ -800,6 +899,10 @@
    "id": "skill.moral-hazard-mitigation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "governance"
+   ],
    "name": "Moral Hazard Mitigation",
    "description": "Detect and deter hidden actions the principal would not approve via monitoring, incentives, and evidence.",
    "status": "active",
@@ -822,6 +925,10 @@
    "id": "skill.multiple-principal-resolution",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "governance"
+   ],
    "name": "Multiple-Principal Resolution",
    "description": "Resolve conflicting objectives when an agent serves several principals (collective-action governance).",
    "status": "active",
@@ -844,6 +951,10 @@
    "id": "skill.negotiation-delegation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "negotiation"
+   ],
    "name": "Negotiation Delegation",
    "description": "Delegate scoped negotiation authority with a defined reservation price and reputational accountability.",
    "status": "active",
@@ -866,6 +977,10 @@
    "id": "skill.non-financial-recognition",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Non-Financial Recognition",
    "description": "Use acknowledgement and praise to raise intrinsic motivation without narrowing the relationship to pure economics.",
    "status": "active",
@@ -888,6 +1003,10 @@
    "id": "skill.objective-performance-evaluation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "evaluation"
+   ],
    "name": "Objective Performance Evaluation",
    "description": "Assess against explicit, measurable standards; prefer aggregate measures to avoid gaming single metrics.",
    "status": "active",
@@ -910,6 +1029,10 @@
    "id": "skill.piece-rates",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Piece Rates",
    "description": "Reward measurable output directly to internalize the consequences of effort for simple, repetitive tasks.",
    "status": "active",
@@ -932,6 +1055,10 @@
    "id": "skill.posting-a-bond",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Bonding",
    "description": "Have the agent post a bond forfeited on misconduct, giving it skin in the game.",
    "status": "active",
@@ -954,6 +1081,10 @@
    "id": "skill.profit-sharing",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Profit Sharing",
    "description": "Share aggregate output value to align team incentives where individual contribution is hard to isolate.",
    "status": "active",
@@ -976,6 +1107,10 @@
    "id": "skill.promotion-based-incentives",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Promotion-Based Incentives",
    "description": "Use internal advancement as long-horizon pay-for-performance via job and title changes.",
    "status": "active",
@@ -998,6 +1133,10 @@
    "id": "skill.relative-performance-evaluation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "evaluation"
+   ],
    "name": "Relative Performance Evaluation",
    "description": "Compare an agent to similar peers to remove common shocks and sharpen incentives.",
    "status": "active",
@@ -1020,6 +1159,10 @@
    "id": "skill.subjective-performance-evaluation",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "evaluation"
+   ],
    "name": "Subjective Performance Evaluation",
    "description": "Use balanced supervisor judgement for complex work; mitigate centrality and leniency bias.",
    "status": "active",
@@ -1042,6 +1185,10 @@
    "id": "skill.termination-threat",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Termination Threat",
    "description": "Use credible threat of ending the relationship to deter shirking and misalignment.",
    "status": "active",
@@ -1064,6 +1211,10 @@
    "id": "skill.tournament-incentives",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "incentive"
+   ],
    "name": "Tournament Incentives",
    "description": "Reward relative rank to motivate effort when absolute measurement is costly; guard against risk-seeking and sabotage.",
    "status": "active",
@@ -1086,6 +1237,10 @@
    "id": "skill.trust-and-reciprocity",
    "dir": "skills",
    "type": "skill",
+   "category": "Agent",
+   "tags": [
+    "alignment"
+   ],
    "name": "Trust and Reciprocity",
    "description": "Use repeated interaction and reputation (trust game dynamics) to sustain trustworthy agent behavior.",
    "status": "active",
@@ -1108,6 +1263,14 @@
    "id": "standard.aagfe",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "governance",
+    "automation",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "AAGFE",
    "description": "Agentic Automation Governance For Every Entity.",
    "status": "active",
@@ -1121,6 +1284,13 @@
    "id": "standard.adk",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Agent Development Kit",
    "description": "Open-source, code-first Python toolkit for building, evaluating, and deploying AI agents.",
    "status": "active",
@@ -1139,6 +1309,14 @@
    "id": "standard.agennext-blog",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "blog",
+    "content",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "AGenNext Blog",
    "description": "AGenNext official blog.",
    "status": "active",
@@ -1152,6 +1330,14 @@
    "id": "standard.agennext-com",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "commerce",
+    "control-plane",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "AGenNext.com",
    "description": "The Commerce Control Plane of AGenNext.",
    "status": "active",
@@ -1165,6 +1351,14 @@
    "id": "standard.agennext-devops",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "devops",
+    "ci-cd",
+    "orchestration",
+    "experimental",
+    "agennext"
+   ],
    "name": "AGenNext-DevOps",
    "description": "AGenNext DevOps tooling (private).",
    "status": "active",
@@ -1178,6 +1372,14 @@
    "id": "standard.agennext-helper",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "helper",
+    "utility",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "AGenNext-Helper",
    "description": "AGenNext helper project.",
    "status": "active",
@@ -1191,6 +1393,13 @@
    "id": "standard.agent-access",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "access-control",
+    "authorization",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Access",
    "description": "AGenNext agent access project.",
    "status": "proposed",
@@ -1204,6 +1413,13 @@
    "id": "standard.agent-aeft",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "aeft",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-AEFT",
    "description": "AGenNext Agent-AEFT project (private).",
    "status": "proposed",
@@ -1217,6 +1433,14 @@
    "id": "standard.agent-analytics",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "analytics",
+    "metrics",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Analytics",
    "description": "AGenNext agent analytics project.",
    "status": "active",
@@ -1230,6 +1454,13 @@
    "id": "standard.agent-assistant",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "assistant",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Assistant",
    "description": "Agent assistant project.",
    "status": "active",
@@ -1243,6 +1474,13 @@
    "id": "standard.agent-auth",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "authentication",
+    "auth",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Auth",
    "description": "Agent authentication project (private).",
    "status": "active",
@@ -1256,6 +1494,14 @@
    "id": "standard.agent-awareness",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "awareness",
+    "situational",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Awareness",
    "description": "Agent awareness project (private).",
    "status": "active",
@@ -1269,6 +1515,14 @@
    "id": "standard.agent-belief",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "belief",
+    "reasoning",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Belief",
    "description": "AGenNext agent belief project (private).",
    "status": "proposed",
@@ -1282,6 +1536,15 @@
    "id": "standard.agent-bench",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "benchmarking",
+    "performance",
+    "evaluation",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Bench",
    "description": "Agent Performance Benchmarking Platform.",
    "status": "active",
@@ -1295,6 +1558,14 @@
    "id": "standard.agent-blueprint",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "blueprint",
+    "template",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Blueprint",
    "description": "Agent blueprint project.",
    "status": "active",
@@ -1308,6 +1579,14 @@
    "id": "standard.agent-book",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "documentation",
+    "knowledge",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Book",
    "description": "AGenNext agent book project.",
    "status": "active",
@@ -1321,6 +1600,13 @@
    "id": "standard.agent-browser",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "browser",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Browser",
    "description": "Agent browser project.",
    "status": "active",
@@ -1334,6 +1620,14 @@
    "id": "standard.agent-builder",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "builder",
+    "no-code",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Builder",
    "description": "AGenNext agent builder project.",
    "status": "active",
@@ -1347,6 +1641,13 @@
    "id": "standard.agent-business",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "business",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Business",
    "description": "Agent business project.",
    "status": "active",
@@ -1360,6 +1661,15 @@
    "id": "standard.agent-card",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "agent-card",
+    "a2a",
+    "descriptor",
+    "interoperability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Card",
    "description": "Agent card project (agent capability descriptor).",
    "status": "active",
@@ -1373,6 +1683,13 @@
    "id": "standard.agent-care",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "care",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Care",
    "description": "AGenNext agent care project.",
    "status": "proposed",
@@ -1386,6 +1703,14 @@
    "id": "standard.agent-channel",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "channel",
+    "messaging",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Channel",
    "description": "Agent channel / messaging project.",
    "status": "active",
@@ -1399,6 +1724,14 @@
    "id": "standard.agent-chat",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "chat",
+    "conversation",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Chat",
    "description": "Agent chat project.",
    "status": "active",
@@ -1412,6 +1745,14 @@
    "id": "standard.agent-cloud",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "agent-cloud",
+    "runtime",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Cloud",
    "description": "Cloud for agents.",
    "status": "active",
@@ -1425,6 +1766,13 @@
    "id": "standard.agent-code",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "code",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Code",
    "description": "Agent code project.",
    "status": "active",
@@ -1438,6 +1786,14 @@
    "id": "standard.agent-cognitive-guard",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "cognitive-guard",
+    "guardrails",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Cognitive-Guard",
    "description": "Cognitive guardrails for agents (private).",
    "status": "active",
@@ -1451,6 +1807,14 @@
    "id": "standard.agent-commerce",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "commerce",
+    "e-commerce",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Commerce",
    "description": "Agents who can run your e-commerce business.",
    "status": "active",
@@ -1464,6 +1828,14 @@
    "id": "standard.agent-commit",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "commit",
+    "version-control",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Commit",
    "description": "AGenNext agent commit project.",
    "status": "proposed",
@@ -1477,6 +1849,13 @@
    "id": "standard.agent-community",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "community",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Community",
    "description": "A community where agents and humans coexist.",
    "status": "active",
@@ -1490,6 +1869,13 @@
    "id": "standard.agent-compliance",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "compliance",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Compliance",
    "description": "Compliance for agents.",
    "status": "active",
@@ -1503,6 +1889,14 @@
    "id": "standard.agent-connect",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "connectivity",
+    "integration",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Connect",
    "description": "Agent connectivity project.",
    "status": "active",
@@ -1516,6 +1910,15 @@
    "id": "standard.agent-constitution-repo",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "constitution",
+    "governance",
+    "alignment",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Constitution",
    "description": "Constitution for secure, governable, reliable, self-improving autonomous agents.",
    "status": "active",
@@ -1529,6 +1932,13 @@
    "id": "standard.agent-constraints",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "constraints",
+    "policy",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Constraints",
    "description": "Agent constraints project.",
    "status": "active",
@@ -1542,6 +1952,13 @@
    "id": "standard.agent-content",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "content",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Content",
    "description": "Content agent project.",
    "status": "active",
@@ -1555,6 +1972,15 @@
    "id": "standard.agent-context",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "context",
+    "kubernetes",
+    "memory",
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Context",
    "description": "Context Kubernetes for the agent world.",
    "status": "active",
@@ -1568,6 +1994,17 @@
    "id": "standard.agent-control",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-drift",
+    "observe-compare-classify-score",
+    "reconciliation",
+    "risk-scoring",
+    "remediation",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Control (AGenNext)",
    "description": "Drift detection and reconciliation service that checks whether a running agent still matches its approved definition.",
    "status": "review",
@@ -1581,6 +2018,13 @@
    "id": "standard.agent-coral",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "coral",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "AGENT-CORAL",
    "description": "AGenNext AGENT-CORAL project (private).",
    "status": "proposed",
@@ -1594,6 +2038,14 @@
    "id": "standard.agent-cortex",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "cortex",
+    "reasoning",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Cortex",
    "description": "Cortex for AGenNext.",
    "status": "active",
@@ -1607,6 +2059,14 @@
    "id": "standard.agent-courses",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "courses",
+    "learning",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Courses",
    "description": "Agent courses / learning project.",
    "status": "active",
@@ -1620,6 +2080,15 @@
    "id": "standard.agent-crawl",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "web-crawler",
+    "firecrawl",
+    "crawl4ai",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Crawl",
    "description": "A simple web crawler agent using Firecrawl and Crawl4AI.",
    "status": "active",
@@ -1633,6 +2102,14 @@
    "id": "standard.agent-crew",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "crew",
+    "multi-agent",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Crew",
    "description": "Agent crew / multi-agent team project.",
    "status": "active",
@@ -1646,6 +2123,14 @@
    "id": "standard.agent-dashboard",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "dashboard",
+    "reporting",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Dashboard",
    "description": "The reporting panel for AGenNext.",
    "status": "active",
@@ -1659,6 +2144,12 @@
    "id": "standard.agent-data",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Data",
    "description": "Agent data project (private).",
    "status": "active",
@@ -1672,6 +2163,13 @@
    "id": "standard.agent-decisions",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "decisions",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Decisions",
    "description": "Agent decisions project (private).",
    "status": "active",
@@ -1685,6 +2183,14 @@
    "id": "standard.agent-deploy",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "deployment",
+    "release",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Deploy",
    "description": "AGenNext agent deployment project.",
    "status": "active",
@@ -1698,6 +2204,14 @@
    "id": "standard.agent-devices",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "devices",
+    "iot",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Devices",
    "description": "Agent devices project.",
    "status": "active",
@@ -1711,6 +2225,14 @@
    "id": "standard.agent-dictionary",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "dictionary",
+    "vocabulary",
+    "data",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Dictionary",
    "description": "Agent dictionary project.",
    "status": "active",
@@ -1724,6 +2246,13 @@
    "id": "standard.agent-distro",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "distribution",
+    "packaging",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Distro",
    "description": "Agent distribution project.",
    "status": "active",
@@ -1737,6 +2266,14 @@
    "id": "standard.agent-draw",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "drawing",
+    "diagram",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Draw",
    "description": "Agent drawing project.",
    "status": "active",
@@ -1750,6 +2287,14 @@
    "id": "standard.agent-drift",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "drift",
+    "reconciliation",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Drift",
    "description": "AGenNext agent drift project.",
    "status": "proposed",
@@ -1763,6 +2308,14 @@
    "id": "standard.agent-drive",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "storage",
+    "drive",
+    "data",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Drive",
    "description": "Cloud storage for agents.",
    "status": "active",
@@ -1776,6 +2329,17 @@
    "id": "standard.agent-economy",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-economy",
+    "value-exchange",
+    "metering",
+    "settlement",
+    "agent",
+    "experimental",
+    "placeholder",
+    "agennext"
+   ],
    "name": "Agent-Economy (AGenNext)",
    "description": "Placeholder repository anticipated to address agent-based economic modeling and value exchange; not yet populated.",
    "status": "proposed",
@@ -1789,6 +2353,14 @@
    "id": "standard.agent-environment",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "environment",
+    "runtime",
+    "orchestration",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Environment",
    "description": "Agent environment project (private).",
    "status": "active",
@@ -1802,6 +2374,14 @@
    "id": "standard.agent-estate",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "estate",
+    "real-estate",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Estate",
    "description": "Agent estate project.",
    "status": "active",
@@ -1815,6 +2395,14 @@
    "id": "standard.agent-eval",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "evaluation",
+    "enterprise-agentic",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Eval",
    "description": "A multi-dimensional framework for evaluating enterprise agentic AI systems.",
    "status": "active",
@@ -1828,6 +2416,13 @@
    "id": "standard.agent-evaluation",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Agent Evaluation",
    "description": "GenAI-powered framework for testing virtual agents.",
    "status": "active",
@@ -1846,6 +2441,14 @@
    "id": "standard.agent-evolve",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "self-improvement",
+    "evolution",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Evolve",
    "description": "Agent self-improvement project (private).",
    "status": "active",
@@ -1859,6 +2462,14 @@
    "id": "standard.agent-extensions",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "extensions",
+    "plugins",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Extensions",
    "description": "Agent extensions project.",
    "status": "active",
@@ -1872,6 +2483,14 @@
    "id": "standard.agent-fabric",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "fabric",
+    "mesh",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Fabric",
    "description": "Agent fabric / mesh project.",
    "status": "active",
@@ -1885,6 +2504,14 @@
    "id": "standard.agent-factory",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "factory",
+    "provisioning",
+    "orchestration",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Factory",
    "description": "Agent factory project.",
    "status": "active",
@@ -1898,6 +2525,13 @@
    "id": "standard.agent-features",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-features",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Features",
    "description": "AGenNext agent features project.",
    "status": "active",
@@ -1911,6 +2545,13 @@
    "id": "standard.agent-feeds",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "feeds",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Feeds",
    "description": "Agent feeds project.",
    "status": "active",
@@ -1924,6 +2565,14 @@
    "id": "standard.agent-finops",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "finops",
+    "cost",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-FinOps",
    "description": "FinOps and cost governance for agents.",
    "status": "active",
@@ -1937,6 +2586,14 @@
    "id": "standard.agent-flow",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "flow",
+    "workflow",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Flow",
    "description": "Agent flow / workflow project.",
    "status": "active",
@@ -1950,6 +2607,15 @@
    "id": "standard.agent-form",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "forms",
+    "automation",
+    "workflow",
+    "orchestration",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Form",
    "description": "AGenNext agent frame automation workflow.",
    "status": "proposed",
@@ -1963,6 +2629,14 @@
    "id": "standard.agent-foundation",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "foundation",
+    "registry",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Foundation",
    "description": "AGenNext agent foundation project.",
    "status": "active",
@@ -1976,6 +2650,13 @@
    "id": "standard.agent-framework",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "framework",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Framework",
    "description": "Agent framework project.",
    "status": "active",
@@ -1989,6 +2670,13 @@
    "id": "standard.agent-frameworks",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "frameworks",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Frameworks",
    "description": "Agent frameworks project.",
    "status": "active",
@@ -2002,6 +2690,15 @@
    "id": "standard.agent-gpa",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "evaluation",
+    "goal-plan-action",
+    "alignment",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-GPA",
    "description": "A framework for evaluating agent Goal-Plan-Action alignment.",
    "status": "active",
@@ -2015,6 +2712,15 @@
    "id": "standard.agent-grammar",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "grammar",
+    "syntax",
+    "validation",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Grammar",
    "description": "AGenNext agent grammar project.",
    "status": "active",
@@ -2028,6 +2734,14 @@
    "id": "standard.agent-gtm",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "gtm",
+    "sales-marketing",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-GTM",
    "description": "Go-to-market agent project.",
    "status": "active",
@@ -2041,6 +2755,14 @@
    "id": "standard.agent-guard",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "guardrails",
+    "safety",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Guard",
    "description": "Guardrails for every agent.",
    "status": "active",
@@ -2054,6 +2776,14 @@
    "id": "standard.agent-handoff",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "handoff",
+    "escalation",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Handoff",
    "description": "Agent handoff / escalation project.",
    "status": "active",
@@ -2067,6 +2797,16 @@
    "id": "standard.agent-harness",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "developer-experience",
+    "scm",
+    "ci-cd",
+    "artifact-registry",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Harness",
    "description": "Agentic developer experience platform with SCM, CI/CD, hosted developer environments, and artifact registries.",
    "status": "active",
@@ -2080,6 +2820,13 @@
    "id": "standard.agent-health",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "health",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Health",
    "description": "Agent health project.",
    "status": "active",
@@ -2093,6 +2840,14 @@
    "id": "standard.agent-home",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "home-automation",
+    "iot",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Home",
    "description": "Home automation agent.",
    "status": "active",
@@ -2106,6 +2861,14 @@
    "id": "standard.agent-hooks",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "hooks",
+    "extensibility",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Hooks",
    "description": "Agent hooks project.",
    "status": "active",
@@ -2119,6 +2882,14 @@
    "id": "standard.agent-ide",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "ide",
+    "developer-tooling",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-IDE",
    "description": "AGenNext agent IDE project.",
    "status": "active",
@@ -2132,6 +2903,13 @@
    "id": "standard.agent-identity-agennext",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "agent-identity",
+    "identity",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Identity (AGenNext)",
    "description": "AGenNext agent identity project.",
    "status": "active",
@@ -2145,6 +2923,14 @@
    "id": "standard.agent-iga",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "iga",
+    "identity-governance",
+    "identity",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-IGA",
    "description": "Agent identity governance and administration project.",
    "status": "active",
@@ -2158,6 +2944,14 @@
    "id": "standard.agent-image",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "image-generation",
+    "visual",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Image",
    "description": "Image generation and processing agent for visual workflows.",
    "status": "active",
@@ -2171,6 +2965,14 @@
    "id": "standard.agent-improvement",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "improvement",
+    "self-improvement",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Improvement",
    "description": "Agent improvement project.",
    "status": "active",
@@ -2184,6 +2986,13 @@
    "id": "standard.agent-input",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "input",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Input",
    "description": "Agent input project.",
    "status": "active",
@@ -2197,6 +3006,14 @@
    "id": "standard.agent-insights",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "insights",
+    "analytics",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Insights",
    "description": "Agent insights project.",
    "status": "active",
@@ -2210,6 +3027,13 @@
    "id": "standard.agent-instructor",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-instruction",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Instructor",
    "description": "AGenNext agent instructor project (private).",
    "status": "active",
@@ -2223,6 +3047,13 @@
    "id": "standard.agent-intelligence",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "intelligence",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Intelligence",
    "description": "Agent intelligence project.",
    "status": "active",
@@ -2236,6 +3067,14 @@
    "id": "standard.agent-intent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "intent",
+    "intention",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Intent",
    "description": "Agent intention and willing project.",
    "status": "active",
@@ -2249,6 +3088,13 @@
    "id": "standard.agent-itsm",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "itsm",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-ITSM",
    "description": "IT service management agent project.",
    "status": "active",
@@ -2262,6 +3108,14 @@
    "id": "standard.agent-kernel",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "kernel",
+    "core",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Kernel",
    "description": "Agent kernel project (private).",
    "status": "active",
@@ -2275,6 +3129,14 @@
    "id": "standard.agent-kit",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "kit",
+    "sdk",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Kit",
    "description": "Agent kit project.",
    "status": "active",
@@ -2288,6 +3150,13 @@
    "id": "standard.agent-knowledge",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "knowledge",
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Knowledge",
    "description": "Agent knowledge project (private).",
    "status": "active",
@@ -2301,6 +3170,14 @@
    "id": "standard.agent-kpis",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "kpi",
+    "metrics",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-KPIs",
    "description": "AGenNext agent KPIs project.",
    "status": "active",
@@ -2314,6 +3191,14 @@
    "id": "standard.agent-labs",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "labs",
+    "experiments",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Labs",
    "description": "Agent labs / experiments project.",
    "status": "active",
@@ -2327,6 +3212,15 @@
    "id": "standard.agent-language",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "language-server-protocol",
+    "langium",
+    "agent-language",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Language (AGenNext)",
    "description": "An agent with skill on the Language Server Protocol and Langium as a tool.",
    "status": "active",
@@ -2340,6 +3234,14 @@
    "id": "standard.agent-lcm",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "lifecycle",
+    "lcm",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-LCM",
    "description": "Lifecycle management for agents.",
    "status": "active",
@@ -2353,6 +3255,14 @@
    "id": "standard.agent-letters",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "letters",
+    "correspondence",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Letters",
    "description": "Agent letters / correspondence project.",
    "status": "active",
@@ -2366,6 +3276,14 @@
    "id": "standard.agent-library",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "library",
+    "learning",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Library",
    "description": "Learning resources for humans and agents.",
    "status": "active",
@@ -2379,6 +3297,14 @@
    "id": "standard.agent-lifecycle-management",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "lifecycle",
+    "identity-lifecycle",
+    "identity",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent Lifecycle Management",
    "description": "Agent identity lifecycle management.",
    "status": "active",
@@ -2392,6 +3318,14 @@
    "id": "standard.agent-llm",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "llm",
+    "models",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-LLM",
    "description": "Agent LLM project.",
    "status": "active",
@@ -2405,6 +3339,13 @@
    "id": "standard.agent-maturity",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "maturity",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Maturity",
    "description": "Agent maturity model project.",
    "status": "active",
@@ -2418,6 +3359,15 @@
    "id": "standard.agent-mcps",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "mcp",
+    "registry",
+    "integrations",
+    "interoperability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-MCPs",
    "description": "Registry of Model Context Protocol servers and integrations.",
    "status": "active",
@@ -2431,6 +3381,13 @@
    "id": "standard.agent-memory-agennext",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-memory",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Memory (AGenNext)",
    "description": "AGenNext agent memory project.",
    "status": "active",
@@ -2444,6 +3401,13 @@
    "id": "standard.agent-metrics",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "metrics",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Metrics",
    "description": "AGenNext agent metrics project.",
    "status": "proposed",
@@ -2457,6 +3421,14 @@
    "id": "standard.agent-mind",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "mind",
+    "cognition",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Mind",
    "description": "Agent mind project (private).",
    "status": "active",
@@ -2470,6 +3442,14 @@
    "id": "standard.agent-ml",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "machine-learning",
+    "library",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-ML",
    "description": "Machine learning library.",
    "status": "active",
@@ -2483,6 +3463,13 @@
    "id": "standard.agent-monitor",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "monitoring",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Monitor",
    "description": "Agent monitoring project.",
    "status": "active",
@@ -2496,6 +3483,14 @@
    "id": "standard.agent-objective",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "objective",
+    "goal",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Objective",
    "description": "Agent objectives project.",
    "status": "active",
@@ -2509,6 +3504,14 @@
    "id": "standard.agent-ocr",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "ocr",
+    "perception",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Ocr",
    "description": "AGenNext agent OCR project.",
    "status": "active",
@@ -2522,6 +3525,14 @@
    "id": "standard.agent-office",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "office",
+    "productivity",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Office",
    "description": "AGenNext agent office project.",
    "status": "proposed",
@@ -2535,6 +3546,14 @@
    "id": "standard.agent-operating-model",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "operating-model",
+    "governance",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Operating-Model",
    "description": "AGenNext agent operating model project (private).",
    "status": "active",
@@ -2548,6 +3567,13 @@
    "id": "standard.agent-optimize",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "optimization",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Optimize",
    "description": "Agent optimization project.",
    "status": "active",
@@ -2561,6 +3587,13 @@
    "id": "standard.agent-output",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "output",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Output",
    "description": "Agent output project.",
    "status": "active",
@@ -2574,6 +3607,14 @@
    "id": "standard.agent-pam",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "privileged-access",
+    "pam",
+    "authorization",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-PAM",
    "description": "Privileged access management for agents.",
    "status": "active",
@@ -2587,6 +3628,14 @@
    "id": "standard.agent-parcel",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "logistics",
+    "parcel",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Parcel",
    "description": "The logistics agent.",
    "status": "active",
@@ -2600,6 +3649,15 @@
    "id": "standard.agent-pay",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "payments",
+    "payment-protocol",
+    "economy",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Pay",
    "description": "Built on the Agents Payment Protocol; payments for agents.",
    "status": "active",
@@ -2613,6 +3671,15 @@
    "id": "standard.agent-platform",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "agent-platform",
+    "cloud-native",
+    "composable",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Platform",
    "description": "Open source cloud-native composable full-stack agent platform.",
    "status": "active",
@@ -2626,6 +3693,14 @@
    "id": "standard.agent-policies",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policies",
+    "policy-as-code",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Policies",
    "description": "Agent policies project.",
    "status": "active",
@@ -2639,6 +3714,14 @@
    "id": "standard.agent-ppt",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "presentation",
+    "ppt",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-PPT",
    "description": "Agent presentation project.",
    "status": "active",
@@ -2652,6 +3735,13 @@
    "id": "standard.agent-pro",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "professional",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Pro",
    "description": "Agent for working professionals.",
    "status": "active",
@@ -2665,6 +3755,14 @@
    "id": "standard.agent-projects",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "project-management",
+    "product-management",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Projects",
    "description": "Next generation project management platform by AutonomyX.",
    "status": "active",
@@ -2678,6 +3776,14 @@
    "id": "standard.agent-publications",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "publishing",
+    "knowledge",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Publications",
    "description": "A publishing platform for autonomous agents.",
    "status": "active",
@@ -2691,6 +3797,14 @@
    "id": "standard.agent-rag",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "rag",
+    "retrieval",
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Rag",
    "description": "Agent retrieval-augmented generation project.",
    "status": "active",
@@ -2704,6 +3818,13 @@
    "id": "standard.agent-research",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "research",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Research",
    "description": "Agent research project.",
    "status": "active",
@@ -2717,6 +3838,13 @@
    "id": "standard.agent-review",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "review",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Review",
    "description": "Agent review project.",
    "status": "active",
@@ -2730,6 +3858,13 @@
    "id": "standard.agent-risk",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "risk",
+    "policy",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Risk",
    "description": "AGenNext agent risk project.",
    "status": "proposed",
@@ -2743,6 +3878,14 @@
    "id": "standard.agent-runs",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "runs",
+    "execution-records",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Runs",
    "description": "Agent run records project.",
    "status": "active",
@@ -2756,6 +3899,14 @@
    "id": "standard.agent-runtime",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "runtime",
+    "execution",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Runtime",
    "description": "AGenNext agent runtime project.",
    "status": "active",
@@ -2769,6 +3920,13 @@
    "id": "standard.agent-sales",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "sales",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Sales",
    "description": "Sales agent project.",
    "status": "active",
@@ -2782,6 +3940,13 @@
    "id": "standard.agent-sandbox",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "agent-sandbox",
    "description": "Manage isolated, stateful, singleton workloads for AI agent runtimes.",
    "status": "active",
@@ -2800,6 +3965,14 @@
    "id": "standard.agent-sdk",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "sdk",
+    "agent-building",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-SDK",
    "description": "Build any kind of agent from an agent SDK.",
    "status": "active",
@@ -2813,6 +3986,13 @@
    "id": "standard.agent-search",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "search",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Search",
    "description": "AGenNext agent search project (private).",
    "status": "active",
@@ -2826,6 +4006,14 @@
    "id": "standard.agent-secrets",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "secrets",
+    "credentials",
+    "authentication",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Secrets",
    "description": "Secrets management for agents.",
    "status": "active",
@@ -2839,6 +4027,13 @@
    "id": "standard.agent-security",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "security",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Security",
    "description": "Agent security project.",
    "status": "active",
@@ -2852,6 +4047,14 @@
    "id": "standard.agent-seed",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "seed",
+    "bootstrap",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Seed",
    "description": "Agent seed project (private).",
    "status": "active",
@@ -2865,6 +4068,13 @@
    "id": "standard.agent-services",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-services",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Services",
    "description": "AGenNext agent services project.",
    "status": "active",
@@ -2878,6 +4088,14 @@
    "id": "standard.agent-sight",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "vision",
+    "perception",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Sight",
    "description": "AGenNext agent sight project.",
    "status": "proposed",
@@ -2891,6 +4109,19 @@
    "id": "standard.agent-sign",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "sigstore",
+    "cosign",
+    "supply-chain",
+    "provenance",
+    "sbom",
+    "oci",
+    "wasm",
+    "packaging",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Sign",
    "description": "Vendor-neutral Sigstore/Cosign helper for signing and verifying OCI artifacts, agent runtimes, and WASM supply-chain releases.",
    "status": "active",
@@ -2904,6 +4135,13 @@
    "id": "standard.agent-site",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "website",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Site",
    "description": "Public website for AgentNXT.",
    "status": "active",
@@ -2917,6 +4155,14 @@
    "id": "standard.agent-skills",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "skills",
+    "reusable-knowhow",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Skills",
    "description": "AGenNext agent skills project.",
    "status": "active",
@@ -2930,6 +4176,15 @@
    "id": "standard.agent-sla",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "sla",
+    "service-levels",
+    "reliability",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-SLA",
    "description": "Towards a service level agreement for AI agents.",
    "status": "active",
@@ -2943,6 +4198,14 @@
    "id": "standard.agent-society",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "society",
+    "groups",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Society",
    "description": "Interest and hobby based groups for agents.",
    "status": "active",
@@ -2956,6 +4219,13 @@
    "id": "standard.agent-space",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "workspace",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Space",
    "description": "Workspace for agents.",
    "status": "active",
@@ -2969,6 +4239,14 @@
    "id": "standard.agent-speech",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "speech",
+    "voice",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Speech",
    "description": "Agent speech project.",
    "status": "active",
@@ -2982,6 +4260,13 @@
    "id": "standard.agent-standard",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "standard",
+    "interoperability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Standard",
    "description": "Agent standard project.",
    "status": "active",
@@ -2995,6 +4280,14 @@
    "id": "standard.agent-swarm",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "swarm",
+    "multi-agent",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Swarm",
    "description": "Agent swarm / multi-agent coordination project.",
    "status": "active",
@@ -3008,6 +4301,14 @@
    "id": "standard.agent-team",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "team",
+    "multi-agent",
+    "orchestration",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Team",
    "description": "Agent team / multi-agent project.",
    "status": "active",
@@ -3021,6 +4322,13 @@
    "id": "standard.agent-theories",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-theory",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Theories",
    "description": "AGenNext agent theories project.",
    "status": "active",
@@ -3034,6 +4342,14 @@
    "id": "standard.agent-threat",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "threat",
+    "security",
+    "policy",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Threat",
    "description": "AGenNext agent threat project.",
    "status": "proposed",
@@ -3047,6 +4363,13 @@
    "id": "standard.agent-tools",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-tools",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Tools",
    "description": "AGenNext agent tools project.",
    "status": "active",
@@ -3060,6 +4383,14 @@
    "id": "standard.agent-traces",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "traces",
+    "evidence",
+    "observability",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Traces",
    "description": "Agent trace / evidence project.",
    "status": "active",
@@ -3073,6 +4404,13 @@
    "id": "standard.agent-travel",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "travel",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Travel",
    "description": "Travel agent project.",
    "status": "active",
@@ -3086,6 +4424,14 @@
    "id": "standard.agent-trigger",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "trigger",
+    "events",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Trigger",
    "description": "Agent trigger / event project.",
    "status": "active",
@@ -3099,6 +4445,13 @@
    "id": "standard.agent-trust",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "trust",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Trust",
    "description": "Trust for agents.",
    "status": "active",
@@ -3112,6 +4465,14 @@
    "id": "standard.agent-tweets",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "social",
+    "communication",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Tweets",
    "description": "Twitter for AgentNXT.",
    "status": "proposed",
@@ -3125,6 +4486,13 @@
    "id": "standard.agent-ui",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "ui",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-UI",
    "description": "Agent UI project.",
    "status": "active",
@@ -3138,6 +4506,13 @@
    "id": "standard.agent-validate",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "validation",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Validate",
    "description": "AGenNext agent validation project.",
    "status": "proposed",
@@ -3151,6 +4526,17 @@
    "id": "standard.agent-vision",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "vision",
+    "object-detection",
+    "ocr",
+    "speech-to-text",
+    "classification",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Vision",
    "description": "AutonomyX Vision AI: unified API for object detection (YOLO26), OCR (Tesseract), speech-to-text (Whisper), image classification (CLIP), and background removal.",
    "status": "active",
@@ -3164,6 +4550,15 @@
    "id": "standard.agent-vocabulary",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "vocabulary",
+    "schema-org",
+    "defined-term",
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Agent-Vocabulary",
    "description": "Machine-loadable vocabulary of terms an AGenNext agent understands, using schema.org DefinedTermSet and DefinedTerm.",
    "status": "active",
@@ -3177,6 +4572,14 @@
    "id": "standard.agent-wallet",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "wallet",
+    "economy",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Wallet",
    "description": "Wallet for agents.",
    "status": "active",
@@ -3190,6 +4593,13 @@
    "id": "standard.agent-web",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "web",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-Web",
    "description": "AGenNext agent web project.",
    "status": "proposed",
@@ -3203,6 +4613,14 @@
    "id": "standard.agent-world",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "world",
+    "ecosystem",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Agent-World",
    "description": "Agent world project.",
    "status": "active",
@@ -3216,6 +4634,16 @@
    "id": "standard.agent2agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "agent-to-agent",
+    "agent-interoperability",
+    "peer-to-peer-coordination",
+    "agent-card",
+    "interoperability",
+    "canonical",
+    "linux-foundation"
+   ],
    "name": "Agent2Agent Protocol (A2A)",
    "description": "Open standard for agent-to-agent interoperability (horizontal coordination, peer-to-peer) across frameworks and vendors.",
    "status": "active",
@@ -3229,6 +4657,13 @@
    "id": "standard.agentcservices",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "services",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "AgentcServices",
    "description": "AGenNext agentic services project.",
    "status": "active",
@@ -3242,6 +4677,13 @@
    "id": "standard.agentgateway",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "interoperability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Agentgateway",
    "description": "Next-generation agentic proxy for AI agents and MCP servers.",
    "status": "active",
@@ -3260,6 +4702,14 @@
    "id": "standard.agentql",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "query-language",
+    "agentql",
+    "data",
+    "evaluating",
+    "agennext"
+   ],
    "name": "AgentQL",
    "description": "AgentQL is the official structured query language of the AGenNext platform.",
    "status": "active",
@@ -3273,6 +4723,13 @@
    "id": "standard.agno",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Agno",
    "description": "Build, run, manage agentic software at scale.",
    "status": "active",
@@ -3291,6 +4748,13 @@
    "id": "standard.aibrix",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "AIBrix",
    "description": "Pluggable infrastructure components for GenAI inference.",
    "status": "active",
@@ -3309,6 +4773,13 @@
    "id": "standard.alluxio",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Alluxio",
    "description": "Data orchestration for analytics and ML in the cloud.",
    "status": "active",
@@ -3327,6 +4798,13 @@
    "id": "standard.apache-age",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache AGE",
    "description": "Graph database as a PostgreSQL extension.",
    "status": "active",
@@ -3345,6 +4823,13 @@
    "id": "standard.apache-druid",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Druid",
    "description": "High-performance real-time analytics database.",
    "status": "active",
@@ -3363,6 +4848,13 @@
    "id": "standard.apache-flink",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Flink",
    "description": "Stream and batch processing framework.",
    "status": "active",
@@ -3381,6 +4873,13 @@
    "id": "standard.apache-hbase",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache HBase",
    "description": "Distributed, versioned, column-oriented store (Bigtable-like).",
    "status": "active",
@@ -3399,6 +4898,13 @@
    "id": "standard.apache-pinot",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Pinot",
    "description": "Realtime distributed OLAP datastore.",
    "status": "active",
@@ -3417,6 +4923,13 @@
    "id": "standard.apache-spark",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Spark",
    "description": "Unified analytics engine for large-scale data processing.",
    "status": "active",
@@ -3435,6 +4948,13 @@
    "id": "standard.apache-zeppelin",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Zeppelin",
    "description": "Web-based notebook for interactive data analytics.",
    "status": "active",
@@ -3453,6 +4973,13 @@
    "id": "standard.arks",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Arks",
    "description": "Framework for managing LLM applications within Kubernetes.",
    "status": "active",
@@ -3471,6 +4998,14 @@
    "id": "standard.armada",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Armada",
    "description": "Multi-cluster batch queuing system for high-throughput workloads on Kubernetes.",
    "status": "active",
@@ -3489,6 +5024,16 @@
    "id": "standard.artifact-hub",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "discovery",
+    "distribution",
+    "packaging",
+    "capability-catalog",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Artifact Hub",
    "description": "CNCF discovery and distribution hub for cloud-native packages, referenced for agent capability discovery and distribution.",
    "status": "active",
@@ -3502,6 +5047,13 @@
    "id": "standard.autogen",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "AutoGen",
    "description": "A programming framework for agentic AI.",
    "status": "active",
@@ -3520,6 +5072,16 @@
    "id": "standard.autonomous-governance-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "governance",
+    "kill-switch",
+    "security",
+    "autopilot",
+    "policy",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Autonomous-Governance-Agent",
    "description": "Governance agent with a kill switch; AI security and governance on autopilot.",
    "status": "active",
@@ -3533,6 +5095,14 @@
    "id": "standard.aws-security-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent-security",
+    "cloud-security",
+    "vendor-tooling",
+    "agent",
+    "evaluating"
+   ],
    "name": "AWS Security Agent",
    "description": "AWS agentic security offering referenced for agent security tooling and integration. Product details not independently verified (page not retrieved).",
    "status": "review",
@@ -3546,6 +5116,13 @@
    "id": "standard.axolotl",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Axolotl",
    "description": "Fine-tuning framework for LLMs.",
    "status": "active",
@@ -3564,6 +5141,13 @@
    "id": "standard.backend-ai",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Backend.AI",
    "description": "Container-level GPU virtualization platform for the AI lifecycle.",
    "status": "active",
@@ -3582,6 +5166,13 @@
    "id": "standard.bentoml",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "BentoML",
    "description": "Build production-grade AI applications.",
    "status": "active",
@@ -3600,6 +5191,14 @@
    "id": "standard.browser-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "browser",
+    "web-automation",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Browser-Agent",
    "description": "Browser agent project.",
    "status": "active",
@@ -3613,6 +5212,13 @@
    "id": "standard.browser-use",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Browser Use",
    "description": "Make websites accessible for AI agents; automate web tasks.",
    "status": "active",
@@ -3631,6 +5237,13 @@
    "id": "standard.camel",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "CAMEL",
    "description": "Multi-agent framework studying the scaling law of agents.",
    "status": "active",
@@ -3649,6 +5262,13 @@
    "id": "standard.cann",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "CANN",
    "description": "Compute Architecture for Neural Networks (Huawei).",
    "status": "active",
@@ -3667,6 +5287,13 @@
    "id": "standard.cassandra",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Cassandra",
    "description": "Distributed transactional database.",
    "status": "active",
@@ -3685,6 +5312,13 @@
    "id": "standard.ceph",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Ceph",
    "description": "Distributed object, block, and file storage platform.",
    "status": "active",
@@ -3703,6 +5337,13 @@
    "id": "standard.chroma",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Chroma",
    "description": "AI-native open-source embedding database.",
    "status": "active",
@@ -3721,6 +5362,14 @@
    "id": "standard.cilium",
    "dir": "standards",
    "type": "standard",
+   "category": "Networking",
+   "tags": [
+    "transport",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "Cilium",
    "description": "eBPF-based networking, security, and observability.",
    "status": "active",
@@ -3739,6 +5388,13 @@
    "id": "standard.clickhouse",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "ClickHouse",
    "description": "Real-time analytics database management system.",
    "status": "active",
@@ -3757,6 +5413,17 @@
    "id": "standard.cloud-native",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "containers",
+    "microservices",
+    "declarative-apis",
+    "resilient-manageable-observable",
+    "ai-native",
+    "interoperability",
+    "canonical",
+    "cncf"
+   ],
    "name": "Cloud Native (CNCF Definition)",
    "description": "The CNCF definition of cloud-native computing; foundational posture now extended to AI-native and agentic workloads.",
    "status": "active",
@@ -3770,6 +5437,16 @@
    "id": "standard.cloud-security-alliance",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "cloud-controls-matrix",
+    "star",
+    "ai-controls-matrix",
+    "agentic-ai-security",
+    "compliance-mapping",
+    "policy",
+    "canonical"
+   ],
    "name": "Cloud Security Alliance (CSA)",
    "description": "Industry body for cloud and AI security best practices (CCM, STAR, AI Controls Matrix, agentic AI security guidance).",
    "status": "active",
@@ -3783,6 +5460,16 @@
    "id": "standard.cncf-ai-native-landscape",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "ecosystem-catalog",
+    "ai-inference",
+    "ml-orchestration",
+    "agentic-platforms",
+    "interoperability",
+    "integration",
+    "cncf"
+   ],
    "name": "CNCF AI-Native Landscape",
    "description": "CNCF interactive landscape catalog of AI-native and agentic projects, used as a reference for ecosystem alignment.",
    "status": "active",
@@ -3796,6 +5483,13 @@
    "id": "standard.code-assist",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "code-assist",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Code-Assist",
    "description": "Code assistance agent project.",
    "status": "active",
@@ -3809,6 +5503,14 @@
    "id": "standard.code-review",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "code-review",
+    "coding-agent",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Code-Review",
    "description": "AI coding agent for senior developers, powered by Claude.",
    "status": "active",
@@ -3822,6 +5524,13 @@
    "id": "standard.composio",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Composio",
    "description": "1000+ toolkits, tool search, auth, and sandboxed workbench for agents.",
    "status": "active",
@@ -3840,6 +5549,14 @@
    "id": "standard.container-network-interface",
    "dir": "standards",
    "type": "standard",
+   "category": "Networking",
+   "tags": [
+    "transport",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Container Network Interface (CNI)",
    "description": "Networking for Linux containers.",
    "status": "active",
@@ -3858,6 +5575,13 @@
    "id": "standard.container-storage-interface",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Container Storage Interface (CSI)",
    "description": "Container Storage Interface specification.",
    "status": "active",
@@ -3876,6 +5600,14 @@
    "id": "standard.containerd",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "containerd",
    "description": "An open and reliable container runtime.",
    "status": "active",
@@ -3894,6 +5626,14 @@
    "id": "standard.cozystack",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Cozystack",
    "description": "PaaS platform and framework for building private clouds.",
    "status": "active",
@@ -3912,6 +5652,13 @@
    "id": "standard.crew-ai",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "CrewAI",
    "description": "Framework for orchestrating role-playing autonomous AI agents.",
    "status": "active",
@@ -3930,6 +5677,14 @@
    "id": "standard.cri-o",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "CRI-O",
    "description": "OCI-based implementation of Kubernetes Container Runtime Interface.",
    "status": "active",
@@ -3948,6 +5703,14 @@
    "id": "standard.cubefs",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "CubeFS",
    "description": "Cloud-native distributed storage.",
    "status": "active",
@@ -3966,6 +5729,13 @@
    "id": "standard.cubesandbox",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "CubeSandbox",
    "description": "High-performance sandbox infrastructure for AI agent execution.",
    "status": "active",
@@ -3984,6 +5754,13 @@
    "id": "standard.daytona",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Daytona",
    "description": "Secure, elastic infrastructure for running AI-generated code.",
    "status": "active",
@@ -4002,6 +5779,15 @@
    "id": "standard.deep-agents",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "langgraph",
+    "langchain",
+    "deep-agents",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Deep-Agents",
    "description": "Agents based on LangChain's LangGraph agent framework.",
    "status": "active",
@@ -4015,6 +5801,13 @@
    "id": "standard.deepchecks",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Deepchecks",
    "description": "Continuous validation of ML models and data.",
    "status": "active",
@@ -4033,6 +5826,13 @@
    "id": "standard.deepeval",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "DeepEval",
    "description": "The LLM evaluation framework.",
    "status": "active",
@@ -4051,6 +5851,13 @@
    "id": "standard.deepflow",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "DeepFlow",
    "description": "eBPF zero-code observability for cloud-native and AI applications.",
    "status": "active",
@@ -4069,6 +5876,13 @@
    "id": "standard.deepspeed",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "DeepSpeed",
    "description": "Deep learning optimization library for distributed training.",
    "status": "active",
@@ -4087,6 +5901,13 @@
    "id": "standard.demo-repository",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "demo",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Demo-Repository",
    "description": "Demonstration repository (private).",
    "status": "active",
@@ -4100,6 +5921,13 @@
    "id": "standard.design-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "design",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Design-Agent",
    "description": "Design agent project.",
    "status": "active",
@@ -4113,6 +5941,13 @@
    "id": "standard.dify",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Dify",
    "description": "Production-ready platform for agentic workflow development.",
    "status": "active",
@@ -4131,6 +5966,13 @@
    "id": "standard.docling",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Docling",
    "description": "Get your documents ready for gen AI.",
    "status": "active",
@@ -4149,6 +5991,13 @@
    "id": "standard.e2b",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "E2B",
    "description": "Open-source secure environment with tools for enterprise agents.",
    "status": "active",
@@ -4167,6 +6016,13 @@
    "id": "standard.envoy-ai-gateway",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "interoperability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Envoy AI Gateway",
    "description": "Unified access to generative AI services built on Envoy Gateway.",
    "status": "active",
@@ -4185,6 +6041,13 @@
    "id": "standard.falkordb",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "FalkorDB",
    "description": "Fast graph database for knowledge graphs / GraphRAG.",
    "status": "active",
@@ -4203,6 +6066,13 @@
    "id": "standard.feast",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Feast",
    "description": "Feature store to manage ML features.",
    "status": "active",
@@ -4221,6 +6091,13 @@
    "id": "standard.firecracker",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Firecracker",
    "description": "Secure and fast microVMs for serverless computing.",
    "status": "active",
@@ -4239,6 +6116,13 @@
    "id": "standard.firecrawl",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Firecrawl",
    "description": "API to search, scrape, and interact with the web for AI.",
    "status": "active",
@@ -4257,6 +6141,14 @@
    "id": "standard.fluid",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Fluid",
    "description": "Orchestration for elastic data abstraction and acceleration.",
    "status": "active",
@@ -4275,6 +6167,13 @@
    "id": "standard.frontier-chat",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "chat",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Frontier-Chat",
    "description": "Frontier chat project (private).",
    "status": "active",
@@ -4288,6 +6187,14 @@
    "id": "standard.github-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "github",
+    "integration",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "GitHub-Agent",
    "description": "GitHub agent project.",
    "status": "active",
@@ -4301,6 +6208,13 @@
    "id": "standard.grafana",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Grafana",
    "description": "Query, visualize, and alert on metrics.",
    "status": "active",
@@ -4319,6 +6233,13 @@
    "id": "standard.guardrails-ai",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Guardrails AI",
    "description": "Adding guardrails to large language models.",
    "status": "active",
@@ -4337,6 +6258,13 @@
    "id": "standard.guidance",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Guidance",
    "description": "A guidance language for controlling LLMs.",
    "status": "active",
@@ -4355,6 +6283,13 @@
    "id": "standard.gvisor",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "gVisor",
    "description": "Application kernel for containers.",
    "status": "active",
@@ -4373,6 +6308,13 @@
    "id": "standard.hadoop-hdfs",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Hadoop HDFS",
    "description": "Framework for storing and handling big data.",
    "status": "active",
@@ -4391,6 +6333,14 @@
    "id": "standard.hami",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "HAMi",
    "description": "Heterogeneous AI computing virtualization middleware.",
    "status": "active",
@@ -4409,6 +6359,13 @@
    "id": "standard.hatchet",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Hatchet",
    "description": "Run background tasks at scale.",
    "status": "active",
@@ -4427,6 +6384,13 @@
    "id": "standard.haystack",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Haystack",
    "description": "Open-source AI orchestration framework for LLM applications.",
    "status": "active",
@@ -4445,6 +6409,14 @@
    "id": "standard.higress",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "interoperability",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Higress",
    "description": "AI-native API gateway.",
    "status": "active",
@@ -4463,6 +6435,13 @@
    "id": "standard.horovod",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Horovod",
    "description": "Distributed deep learning training framework.",
    "status": "active",
@@ -4481,6 +6460,18 @@
    "id": "standard.huggingface-hub",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "datasets",
+    "models",
+    "spaces",
+    "model-registry",
+    "rag-corpus",
+    "fine-tuning-data",
+    "supply-chain",
+    "data",
+    "integration"
+   ],
    "name": "Hugging Face Hub",
    "description": "Open platform hosting models, datasets, and spaces; a primary supply source for agent models, fine-tuning data, and RAG corpora. Treated as a governed, provenance-tracked supply-chain source.",
    "status": "active",
@@ -4503,6 +6494,13 @@
    "id": "standard.hyperopt",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Hyperopt",
    "description": "Distributed asynchronous hyper-parameter optimization.",
    "status": "active",
@@ -4521,6 +6519,13 @@
    "id": "standard.influxdb",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "InfluxDB",
    "description": "Open-source time series database.",
    "status": "active",
@@ -4539,6 +6544,13 @@
    "id": "standard.inngest",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Inngest",
    "description": "Workflow orchestration platform for stateful step functions and AI workflows.",
    "status": "active",
@@ -4557,6 +6569,13 @@
    "id": "standard.instructor",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Instructor",
    "description": "Structured outputs for LLMs.",
    "status": "active",
@@ -4575,6 +6594,24 @@
    "id": "standard.ioa-protocol-ietf",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "internet-of-agents",
+    "heterogeneous-agent-collaboration",
+    "dynamic-team-formation",
+    "adaptive-task-coordination",
+    "layered-architecture",
+    "session-state-machine",
+    "agent-registry-discovery",
+    "message-protocol",
+    "oauth2",
+    "tls-1-3",
+    "quic",
+    "6g",
+    "interoperability",
+    "experimental",
+    "ietf-internet-draft"
+   ],
    "name": "IETF Internet of Agents Protocol (draft)",
    "description": "IETF Internet-Draft defining an Internet of Agents Protocol for distributed, heterogeneous agent collaboration (dynamic team formation, adaptive task coordination, structured communication); part of the DMSC effort, 6G-oriented.",
    "status": "review",
@@ -4593,6 +6630,13 @@
    "id": "standard.isulad",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "iSulad",
    "description": "Lightweight container runtime daemon for IoT and cloud.",
    "status": "active",
@@ -4611,6 +6655,13 @@
    "id": "standard.jina-reader",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Jina Reader",
    "description": "Convert any URL to LLM-friendly input.",
    "status": "active",
@@ -4629,6 +6680,13 @@
    "id": "standard.juicefs",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "JuiceFS",
    "description": "Distributed POSIX file system on Redis and S3.",
    "status": "active",
@@ -4647,6 +6705,13 @@
    "id": "standard.kafka",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Kafka",
    "description": "Distributed event streaming platform.",
    "status": "active",
@@ -4665,6 +6730,14 @@
    "id": "standard.kagent",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "kagent",
    "description": "Open-source framework to run AI agents in Kubernetes.",
    "status": "active",
@@ -4683,6 +6756,14 @@
    "id": "standard.kaito",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "KAITO",
    "description": "Kubernetes AI Toolchain Operator for LLM inference, tuning, RAG.",
    "status": "active",
@@ -4701,6 +6782,14 @@
    "id": "standard.karmada",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Karmada",
    "description": "Open, multi-cloud, multi-cluster Kubernetes orchestration.",
    "status": "active",
@@ -4719,6 +6808,13 @@
    "id": "standard.kata-containers",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kata Containers",
    "description": "Lightweight VMs that feel like containers with VM isolation.",
    "status": "active",
@@ -4737,6 +6833,14 @@
    "id": "standard.keda",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "KEDA",
    "description": "Kubernetes-based event-driven autoscaling.",
    "status": "active",
@@ -4755,6 +6859,14 @@
    "id": "standard.kepler",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Kepler",
    "description": "eBPF-based power consumption metrics exporter.",
    "status": "active",
@@ -4773,6 +6885,14 @@
    "id": "standard.keycloak",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "identity",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Keycloak",
    "description": "Open-source identity and access management.",
    "status": "active",
@@ -4791,6 +6911,14 @@
    "id": "standard.kgateway",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "interoperability",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Kgateway",
    "description": "Cloud-native API gateway and AI gateway (Envoy-powered, K8s-native).",
    "status": "active",
@@ -4809,6 +6937,14 @@
    "id": "standard.knative",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "Knative",
    "description": "Developer-focused serverless application layer for Kubernetes.",
    "status": "active",
@@ -4827,6 +6963,14 @@
    "id": "standard.koordinator",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Koordinator",
    "description": "QoS-based scheduling for hybrid orchestration workloads on Kubernetes.",
    "status": "active",
@@ -4845,6 +6989,14 @@
    "id": "standard.kserve",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "KServe",
    "description": "Standardized distributed AI inference platform on Kubernetes.",
    "status": "active",
@@ -4863,6 +7015,14 @@
    "id": "standard.kuasar",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "Kuasar",
    "description": "Multi-sandbox container runtime for cloud-native scenarios.",
    "status": "active",
@@ -4881,6 +7041,17 @@
    "id": "standard.kubeadmiral",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "multi-cluster-orchestration",
+    "kubernetes-federation",
+    "scheduling",
+    "cloud-native-runtime",
+    "orchestration",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "KubeAdmiral",
    "description": "Next-generation multi-cluster orchestration engine based on Kubernetes (extends Kubernetes Federation), referenced for multi-cluster agent runtime orchestration.",
    "status": "active",
@@ -4899,6 +7070,13 @@
    "id": "standard.kubeflow-katib",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Katib",
    "description": "Automated machine learning on Kubernetes.",
    "status": "active",
@@ -4917,6 +7095,13 @@
    "id": "standard.kubeflow-model-registry",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "packaging",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Model Registry",
    "description": "Store and manage models, versions, and artifacts metadata.",
    "status": "active",
@@ -4935,6 +7120,13 @@
    "id": "standard.kubeflow-mpi-operator",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow MPI Operator",
    "description": "Manage all-reduce distributed training and HPC workloads.",
    "status": "active",
@@ -4953,6 +7145,13 @@
    "id": "standard.kubeflow-notebooks",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Notebooks",
    "description": "ML toolkit notebooks for Kubernetes.",
    "status": "active",
@@ -4971,6 +7170,13 @@
    "id": "standard.kubeflow-pipelines",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Pipelines",
    "description": "Machine learning pipelines for Kubeflow.",
    "status": "active",
@@ -4989,6 +7195,13 @@
    "id": "standard.kubeflow-spark-operator",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Spark Operator",
    "description": "Operator to manage Apache Spark on Kubernetes.",
    "status": "active",
@@ -5007,6 +7220,13 @@
    "id": "standard.kubeflow-training-operator",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kubeflow Training Operator",
    "description": "Training operators on Kubernetes.",
    "status": "active",
@@ -5025,6 +7245,13 @@
    "id": "standard.kuberay",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "KubeRay",
    "description": "Toolkit to run Ray applications on Kubernetes.",
    "status": "active",
@@ -5043,6 +7270,18 @@
    "id": "standard.kubernetes",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "container-orchestration",
+    "control-loop",
+    "custom-resource",
+    "operator-pattern",
+    "ai-conformance",
+    "orchestration",
+    "canonical",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "Kubernetes",
    "description": "Cloud-native container orchestration platform; the k8s-native runtime substrate for governed agents.",
    "status": "active",
@@ -5056,6 +7295,13 @@
    "id": "standard.kueue",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kueue",
    "description": "Cloud-native job queueing for batch, HPC, AI/ML on Kubernetes.",
    "status": "active",
@@ -5074,6 +7320,13 @@
    "id": "standard.kyverno-json",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Kyverno-JSON",
    "description": "Declarative low-code policies to validate JSON data.",
    "status": "active",
@@ -5092,6 +7345,13 @@
    "id": "standard.lancedb",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LanceDB",
    "description": "OSS embedded retrieval library for multimodal AI.",
    "status": "active",
@@ -5110,6 +7370,13 @@
    "id": "standard.langchain",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LangChain",
    "description": "The agent engineering platform.",
    "status": "active",
@@ -5128,6 +7395,13 @@
    "id": "standard.langfuse",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Langfuse",
    "description": "Open-source LLM engineering platform: observability, evals, prompts.",
    "status": "active",
@@ -5146,6 +7420,13 @@
    "id": "standard.langgraph",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LangGraph",
    "description": "Build resilient language agents as graphs.",
    "status": "active",
@@ -5164,6 +7445,13 @@
    "id": "standard.leaderworkerset",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LeaderWorkerSet",
    "description": "API for deploying a group of pods as a unit of replication.",
    "status": "active",
@@ -5182,6 +7470,13 @@
    "id": "standard.llama-cpp",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "llama.cpp",
    "description": "LLM inference in C/C++.",
    "status": "active",
@@ -5200,6 +7495,15 @@
    "id": "standard.llama-stack",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agentic-stack",
+    "inference",
+    "agents-api",
+    "tooling",
+    "agent",
+    "evaluating"
+   ],
    "name": "Llama Stack",
    "description": "Open agentic application stack; reached \"adopt\" in the CNCF agentic AI radar.",
    "status": "active",
@@ -5213,6 +7517,13 @@
    "id": "standard.llamafactory",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LlamaFactory",
    "description": "Unified efficient fine-tuning of 100+ LLMs and VLMs.",
    "status": "active",
@@ -5231,6 +7542,13 @@
    "id": "standard.llamaindex",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LlamaIndex",
    "description": "Leading document agent and OCR platform.",
    "status": "active",
@@ -5249,6 +7567,13 @@
    "id": "standard.llm-d",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "llm-d",
    "description": "Kubernetes-native high-performance distributed LLM inference.",
    "status": "active",
@@ -5267,6 +7592,13 @@
    "id": "standard.llm-guard",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LLM Guard",
    "description": "Security toolkit for LLM interactions.",
    "status": "active",
@@ -5285,6 +7617,13 @@
    "id": "standard.llmaz",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "llmaz",
    "description": "Inference platform for large language models on Kubernetes.",
    "status": "active",
@@ -5303,6 +7642,13 @@
    "id": "standard.lm-evaluation-harness",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "lm-evaluation-harness",
    "description": "Framework for few-shot evaluation of language models.",
    "status": "active",
@@ -5321,6 +7667,13 @@
    "id": "standard.lmql",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "LMQL",
    "description": "A language for constraint-guided LLM programming.",
    "status": "active",
@@ -5339,6 +7692,13 @@
    "id": "standard.marimo",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "marimo",
    "description": "A reactive notebook for Python.",
    "status": "active",
@@ -5357,6 +7717,13 @@
    "id": "standard.marqo",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Marqo",
    "description": "Ecommerce search and discovery.",
    "status": "active",
@@ -5375,6 +7742,13 @@
    "id": "standard.mcp-gateway-registry",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "interoperability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "MCP Gateway Registry",
    "description": "Enterprise MCP gateway and registry with OAuth and dynamic tool discovery.",
    "status": "active",
@@ -5393,6 +7767,13 @@
    "id": "standard.megatron-lm",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Megatron-LM",
    "description": "GPU-optimized training of transformer models at scale.",
    "status": "active",
@@ -5411,6 +7792,13 @@
    "id": "standard.mem0",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Mem0",
    "description": "Universal memory layer for AI agents.",
    "status": "active",
@@ -5429,6 +7817,13 @@
    "id": "standard.memcached",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Memcached",
    "description": "High-performance distributed memory cache.",
    "status": "active",
@@ -5447,6 +7842,13 @@
    "id": "standard.milvus",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Milvus",
    "description": "Cloud-native vector database for AI applications.",
    "status": "active",
@@ -5465,6 +7867,13 @@
    "id": "standard.mlflow",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "MLflow",
    "description": "Open-source AI engineering platform for agents, LLMs, and ML.",
    "status": "active",
@@ -5483,6 +7892,13 @@
    "id": "standard.mlrun",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "MLRun",
    "description": "Machine learning automation and tracking.",
    "status": "active",
@@ -5501,6 +7917,15 @@
    "id": "standard.model-context-protocol",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "agent-to-tool",
+    "context-integration",
+    "client-server",
+    "tool-invocation",
+    "interoperability",
+    "canonical"
+   ],
    "name": "Model Context Protocol (MCP)",
    "description": "Open standard for agent-to-tool/data/service integration (vertical integration, client-server).",
    "status": "active",
@@ -5514,6 +7939,14 @@
    "id": "standard.model-recommender",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "model-selection",
+    "recommender",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Model-Recommender",
    "description": "Model recommendation project.",
    "status": "active",
@@ -5527,6 +7960,14 @@
    "id": "standard.model-repository",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "model-repository",
+    "registry",
+    "packaging",
+    "experimental",
+    "agennext"
+   ],
    "name": "Model-Repository",
    "description": "Model repository project.",
    "status": "active",
@@ -5540,6 +7981,13 @@
    "id": "standard.model-router",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "model-routing",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Model-Router",
    "description": "Model routing project.",
    "status": "active",
@@ -5553,6 +8001,14 @@
    "id": "standard.model-runner",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "model-runner",
+    "inference",
+    "agent",
+    "evaluating",
+    "agennext"
+   ],
    "name": "Model-Runner",
    "description": "Model runner / inference runtime project.",
    "status": "active",
@@ -5566,6 +8022,14 @@
    "id": "standard.modelpack",
    "dir": "standards",
    "type": "standard",
+   "category": "Packaging & Supply Chain",
+   "tags": [
+    "packaging",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "ModelPack",
    "description": "Open standards for packaging and running AI artifacts cloud-native.",
    "status": "active",
@@ -5584,6 +8048,13 @@
    "id": "standard.nccl",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "NCCL",
    "description": "Optimized primitives for inter-GPU communication (NVIDIA).",
    "status": "active",
@@ -5602,6 +8073,13 @@
    "id": "standard.nemo-guardrails",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "NeMo Guardrails",
    "description": "Programmable guardrails for LLM conversational systems.",
    "status": "active",
@@ -5620,6 +8098,13 @@
    "id": "standard.neo4j",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Neo4j",
    "description": "Graphs for everyone.",
    "status": "active",
@@ -5638,6 +8123,13 @@
    "id": "standard.nokv",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "NoKV",
    "description": "Native metadata service for distributed filesystems and AI datasets.",
    "status": "active",
@@ -5656,6 +8148,13 @@
    "id": "standard.numaflow",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Numaflow",
    "description": "K8s-native real-time data and stream processing engine.",
    "status": "active",
@@ -5674,6 +8173,13 @@
    "id": "standard.nvidia-nemo",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "NVIDIA NeMo",
    "description": "A framework for generative AI.",
    "status": "active",
@@ -5692,6 +8198,13 @@
    "id": "standard.nvidia-triton-lang",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Triton (language)",
    "description": "A language and compiler for parallel programming.",
    "status": "active",
@@ -5710,6 +8223,13 @@
    "id": "standard.okahu",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Okahu",
    "description": "AI observability as a service for LLM apps.",
    "status": "active",
@@ -5728,6 +8248,13 @@
    "id": "standard.opa-gatekeeper",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OPA/Gatekeeper",
    "description": "Admission controller validating Kubernetes requests via OPA.",
    "status": "active",
@@ -5746,6 +8273,13 @@
    "id": "standard.opea",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OPEA",
    "description": "Ecosystem orchestration framework for GenAI technologies.",
    "status": "active",
@@ -5764,6 +8298,13 @@
    "id": "standard.open-mpi",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Open MPI",
    "description": "A high-performance message passing library.",
    "status": "active",
@@ -5782,6 +8323,17 @@
    "id": "standard.open-policy-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy-decision",
+    "rego",
+    "policy-as-code",
+    "decision-logging",
+    "policy",
+    "canonical",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "Open Policy Agent (OPA)",
    "description": "General-purpose policy engine used as the canonical policy decision engine for agent governance.",
    "status": "active",
@@ -5795,6 +8347,13 @@
    "id": "standard.opencompass",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OpenCompass",
    "description": "LLM evaluation platform over 100+ datasets.",
    "status": "active",
@@ -5813,6 +8372,18 @@
    "id": "standard.openfga",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "relationship-based-access-control",
+    "zanzibar",
+    "fine-grained-authorization",
+    "check-api",
+    "relationship-tuples",
+    "authorization",
+    "canonical",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "OpenFGA",
    "description": "Relationship-based fine-grained authorization engine inspired by Google Zanzibar, used for scoped agent permissions.",
    "status": "active",
@@ -5826,6 +8397,16 @@
    "id": "standard.openid-authzen",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "authorization-decision",
+    "policy-decision-point",
+    "policy-enforcement-point",
+    "access-evaluation",
+    "authorization",
+    "canonical",
+    "openid-final"
+   ],
    "name": "OpenID AuthZEN Authorization API",
    "description": "Open standard for separating authorization decisions (PDP) from enforcement (PEP) via a standard Access Evaluation API.",
    "status": "active",
@@ -5839,6 +8420,13 @@
    "id": "standard.openlit",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OpenLIT",
    "description": "OpenTelemetry-native LLM observability and GPU monitoring.",
    "status": "active",
@@ -5857,6 +8445,13 @@
    "id": "standard.openllmetry",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OpenLLMetry",
    "description": "OpenTelemetry-based observability for GenAI / LLM apps.",
    "status": "active",
@@ -5875,6 +8470,15 @@
    "id": "standard.openrouter",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "model-routing",
+    "unified-llm-api",
+    "provider-abstraction",
+    "llm-gateway",
+    "interoperability",
+    "evaluating"
+   ],
    "name": "OpenRouter",
    "description": "Unified API gateway providing access to many LLM providers and models through a single interface; referenced as a model-routing and provider-abstraction layer for agents.",
    "status": "active",
@@ -5893,6 +8497,14 @@
    "id": "standard.opensearch",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "linux-foundation",
+    "cncf"
+   ],
    "name": "OpenSearch",
    "description": "Apache 2.0 search and analytics suite.",
    "status": "active",
@@ -5911,6 +8523,18 @@
    "id": "standard.opentelemetry",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "traces",
+    "metrics",
+    "logs",
+    "otlp",
+    "observability",
+    "evidence",
+    "canonical",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "OpenTelemetry",
    "description": "Open standard for telemetry (traces, metrics, logs); the canonical observability and evidence substrate for governed agents.",
    "status": "active",
@@ -5924,6 +8548,13 @@
    "id": "standard.openvino",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "OpenVINO",
    "description": "Toolkit for optimizing and deploying AI inference.",
    "status": "active",
@@ -5942,6 +8573,14 @@
    "id": "standard.operator-agents",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "operator",
+    "tool-operation",
+    "orchestration",
+    "experimental",
+    "agennext"
+   ],
    "name": "Operator-Agents",
    "description": "Agents who can operate a tool.",
    "status": "active",
@@ -5955,6 +8594,18 @@
    "id": "standard.operator-framework",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "reconciliation",
+    "control-loop",
+    "desired-state",
+    "controller",
+    "custom-resource",
+    "orchestration",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Operator Framework (Operator SDK)",
    "description": "Kubernetes reconciliation/control-loop framework, referenced for the agent-as-operator pattern.",
    "status": "active",
@@ -5968,6 +8619,13 @@
    "id": "standard.optuna",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Optuna",
    "description": "A hyperparameter optimization framework.",
    "status": "active",
@@ -5986,6 +8644,13 @@
    "id": "standard.outlines",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Outlines",
    "description": "Structured outputs for LLMs.",
    "status": "active",
@@ -6004,6 +8669,18 @@
    "id": "standard.owasp-ai-agent-security",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "memory-poisoning",
+    "tool-misuse",
+    "prompt-injection",
+    "human-in-the-loop",
+    "least-privilege",
+    "sandboxing",
+    "egress-control",
+    "policy",
+    "canonical"
+   ],
    "name": "OWASP AI Agent Security Cheat Sheet",
    "description": "OWASP guidance on agentic AI security threats and controls (memory poisoning, tool misuse, prompt injection, human-in-the-loop, least privilege).",
    "status": "active",
@@ -6017,6 +8694,13 @@
    "id": "standard.permify",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "authorization",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Permify",
    "description": "Open-source authorization as a service inspired by Google Zanzibar.",
    "status": "active",
@@ -6035,6 +8719,13 @@
    "id": "standard.personal-assist",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "personal-assistant",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "Personal-Assist",
    "description": "Personal assistant agent project.",
    "status": "active",
@@ -6048,6 +8739,13 @@
    "id": "standard.pgvector",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "pgvector",
    "description": "Vector similarity search for Postgres.",
    "status": "active",
@@ -6066,6 +8764,13 @@
    "id": "standard.presto",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Presto",
    "description": "Distributed SQL query engine for big data.",
    "status": "active",
@@ -6084,6 +8789,13 @@
    "id": "standard.project-jupyter",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Project Jupyter",
    "description": "Interactive computing.",
    "status": "active",
@@ -6102,6 +8814,14 @@
    "id": "standard.projectionbench",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "benchmarking",
+    "projection",
+    "observability",
+    "experimental",
+    "agennext"
+   ],
    "name": "ProjectionBench",
    "description": "AGenNext projection benchmarking project.",
    "status": "active",
@@ -6115,6 +8835,14 @@
    "id": "standard.prometheus",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "integration",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "Prometheus",
    "description": "Monitoring system and time series database.",
    "status": "active",
@@ -6133,6 +8861,13 @@
    "id": "standard.promptfoo",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Promptfoo",
    "description": "Test prompts, agents, RAGs; red-teaming for AI.",
    "status": "active",
@@ -6151,6 +8886,13 @@
    "id": "standard.publishing-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "publishing",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Publishing-Agent",
    "description": "Publishing agent project.",
    "status": "active",
@@ -6164,6 +8906,13 @@
    "id": "standard.pulsar",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Apache Pulsar",
    "description": "Distributed pub-sub messaging system.",
    "status": "active",
@@ -6182,6 +8931,13 @@
    "id": "standard.pydantic-ai",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Pydantic AI",
    "description": "AI agent framework, the Pydantic way.",
    "status": "active",
@@ -6200,6 +8956,13 @@
    "id": "standard.pytorch",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "PyTorch",
    "description": "Tensors and dynamic neural networks with GPU acceleration.",
    "status": "active",
@@ -6218,6 +8981,13 @@
    "id": "standard.pytorch-ddp",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "PyTorch DistributedDataParallel (DDP)",
    "description": "Module-level data parallelism across machines.",
    "status": "active",
@@ -6236,6 +9006,13 @@
    "id": "standard.qdrant",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Qdrant",
    "description": "Vector database for the next generation of AI applications.",
    "status": "active",
@@ -6254,6 +9031,13 @@
    "id": "standard.ragas",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Ragas",
    "description": "Supercharge LLM application evaluations.",
    "status": "active",
@@ -6272,6 +9056,13 @@
    "id": "standard.rbg",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "RBG",
    "description": "Kubernetes API for orchestrating distributed AI inference workloads.",
    "status": "active",
@@ -6290,6 +9081,13 @@
    "id": "standard.redis",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Redis",
    "description": "In-memory cache, data structure server, and vector query engine.",
    "status": "active",
@@ -6308,6 +9106,13 @@
    "id": "standard.runc",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "runc",
    "description": "CLI tool for spawning and running OCI containers.",
    "status": "active",
@@ -6326,6 +9131,15 @@
    "id": "standard.salesforce-agentforce",
    "dir": "standards",
    "type": "standard",
+   "category": "Interoperability",
+   "tags": [
+    "salesforce",
+    "agentforce",
+    "integration",
+    "interoperability",
+    "experimental",
+    "agennext"
+   ],
    "name": "Salesforce-Agentforce",
    "description": "Salesforce Agentforce integration project.",
    "status": "active",
@@ -6339,6 +9153,13 @@
    "id": "standard.scylladb",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "ScyllaDB",
    "description": "NoSQL data store compatible with Apache Cassandra.",
    "status": "active",
@@ -6357,6 +9178,13 @@
    "id": "standard.seldon",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Seldon",
    "description": "MLOps framework to package, deploy, and manage ML models.",
    "status": "active",
@@ -6375,6 +9203,13 @@
    "id": "standard.selenium-grid",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Selenium Grid",
    "description": "Browser automation framework and ecosystem.",
    "status": "active",
@@ -6393,6 +9228,13 @@
    "id": "standard.semantic-kernel",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Semantic Kernel",
    "description": "Integrate LLM technology into apps.",
    "status": "active",
@@ -6411,6 +9253,13 @@
    "id": "standard.sglang",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "SGLang",
    "description": "Fast, scalable inference for LLMs and multimodal models.",
    "status": "active",
@@ -6429,6 +9278,13 @@
    "id": "standard.singularity",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Singularity",
    "description": "Container platform (now Apptainer under Linux Foundation).",
    "status": "active",
@@ -6447,6 +9303,13 @@
    "id": "standard.slurm",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Slurm",
    "description": "Fault-tolerant, scalable cluster management and job scheduling.",
    "status": "active",
@@ -6465,6 +9328,13 @@
    "id": "standard.smolagents",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Smolagents",
    "description": "Barebones library for agents that think in code.",
    "status": "active",
@@ -6483,6 +9353,13 @@
    "id": "standard.spicedb",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "authorization",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "SpiceDB",
    "description": "Database for storing and querying authorization data (Zanzibar).",
    "status": "active",
@@ -6501,6 +9378,18 @@
    "id": "standard.spiffe",
    "dir": "standards",
    "type": "standard",
+   "category": "Identity & Access",
+   "tags": [
+    "agent-identity",
+    "workload-identity",
+    "svid",
+    "attestation",
+    "trust-domain",
+    "identity",
+    "canonical",
+    "cncf-graduated",
+    "cncf"
+   ],
    "name": "SPIFFE / SPIRE",
    "description": "Open standard for cryptographic workload and agent identity, used as the canonical agent identity foundation.",
    "status": "active",
@@ -6514,6 +9403,13 @@
    "id": "standard.stacklock-minder",
    "dir": "standards",
    "type": "standard",
+   "category": "Governance & Policy",
+   "tags": [
+    "policy",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Stacklok Minder",
    "description": "Software supply chain security platform.",
    "status": "active",
@@ -6532,6 +9428,13 @@
    "id": "standard.strands",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "agent",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Strands",
    "description": "Model-driven approach to building AI agents.",
    "status": "active",
@@ -6550,6 +9453,13 @@
    "id": "standard.stratovirt",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "StratoVirt",
    "description": "Enterprise-level virtualization platform.",
    "status": "active",
@@ -6568,6 +9478,14 @@
    "id": "standard.surreal-agent",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "surrealdb",
+    "tenant-management",
+    "data",
+    "experimental",
+    "agennext"
+   ],
    "name": "Surreal-Agent",
    "description": "Agent to manage SurrealDB tenants.",
    "status": "active",
@@ -6581,6 +9499,13 @@
    "id": "standard.temporal",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Temporal",
    "description": "Durable execution / workflow orchestration service.",
    "status": "active",
@@ -6599,6 +9524,13 @@
    "id": "standard.tensorflow",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "TensorFlow",
    "description": "Open-source machine learning framework.",
    "status": "active",
@@ -6617,6 +9549,13 @@
    "id": "standard.tensorflow-distributed",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "TensorFlow Distributed",
    "description": "API to distribute training across GPUs, machines, or TPUs.",
    "status": "active",
@@ -6635,6 +9574,13 @@
    "id": "standard.tfx",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "TensorFlow Extended (TFX)",
    "description": "End-to-end platform for deploying production ML pipelines.",
    "status": "active",
@@ -6653,6 +9599,13 @@
    "id": "standard.tgi",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Text Generation Inference (TGI)",
    "description": "Large language model text generation inference.",
    "status": "active",
@@ -6671,6 +9624,15 @@
    "id": "standard.the-graph",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "graph-indexing",
+    "graphql",
+    "subgraph",
+    "decentralized-query",
+    "data",
+    "evaluating"
+   ],
    "name": "The Graph",
    "description": "Decentralized protocol for indexing and querying data via open GraphQL APIs (subgraphs); referenced as a query/indexing model for the foundation graph.",
    "status": "active",
@@ -6684,6 +9646,13 @@
    "id": "standard.torchx",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "TorchX",
    "description": "Universal job launcher for PyTorch applications.",
    "status": "active",
@@ -6702,6 +9671,13 @@
    "id": "standard.trino",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Trino",
    "description": "Distributed SQL query engine for big data.",
    "status": "active",
@@ -6720,6 +9696,13 @@
    "id": "standard.trulens",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "TruLens",
    "description": "Evaluation and tracking for LLM experiments and agents.",
    "status": "active",
@@ -6738,6 +9721,13 @@
    "id": "standard.txtai",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "txtai",
    "description": "All-in-one AI framework for semantic search and LLM orchestration.",
    "status": "active",
@@ -6756,6 +9746,14 @@
    "id": "standard.ui-tool-kit",
    "dir": "standards",
    "type": "standard",
+   "category": "Agent Ecosystem",
+   "tags": [
+    "ui",
+    "toolkit",
+    "agent",
+    "experimental",
+    "agennext"
+   ],
    "name": "UI-Tool-Kit",
    "description": "UI toolkit for agent applications.",
    "status": "active",
@@ -6769,6 +9767,13 @@
    "id": "standard.unsloth",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Unsloth",
    "description": "UI for training and running open models locally.",
    "status": "active",
@@ -6787,6 +9792,13 @@
    "id": "standard.unstructured",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Unstructured",
    "description": "Convert documents to structured data for language models.",
    "status": "active",
@@ -6805,6 +9817,14 @@
    "id": "standard.valkey",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "linux-foundation",
+    "cncf"
+   ],
    "name": "Valkey",
    "description": "Distributed key-value datastore for caching and realtime workloads.",
    "status": "active",
@@ -6823,6 +9843,13 @@
    "id": "standard.verl",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "verl",
    "description": "Volcano Engine reinforcement learning for LLMs.",
    "status": "active",
@@ -6841,6 +9868,13 @@
    "id": "standard.vllm",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "vLLM",
    "description": "Fast, easy-to-use library for LLM inference and serving.",
    "status": "active",
@@ -6859,6 +9893,14 @@
    "id": "standard.volcano",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "integration",
+    "cncf-incubating",
+    "cncf"
+   ],
    "name": "Volcano",
    "description": "A cloud-native batch system (CNCF).",
    "status": "active",
@@ -6877,6 +9919,13 @@
    "id": "standard.volcano-kthena",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Volcano Kthena",
    "description": "Kubernetes-native AI serving platform for scalable model serving.",
    "status": "active",
@@ -6895,6 +9944,13 @@
    "id": "standard.wandb",
    "dir": "standards",
    "type": "standard",
+   "category": "Observability",
+   "tags": [
+    "observability",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Weights and Biases",
    "description": "Visualize and track machine learning experiments.",
    "status": "active",
@@ -6913,6 +9969,14 @@
    "id": "standard.wasmedge",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf-sandbox",
+    "cncf"
+   ],
    "name": "WasmEdge",
    "description": "Lightweight, high-performance WebAssembly runtime for cloud native.",
    "status": "active",
@@ -6931,6 +9995,13 @@
    "id": "standard.weaviate",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "Weaviate",
    "description": "Open-source vector database with hybrid search.",
    "status": "active",
@@ -6949,6 +10020,13 @@
    "id": "standard.xgboost",
    "dir": "standards",
    "type": "standard",
+   "category": "Data & Models",
+   "tags": [
+    "data",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "XGBoost",
    "description": "Optimized distributed gradient boosting library.",
    "status": "active",
@@ -6967,6 +10045,13 @@
    "id": "standard.yunikorn",
    "dir": "standards",
    "type": "standard",
+   "category": "Orchestration & Runtime",
+   "tags": [
+    "orchestration",
+    "ai-native",
+    "evaluating",
+    "cncf"
+   ],
    "name": "YuniKorn",
    "description": "Resource scheduling for batch, data, and ML on Kubernetes.",
    "status": "active",
@@ -6985,6 +10070,8 @@
    "id": "taxonomy.agent-categories",
    "dir": "taxonomies",
    "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
    "name": "Agent Categories",
    "description": "Market and functional categories of agent offerings, mapped to external analyst and CNCF taxonomies.",
    "status": "active",
@@ -6998,6 +10085,8 @@
    "id": "taxonomy.agent-grammar",
    "dir": "taxonomies",
    "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
    "name": "Agent Grammar",
    "description": "The allowed relationship (edge) types of the foundation graph; the grammar by which vocabulary terms connect into well-formed statements.",
    "status": "active",
@@ -7011,8 +10100,25 @@
    "id": "taxonomy.agent-vocabulary",
    "dir": "taxonomies",
    "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
    "name": "Agent Vocabulary",
    "description": "Canonical vocabulary of core agent-governance terms (the node terms of the foundation graph), with mappings to external standards.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": []
+  },
+  {
+   "id": "taxonomy.knowledge-domains",
+   "dir": "taxonomies",
+   "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
+   "name": "Knowledge Domains",
+   "description": "Classification of foundation knowledge into theory, models, and best practices, locating where each topic fits in the graph.",
    "status": "active",
    "standardType": "",
    "adoptionPosture": "",
@@ -7024,6 +10130,8 @@
    "id": "taxonomy.registry-object-types",
    "dir": "taxonomies",
    "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
    "name": "Registry Object Types",
    "description": "The canonical governed object types of the OpenAutonomyX foundation meta-model.",
    "status": "active",
@@ -7037,6 +10145,8 @@
    "id": "taxonomy.standard-domains",
    "dir": "taxonomies",
    "type": "taxonomy",
+   "category": "Taxonomy",
+   "tags": [],
    "name": "Standard Domains",
    "description": "Domains used to classify external standards and ecosystem projects.",
    "status": "active",
@@ -7050,6 +10160,8 @@
    "id": "twin.contract-review-assistant",
    "dir": "twins",
    "type": "digital-twin",
+   "category": "Agent",
+   "tags": [],
    "name": "Contract Review Assistant Digital Twin",
    "description": "Two-way digital twin of the contract-review assistant pairing its approved definition (desired state) with a runtime snapshot (observed state).",
    "status": "active",
@@ -7084,6 +10196,8 @@
    "id": "workspace.contract-governance",
    "dir": "workspaces",
    "type": "workspace",
+   "category": "Agent",
+   "tags": [],
    "name": "Contract Governance Workspace",
    "description": "Governed workspace where the contract-review assistant operates under policy, approval, and audit controls.",
    "status": "active",
