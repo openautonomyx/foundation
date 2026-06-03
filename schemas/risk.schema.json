@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/risk.schema.json",
+  "title": "OpenAutonomyX Risk",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["riskType", "source", "likelihood", "impact", "owner", "status"],
+      "properties": {
+        "riskType": {
+          "type": "string",
+          "enum": ["strategic", "operational", "technology", "cybersecurity", "privacy", "compliance", "legal", "financial", "vendor", "data", "model", "agent", "automation", "reliability", "reputational", "ethical"]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "affectedStakeholders": { "type": "array", "items": { "type": "string" } },
+        "impactedAssets": { "type": "array", "items": { "type": "string" } },
+        "likelihood": { "type": "string", "enum": ["rare", "unlikely", "possible", "likely", "almost-certain"] },
+        "impact": { "type": "string", "enum": ["negligible", "minor", "moderate", "major", "critical"] },
+        "inherentRiskRating": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "existingControls": { "type": "array", "items": { "type": "string" } },
+        "residualRiskRating": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "treatment": { "type": "string", "enum": ["avoid", "reduce", "transfer", "accept", "monitor", "escalate"] },
+        "treatmentPlan": { "type": "string" },
+        "decisionOwner": { "type": "string" },
+        "reviewCadence": { "type": "string" },
+        "escalationPath": { "type": "array", "items": { "type": "string" } },
+        "evidence": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
