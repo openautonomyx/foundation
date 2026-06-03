@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/taxonomy.schema.json",
+  "title": "OpenAutonomyX Taxonomy",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["taxonomyType", "terms"],
+      "properties": {
+        "taxonomyType": {
+          "type": "string",
+          "enum": ["capability", "risk", "control", "decision", "workspace", "knowledge", "memory", "agent", "identity", "trust", "policy", "artifact", "relationship", "custom"]
+        },
+        "parentTaxonomy": { "type": "string" },
+        "terms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "label": { "type": "string", "minLength": 1 },
+              "description": { "type": "string" },
+              "parent": { "type": "string" },
+              "status": {
+                "type": "string",
+                "enum": ["proposed", "active", "deprecated", "retired"]
+              },
+              "aliases": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": true
+          }
+        },
+        "mappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["sourceTerm", "targetStandard", "targetTerm"],
+            "properties": {
+              "sourceTerm": { "type": "string" },
+              "targetStandard": { "type": "string" },
+              "targetVersion": { "type": "string" },
+              "targetTerm": { "type": "string" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+              "evidence": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": true
+          }
+        },
+        "deprecatedTerms": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
