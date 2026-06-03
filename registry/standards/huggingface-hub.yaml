@@ -1,0 +1,40 @@
+id: standard.huggingface-hub
+type: standard
+name: Hugging Face Hub
+description: Open platform hosting models, datasets, and spaces; a primary supply source for agent models, fine-tuning data, and RAG corpora. Treated as a governed, provenance-tracked supply-chain source.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: Hugging Face
+specReference: https://huggingface.co/datasets
+specVersion: "rolling"
+repositoryUrl: https://github.com/huggingface
+documentationUrl: https://huggingface.co/docs
+upstreamMaturity: industry-platform
+license: varies-per-artifact
+adoptionPosture: integration
+mappedConcepts:
+  - datasets
+  - models
+  - spaces
+  - model-registry
+  - rag-corpus
+  - fine-tuning-data
+  - supply-chain
+
+provenance:
+  - "Hugging Face Hub: models, datasets, and spaces; artifact licenses vary and must be verified before adoption"
+
+relationships:
+  - type: supply-source-for
+    target: agent.contract-review-assistant
+  - type: documented-by
+    target: standard.owasp-ai-agent-security
+
+trust:
+  level: monitored
+  score: 70
