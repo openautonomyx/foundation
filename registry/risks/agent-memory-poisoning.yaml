@@ -1,0 +1,55 @@
+id: risk.agent-memory-poisoning
+type: risk
+name: Agent Memory Poisoning
+description: Risk that malicious or false data is persisted in agent memory to influence future decisions, sessions, or other users (OWASP agentic threat T1).
+version: 1.0.0
+status: active
+owner: security
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+riskType: agent
+source: agentic-memory
+affectedStakeholders:
+  - end-users
+  - business-owners
+  - security
+impactedAssets:
+  - agent-memory
+  - enterprise-data
+  - governed-workspaces
+likelihood: possible
+impact: major
+inherentRiskRating: high
+existingControls:
+  - control.human-approval
+  - control.separation-of-duty
+residualRiskRating: medium
+treatment: reduce
+treatmentPlan: Validate and sanitize data before storage, isolate memory per user/session, set expiration and size limits, audit memory for sensitive data, and apply integrity checks to long-term memory.
+decisionOwner: governance-board
+reviewCadence: quarterly
+escalationPath:
+  - agent-owner
+  - security-operations
+  - governance-board
+
+governance:
+  policies:
+    - policies/auditability.md
+    - policies/traceability.md
+  controls:
+    - control.human-approval
+  reviewCadence: quarterly
+
+relationships:
+  - type: governed-by
+    target: capability.enterprise-agent-governance
+  - type: documented-by
+    target: standard.owasp-ai-agent-security
+  - type: affects
+    target: agent.contract-review-assistant
+
+trust:
+  level: monitored
+  score: 65
