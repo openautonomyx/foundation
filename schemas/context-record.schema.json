@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/context-record.schema.json",
+  "title": "OpenAutonomyX Context Record",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["contextType", "subject", "purpose", "source", "retentionRule", "dispositionRule"],
+      "properties": {
+        "contextType": {
+          "type": "string",
+          "enum": ["working", "session", "task", "workspace", "team", "project", "product", "customer", "decision", "policy", "operational", "incident", "audit", "organizational", "institutional"]
+        },
+        "subject": { "type": "string", "minLength": 1 },
+        "purpose": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "consentContext": { "type": "string" },
+        "classification": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential", "restricted", "secret"]
+        },
+        "accessRules": { "type": "array", "items": { "type": "string" } },
+        "retentionRule": { "type": "string", "minLength": 1 },
+        "reviewDate": { "type": "string", "format": "date-time" },
+        "dispositionRule": { "type": "string", "minLength": 1 },
+        "relatedWorkspace": { "type": "string" },
+        "relatedEntities": { "type": "array", "items": { "type": "string" } },
+        "relatedDecisions": { "type": "array", "items": { "type": "string" } },
+        "relatedPolicies": { "type": "array", "items": { "type": "string" } },
+        "provenance": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "recordState": {
+          "type": "string",
+          "enum": ["captured", "classified", "approved-for-retention", "active", "reviewed", "updated", "superseded", "disposed", "archived"]
+        }
+      }
+    }
+  ]
+}
