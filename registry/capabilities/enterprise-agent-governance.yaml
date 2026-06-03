@@ -1,0 +1,49 @@
+id: capability.enterprise-agent-governance
+type: capability
+name: Enterprise Agent Governance
+description: Govern enterprise agent lifecycle, autonomy, trust, approvals, evidence, and accountability.
+version: 1.0.0
+status: active
+owner: architecture-board
+createdAt: "2026-06-02T00:00:00Z"
+updatedAt: "2026-06-02T00:00:00Z"
+
+capabilityType: agent
+businessObjective: Enable safe, auditable, policy-bound enterprise use of autonomous and semi-autonomous agents.
+sponsor: executive-sponsor
+stakeholders:
+  - cio
+  - cto
+  - ciso
+  - enterprise-architecture
+  - risk-compliance
+  - it-operations
+  - business-owners
+maturityLevel: defined
+
+valueMetrics:
+  - agent-policy-compliance
+  - audit-readiness
+  - reduced-unauthorized-execution-risk
+  - improved-decision-traceability
+
+adoptionMetrics:
+  - governed-agents-registered
+  - agent-actions-with-evidence
+  - approvals-completed
+  - escalations-resolved
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/traceability.md
+    - policies/auditability.md
+    - policies/trust-review.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  reviewCadence: quarterly
+
+trust:
+  level: foundation-defined
+  score: 80
