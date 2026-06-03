@@ -61,19 +61,19 @@ terms:
   - id: patterns
     label: Patterns
     parent: best-practices
-    status: proposed
+    status: active
   - id: anti-patterns
     label: Anti-Patterns
     parent: best-practices
-    status: proposed
+    status: active
   - id: threat-model
     label: Threat Model
     parent: best-practices
-    status: proposed
+    status: active
   - id: maturity-model
     label: Maturity Model
     parent: best-practices
-    status: proposed
+    status: active
   - id: testing-evaluation
     label: Testing & Evaluation
     parent: best-practices
