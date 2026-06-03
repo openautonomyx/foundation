@@ -1,0 +1,29 @@
+id: standard.agent-language
+type: standard
+name: Agent-Language (AGenNext)
+description: Placeholder repository anticipated to define an agent language; not yet populated.
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Language
+specVersion: "placeholder (no content)"
+repositoryUrl: https://github.com/AGenNext/Agent-Language
+documentationUrl: https://github.com/AGenNext/Agent-Language
+upstreamMaturity: placeholder
+license: unspecified
+adoptionPosture: experimental
+mappedConcepts:
+  - agent-language
+  - agent-specification
+
+provenance:
+  - "Repository empty as of 2026-06-03; tracked for future evaluation"
+
+trust:
+  level: untrusted
+  score: 20
