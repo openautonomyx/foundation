@@ -1,0 +1,50 @@
+id: protocol.reconciliation
+type: protocol
+name: Reconciliation Protocol
+description: Agent-as-operator control loop that drives actual state toward declared desired state.
+version: 1.0.0
+status: active
+owner: platform-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: interaction
+purpose: Continuously observe, diff, and reconcile actual state to governed desired state.
+participants:
+  - agent
+  - controller
+  - managed-resource
+messagePatterns:
+  - observe
+  - diff
+  - reconcile
+  - report-status
+envelopeFields:
+  - desired-state
+  - observed-state
+  - reconcile-action
+  - status
+authentication: spiffe-svid
+authorizationModel: pdp-pep-separation
+openStandard: true
+specReference: https://sdk.operatorframework.io/
+interoperability: integration
+conformanceRequirements:
+  - declarative-desired-state
+  - idempotent-reconcile
+  - approval-gate-for-consequential-actions
+  - emit-status-and-events
+failureMode: fail-closed
+evidenceRequired:
+  - desired-state
+  - observed-state
+  - reconcile-event
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.operator-framework
+
+trust:
+  level: foundation-defined
+  score: 80

@@ -1,0 +1,45 @@
+id: protocol.policy-evaluation
+type: protocol
+name: Policy Evaluation Protocol
+description: Evaluate policy-as-code to produce governed, logged policy decisions for agent actions.
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: governance
+purpose: Decide whether an agent action complies with policy-as-code, with decision logging.
+participants:
+  - policy-decision-point
+  - policy-engine
+messagePatterns:
+  - policy-query
+  - policy-decision
+envelopeFields:
+  - input-document
+  - policy-context
+  - decision
+authentication: spiffe-svid
+authorizationModel: policy-as-code
+openStandard: true
+specReference: https://www.openpolicyagent.org/
+interoperability: canonical
+conformanceRequirements:
+  - evaluate-versioned-policy
+  - emit-decision-log
+  - deny-on-evaluation-error
+failureMode: fail-closed
+evidenceRequired:
+  - policy-input
+  - policy-decision
+  - decision-log
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.open-policy-agent
+
+trust:
+  level: foundation-defined
+  score: 86

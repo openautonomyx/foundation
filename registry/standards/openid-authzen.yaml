@@ -1,0 +1,31 @@
+id: standard.openid-authzen
+type: standard
+name: OpenID AuthZEN Authorization API
+description: Open standard for separating authorization decisions (PDP) from enforcement (PEP) via a standard Access Evaluation API.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: authorization
+organization: OpenID Foundation
+specReference: https://openid.github.io/authzen/
+specVersion: "Authorization API 1.0 (Final)"
+repositoryUrl: https://github.com/openid/authzen
+documentationUrl: https://openid.net/wg/authzen/
+upstreamMaturity: openid-final
+license: OpenID Foundation IPR Policy
+adoptionPosture: canonical
+mappedConcepts:
+  - authorization-decision
+  - policy-decision-point
+  - policy-enforcement-point
+  - access-evaluation
+
+provenance:
+  - "Authorization API 1.0 Final Specification approved 2026-03"
+
+trust:
+  level: foundation-defined
+  score: 88

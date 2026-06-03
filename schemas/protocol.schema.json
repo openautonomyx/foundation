@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/protocol.schema.json",
+  "title": "OpenAutonomyX Agent Protocol",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["protocolLayer", "purpose", "messagePatterns", "conformanceRequirements"],
+      "properties": {
+        "protocolLayer": {
+          "type": "string",
+          "enum": ["transport", "identity", "interaction", "semantic", "governance"]
+        },
+        "purpose": { "type": "string", "minLength": 1 },
+        "participants": { "type": "array", "items": { "type": "string" } },
+        "messagePatterns": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "envelopeFields": { "type": "array", "items": { "type": "string" } },
+        "authentication": { "type": "string" },
+        "authorizationModel": { "type": "string" },
+        "openStandard": { "type": "boolean" },
+        "specReference": { "type": "string" },
+        "interoperability": {
+          "type": "string",
+          "enum": ["canonical", "integration", "experimental"]
+        },
+        "conformanceRequirements": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "failureMode": {
+          "type": "string",
+          "enum": ["fail-closed", "fail-open", "degrade"]
+        },
+        "evidenceRequired": { "type": "array", "items": { "type": "string" } },
+        "versioningPolicy": { "type": "string" }
+      }
+    }
+  ]
+}

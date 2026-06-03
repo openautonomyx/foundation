@@ -1,0 +1,32 @@
+id: standard.openfga
+type: standard
+name: OpenFGA
+description: Relationship-based fine-grained authorization engine inspired by Google Zanzibar, used for scoped agent permissions.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: authorization
+organization: CNCF
+specReference: https://openfga.dev/
+specVersion: "1.x (latest 2026-04)"
+repositoryUrl: https://github.com/openfga/openfga
+documentationUrl: https://openfga.dev/docs
+upstreamMaturity: cncf-incubating
+license: Apache-2.0
+adoptionPosture: canonical
+mappedConcepts:
+  - relationship-based-access-control
+  - zanzibar
+  - fine-grained-authorization
+  - check-api
+  - relationship-tuples
+
+provenance:
+  - "OpenFGA became a CNCF incubating project 2025-11-11"
+
+trust:
+  level: foundation-defined
+  score: 85

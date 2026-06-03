@@ -1,0 +1,52 @@
+id: protocol.authorization-decision
+type: protocol
+name: Authorization Decision Protocol
+description: Request and receive an authorization decision from a policy decision point, separated from enforcement.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: governance
+purpose: Let an agent (PEP) obtain a standard allow/deny decision from a PDP before acting.
+participants:
+  - agent
+  - policy-enforcement-point
+  - policy-decision-point
+messagePatterns:
+  - access-evaluation-request
+  - access-evaluation-response
+envelopeFields:
+  - subject
+  - resource
+  - action
+  - context
+  - policy-context
+authentication: spiffe-svid
+authorizationModel: pdp-pep-separation
+openStandard: true
+specReference: https://openid.github.io/authzen/
+interoperability: canonical
+conformanceRequirements:
+  - separate-decision-from-enforcement
+  - include-subject-resource-action-context
+  - deny-on-missing-or-ambiguous-decision
+failureMode: fail-closed
+evidenceRequired:
+  - authorization-request
+  - authorization-decision
+  - decision-record
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.openid-authzen
+  - type: composes-with
+    target: protocol.policy-evaluation
+  - type: composes-with
+    target: protocol.relationship-authorization
+
+trust:
+  level: foundation-defined
+  score: 86

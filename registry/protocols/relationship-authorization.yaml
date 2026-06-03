@@ -1,0 +1,46 @@
+id: protocol.relationship-authorization
+type: protocol
+name: Relationship Authorization Protocol
+description: Check fine-grained relationship-based permissions for scoped agent access.
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: governance
+purpose: Resolve whether a subject has a relation to an object using relationship-based access control.
+participants:
+  - policy-decision-point
+  - authorization-engine
+messagePatterns:
+  - check-request
+  - check-response
+  - relationship-tuple-write
+envelopeFields:
+  - user
+  - relation
+  - object
+  - authorization-model
+authentication: spiffe-svid
+authorizationModel: relationship-based-access-control
+openStandard: true
+specReference: https://openfga.dev/
+interoperability: canonical
+conformanceRequirements:
+  - evaluate-against-versioned-authorization-model
+  - least-privilege-scoping
+  - deny-on-missing-relationship
+failureMode: fail-closed
+evidenceRequired:
+  - check-request
+  - check-result
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.openfga
+
+trust:
+  level: foundation-defined
+  score: 84

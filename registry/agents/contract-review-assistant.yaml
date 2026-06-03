@@ -81,6 +81,16 @@ relationships:
     target: workspace.contract-governance
   - type: authorized-by
     target: decision.approve-contract-review-assistant
+  - type: uses-protocol
+    target: protocol.agent-identity
+  - type: uses-protocol
+    target: protocol.authorization-decision
+  - type: uses-protocol
+    target: protocol.policy-evaluation
+  - type: uses-protocol
+    target: protocol.relationship-authorization
+  - type: uses-protocol
+    target: protocol.capability-discovery
 
 trust:
   level: monitored

@@ -1,0 +1,47 @@
+id: protocol.capability-discovery
+type: protocol
+name: Capability Discovery Protocol
+description: Discover, publish, and verify agent capabilities and packaged artifacts from a governed catalog.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: semantic
+purpose: Advertise and discover agent capabilities, skills, tools, and artifacts with provenance.
+participants:
+  - agent
+  - capability-catalog
+  - publisher
+messagePatterns:
+  - publish-capability
+  - discover-capability
+  - verify-provenance
+envelopeFields:
+  - capability-descriptor
+  - provenance
+  - signature
+  - version
+authentication: spiffe-svid
+authorizationModel: scoped-delegation
+openStandard: true
+specReference: https://artifacthub.io/
+interoperability: integration
+conformanceRequirements:
+  - signed-capability-descriptors
+  - provenance-and-version-required
+  - policy-check-before-adoption
+failureMode: fail-closed
+evidenceRequired:
+  - capability-descriptor
+  - provenance-record
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.artifact-hub
+
+trust:
+  level: foundation-defined
+  score: 80

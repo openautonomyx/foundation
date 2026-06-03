@@ -1,0 +1,47 @@
+id: protocol.agent-identity
+type: protocol
+name: Agent Identity Protocol
+description: Mutual authentication and attestation of agent and workload identity before any consequential exchange.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: identity
+purpose: Establish verifiable, attested agent identity using short-lived cryptographic credentials.
+participants:
+  - agent
+  - identity-authority
+  - relying-party
+messagePatterns:
+  - identity-handshake
+  - attestation
+  - credential-issuance
+envelopeFields:
+  - sender-identity
+  - recipient-identity
+  - signature
+  - timestamp
+authentication: spiffe-svid
+authorizationModel: attested-identity
+openStandard: true
+specReference: https://spiffe.io/docs/latest/spiffe-about/spiffe-concepts/
+interoperability: canonical
+conformanceRequirements:
+  - verify-svid-before-exchange
+  - reject-expired-or-revoked-credentials
+  - bind-identity-to-trust-domain
+failureMode: fail-closed
+evidenceRequired:
+  - identity-assertion
+  - attestation-result
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: pins-standard
+    target: standard.spiffe
+
+trust:
+  level: foundation-defined
+  score: 88

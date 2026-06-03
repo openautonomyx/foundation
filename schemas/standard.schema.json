@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/standard.schema.json",
+  "title": "OpenAutonomyX External Standard",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["standardType", "organization", "specReference", "adoptionPosture"],
+      "properties": {
+        "standardType": {
+          "type": "string",
+          "enum": ["identity", "authentication", "authorization", "policy", "transport", "packaging", "orchestration", "observability", "data", "interoperability", "agent"]
+        },
+        "organization": { "type": "string", "minLength": 1 },
+        "specReference": { "type": "string", "format": "uri" },
+        "specVersion": { "type": "string" },
+        "repositoryUrl": { "type": "string", "format": "uri" },
+        "documentationUrl": { "type": "string", "format": "uri" },
+        "upstreamMaturity": { "type": "string" },
+        "license": { "type": "string" },
+        "adoptionPosture": {
+          "type": "string",
+          "enum": ["canonical", "integration", "experimental", "evaluating", "deprecated"]
+        },
+        "mappedConcepts": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
