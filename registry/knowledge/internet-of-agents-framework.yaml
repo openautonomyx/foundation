@@ -1,0 +1,33 @@
+id: knowledge.internet-of-agents-framework
+type: knowledge-asset
+name: "Internet of Agents framework (IoA, ICLR 2025 Spotlight)"
+description: "Peer-reviewed framework for LLM multi-agent collaboration: agent integration protocol, instant-messaging-like architecture, nested team formation, and FSM-based conversation flow control."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+knowledgeType: claim
+source: "Chen et al., Internet of Agents: Weaving a Web of Heterogeneous Agents for Collaborative Intelligence (ICLR 2025 Spotlight), OpenReview o1Et3MogPw"
+confidence: 0.85
+validationState: reviewed
+approvalState: not-required
+sensitivityClassification: public
+provenance:
+  - "ICLR 2025 Spotlight; unanimous accept; key ideas: agent integration protocol, IM-like architecture, nested team formation, FSM conversation flow"
+policyBindings:
+  - policies/traceability.md
+reviewCadence: annual
+
+relationships:
+  - type: informs
+    target: protocol.orchestration
+  - type: informs
+    target: protocol.capability-discovery
+  - type: informs
+    target: standard.agent2agent
+
+trust:
+  level: monitored
+  score: 72

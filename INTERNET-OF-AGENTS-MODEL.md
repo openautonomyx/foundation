@@ -26,6 +26,17 @@ The IoA must not be an ungoverned mesh. The foundation overlays:
 - evidence and observability (OpenTelemetry) for every exchange
 - fail-closed behavior on low trust or policy conflict
 
+## Reference Framework (IoA, Chen et al., ICLR 2025)
+
+A concrete IoA framework demonstrates these enablers and informs this model:
+
+- **Agent integration protocol** — wrap heterogeneous, third-party agents (built in different ecosystems) behind a uniform interface (e.g. a `run()` adapter, often containerized) so they can collaborate.
+- **Instant-messaging-like architecture** — a server routes messages and coordinates; each agent is a client with its own connection; layered into interaction, data, and foundation layers.
+- **Nested team formation** — agents discover collaborators by capability and form small, sparse subgroups, reducing communication overhead versus fully-connected topologies.
+- **Conversation flow control (FSM)** — a finite state machine governs states (discussion, synchronous/asynchronous task assignment, pause-and-trigger, conclusion), with an LLM deciding transitions and the next speaker.
+
+The foundation adopts these patterns under governance: integration adapters are supply-chain-verified, message routing is authorized and logged, team formation respects trust thresholds, and FSM transitions emit evidence.
+
 ## Architecture Posture
 
 Hierarchical and federated rather than flat: nested principal–agent relationships, scoped delegation, and cascaded control loops, on a cloud-native substrate.
