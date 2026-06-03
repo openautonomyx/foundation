@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/capability.schema.json",
+  "title": "OpenAutonomyX Capability",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["capabilityType", "businessObjective", "maturityLevel"],
+      "properties": {
+        "capabilityType": {
+          "type": "string",
+          "enum": ["business", "technology", "data", "ai", "agent", "governance", "security", "compliance", "operational", "integration", "financial", "customer", "workforce"]
+        },
+        "businessObjective": { "type": "string", "minLength": 1 },
+        "sponsor": { "type": "string" },
+        "stakeholders": { "type": "array", "items": { "type": "string" } },
+        "dependentCapabilities": { "type": "array", "items": { "type": "string" } },
+        "enablingSystems": { "type": "array", "items": { "type": "string" } },
+        "dataDependencies": { "type": "array", "items": { "type": "string" } },
+        "policyDependencies": { "type": "array", "items": { "type": "string" } },
+        "riskProfile": { "type": "string" },
+        "controlRequirements": { "type": "array", "items": { "type": "string" } },
+        "maturityLevel": {
+          "type": "string",
+          "enum": ["ad-hoc", "defined", "managed", "measured", "optimized", "adaptive", "autonomous-governed"]
+        },
+        "valueMetrics": { "type": "array", "items": { "type": "string" } },
+        "adoptionMetrics": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
