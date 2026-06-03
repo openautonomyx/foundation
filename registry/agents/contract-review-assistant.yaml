@@ -1,0 +1,87 @@
+id: agent.contract-review-assistant
+type: agent
+name: Contract Review Assistant
+description: Semi-autonomous agent that reviews contracts, drafts risk summaries, and routes consequential actions for human approval.
+version: 1.0.0
+status: active
+owner: legal-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+agentType: knowledge
+identity: identity.agent.contract-review-assistant
+purpose: Accelerate contract review while keeping consequential actions under human approval and policy scope.
+humanOwner: legal-operations-lead
+operator: platform-operations
+capabilities:
+  - capability.enterprise-agent-governance
+skills:
+  - contract-clause-extraction
+  - risk-summary-drafting
+allowedTools:
+  - document-reader
+  - clause-classifier
+allowedDataScopes:
+  - contract-repository
+policyBindings:
+  - policies/human-approval.md
+  - policies/separation-of-duty.md
+  - policies/traceability.md
+  - policies/auditability.md
+trustRequirements:
+  - verified-identity
+  - scoped-tool-access
+autonomyLevel: execute-with-approval
+approvalRequirements:
+  - control.human-approval
+  - control.separation-of-duty
+evaluationMethod: human-in-the-loop-review
+evaluationMetrics:
+  - approval-completion-rate
+  - policy-compliance-rate
+  - escalations-resolved
+escalationPath:
+  - agent-owner
+  - security-operations
+  - governance-board
+suspensionConditions:
+  - policy-violation-detected
+  - identity-verification-lost
+  - unauthorized-tool-access
+killSwitch: true
+memoryPolicy: append-only-governed
+knowledgeSources:
+  - contract-repository
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/separation-of-duty.md
+    - policies/traceability.md
+    - policies/auditability.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  approvers:
+    - governance-board
+  reviewCadence: quarterly
+
+relationships:
+  - type: realizes-capability
+    target: capability.enterprise-agent-governance
+  - type: subject-to-risk
+    target: risk.unauthorized-agent-execution
+  - type: governed-by-control
+    target: control.human-approval
+  - type: governed-by-control
+    target: control.separation-of-duty
+  - type: identified-by
+    target: identity.agent.contract-review-assistant
+  - type: operates-in
+    target: workspace.contract-governance
+  - type: authorized-by
+    target: decision.approve-contract-review-assistant
+
+trust:
+  level: monitored
+  score: 75

@@ -1,0 +1,28 @@
+id: identity.agent.contract-review-assistant
+type: identity
+name: Contract Review Assistant Identity
+description: Verified agent identity for the contract-review assistant operating under enterprise agent governance.
+owner: enterprise-architecture
+lifecycleState: active
+version: 1.0.0
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+identityType: agent
+issuer: identity-authority
+subject: agent.contract-review-assistant
+credentials:
+  - workload-identity
+  - signed-agent-manifest
+roles:
+  - contract-reviewer
+permissions:
+  - read:contract-repository
+  - draft:review-summary
+verificationState: verified
+
+relationships:
+  - type: identity-of
+    target: agent.contract-review-assistant
+
+trustState: monitored
