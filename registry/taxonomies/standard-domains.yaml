@@ -1,0 +1,88 @@
+id: taxonomy.standard-domains
+type: taxonomy
+name: Standard Domains
+description: Domains used to classify external standards and ecosystem projects.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: custom
+terms:
+  - id: identity
+    label: Identity
+    status: active
+  - id: authentication
+    label: Authentication
+    status: active
+  - id: authorization
+    label: Authorization
+    status: active
+  - id: policy
+    label: Policy
+    status: active
+  - id: transport
+    label: Transport
+    status: active
+  - id: packaging
+    label: Packaging
+    status: active
+  - id: orchestration
+    label: Orchestration
+    status: active
+  - id: observability
+    label: Observability
+    status: active
+  - id: data
+    label: Data
+    status: active
+  - id: interoperability
+    label: Interoperability
+    status: active
+  - id: agent
+    label: Agent
+    status: active
+mappings:
+  - sourceTerm: identity
+    targetStandard: standard.spiffe
+    targetVersion: "SPIRE 1.14.1"
+    targetTerm: workload-identity
+    confidence: 0.9
+  - sourceTerm: authorization
+    targetStandard: standard.openid-authzen
+    targetVersion: "1.0"
+    targetTerm: access-evaluation
+    confidence: 0.9
+  - sourceTerm: policy
+    targetStandard: standard.open-policy-agent
+    targetVersion: "1.14.0"
+    targetTerm: policy-decision
+    confidence: 0.9
+  - sourceTerm: authorization
+    targetStandard: standard.openfga
+    targetVersion: "1.x"
+    targetTerm: relationship-check
+    confidence: 0.85
+  - sourceTerm: observability
+    targetStandard: standard.opentelemetry
+    targetVersion: "OTLP 1.x"
+    targetTerm: telemetry
+    confidence: 0.9
+  - sourceTerm: orchestration
+    targetStandard: standard.kubernetes
+    targetVersion: "v1.35"
+    targetTerm: control-loop
+    confidence: 0.85
+  - sourceTerm: interoperability
+    targetStandard: standard.model-context-protocol
+    targetTerm: agent-to-tool
+    confidence: 0.85
+  - sourceTerm: interoperability
+    targetStandard: standard.agent2agent
+    targetTerm: agent-to-agent
+    confidence: 0.85
+
+trust:
+  level: foundation-defined
+  score: 88

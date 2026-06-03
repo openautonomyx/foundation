@@ -1,0 +1,31 @@
+id: standard.the-graph
+type: standard
+name: The Graph
+description: Decentralized protocol for indexing and querying data via open GraphQL APIs (subgraphs); referenced as a query/indexing model for the foundation graph.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: The Graph (Edge & Node / The Graph Foundation)
+specReference: https://thegraph.com/
+specVersion: "subgraphs / GraphQL"
+repositoryUrl: https://github.com/graphprotocol
+documentationUrl: https://thegraph.com/docs/
+upstreamMaturity: open-protocol
+license: Apache-2.0
+adoptionPosture: evaluating
+mappedConcepts:
+  - graph-indexing
+  - graphql
+  - subgraph
+  - decentralized-query
+
+provenance:
+  - "The Graph: open protocol for indexing and querying networks via GraphQL subgraphs"
+
+trust:
+  level: monitored
+  score: 65

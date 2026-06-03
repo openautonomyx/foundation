@@ -1,0 +1,32 @@
+id: standard.cloud-security-alliance
+type: standard
+name: Cloud Security Alliance (CSA)
+description: Industry body for cloud and AI security best practices (CCM, STAR, AI Controls Matrix, agentic AI security guidance).
+version: 1.0.0
+status: active
+owner: security
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: Cloud Security Alliance
+specReference: https://cloudsecurityalliance.org/
+specVersion: "rolling guidance"
+repositoryUrl: https://github.com/cloudsecurityalliance
+documentationUrl: https://cloudsecurityalliance.org/research/
+upstreamMaturity: industry-body
+license: varies
+adoptionPosture: canonical
+mappedConcepts:
+  - cloud-controls-matrix
+  - star
+  - ai-controls-matrix
+  - agentic-ai-security
+  - compliance-mapping
+
+provenance:
+  - "Cloud Security Alliance research and control frameworks"
+
+trust:
+  level: foundation-defined
+  score: 82

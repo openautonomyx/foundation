@@ -1,0 +1,116 @@
+id: taxonomy.agent-grammar
+type: taxonomy
+name: Agent Grammar
+description: The allowed relationship (edge) types of the foundation graph; the grammar by which vocabulary terms connect into well-formed statements.
+version: 1.0.0
+status: active
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: relationship
+terms:
+  - id: realizes-capability
+    label: realizes-capability
+    description: agent → capability
+    status: active
+  - id: subject-to-risk
+    label: subject-to-risk
+    description: agent → risk
+    status: active
+  - id: governed-by-control
+    label: governed-by-control
+    description: agent/workspace → control
+    status: active
+  - id: mitigates
+    label: mitigates
+    description: control/skill → risk
+    status: active
+  - id: mitigated-by
+    label: mitigated-by
+    description: risk → control
+    status: active
+  - id: requires-control
+    label: requires-control
+    description: capability → control
+    status: active
+  - id: identity-of
+    label: identity-of
+    description: identity → agent
+    status: active
+  - id: identified-by
+    label: identified-by
+    description: agent → identity
+    status: active
+  - id: operates-in
+    label: operates-in
+    description: agent → workspace
+    status: active
+  - id: hosts-agent
+    label: hosts-agent
+    description: workspace → agent
+    status: active
+  - id: authorized-by
+    label: authorized-by
+    description: agent → decision
+    status: active
+  - id: uses-protocol
+    label: uses-protocol
+    description: agent → protocol
+    status: active
+  - id: pins-standard
+    label: pins-standard
+    description: protocol → standard
+    status: active
+  - id: composes-with
+    label: composes-with
+    description: protocol → protocol
+    status: active
+  - id: supports-capability
+    label: supports-capability
+    description: skill → capability
+    status: active
+  - id: twins
+    label: twins
+    description: digital-twin → agent/entity
+    status: active
+  - id: observes-via
+    label: observes-via
+    description: digital-twin → protocol
+    status: active
+  - id: telemetry-via
+    label: telemetry-via
+    description: digital-twin → standard
+    status: active
+  - id: drift-checked-by
+    label: drift-checked-by
+    description: digital-twin → standard
+    status: active
+  - id: governed-by
+    label: governed-by
+    description: object → capability
+    status: active
+  - id: documented-by
+    label: documented-by
+    description: risk → standard
+    status: active
+  - id: affects
+    label: affects
+    description: risk → agent
+    status: active
+  - id: knowledge-source-for
+    label: knowledge-source-for
+    description: knowledge-asset → object
+    status: active
+  - id: informs
+    label: informs
+    description: knowledge-asset → object
+    status: active
+  - id: located-in
+    label: located-in
+    description: digital-twin → workspace
+    status: active
+
+trust:
+  level: foundation-defined
+  score: 85

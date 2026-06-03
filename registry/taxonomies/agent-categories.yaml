@@ -1,0 +1,91 @@
+id: taxonomy.agent-categories
+type: taxonomy
+name: Agent Categories
+description: Market and functional categories of agent offerings, mapped to external analyst and CNCF taxonomies.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: agent
+terms:
+  - id: agent-platform
+    label: Agent Platform
+    description: Build, run, and govern agents.
+    status: active
+  - id: agent-development-platform
+    label: Agent Development Platform
+    description: Engineering tooling for agents.
+    parent: agent-platform
+    status: active
+  - id: no-code-agent-builder
+    label: No-Code Agent Builder
+    description: Citizen-built agents.
+    parent: agent-platform
+    status: active
+  - id: multi-agent-orchestration
+    label: Multi-Agent Orchestration
+    description: Coordinate multiple agents (swarm/crew/flow).
+    status: active
+  - id: agent-marketplace
+    label: Agent Marketplace
+    description: Discovery and distribution of agents and capabilities.
+    status: active
+  - id: agent-governance-control
+    label: Agent Governance and Control
+    description: Identity, policy, evaluation, drift, compliance.
+    status: active
+  - id: embedded-agentic-feature
+    label: Embedded Agentic Feature
+    description: Agentic capability inside existing products.
+    status: active
+  - id: vertical-agent
+    label: Vertical / Domain Agent
+    description: Domain-specific agents.
+    status: active
+  - id: customer-service-agent
+    label: Customer Service Agent
+    parent: vertical-agent
+    status: active
+  - id: sales-agent
+    label: Sales Agent
+    parent: vertical-agent
+    status: active
+  - id: procurement-agent
+    label: Procurement Agent
+    parent: vertical-agent
+    status: active
+  - id: finance-agent
+    label: Finance Agent
+    parent: vertical-agent
+    status: active
+  - id: legal-agent
+    label: Legal Agent
+    parent: vertical-agent
+    status: active
+  - id: hr-agent
+    label: HR Agent
+    parent: vertical-agent
+    status: active
+  - id: itsm-agent
+    label: ITSM Agent
+    parent: vertical-agent
+    status: active
+  - id: coding-agent
+    label: Coding Agent
+    parent: vertical-agent
+    status: active
+  - id: analytics-agent
+    label: Analytics Agent
+    parent: vertical-agent
+    status: active
+mappings:
+  - sourceTerm: agent-platform
+    targetStandard: standard.cncf-ai-native-landscape
+    targetTerm: agentic-platforms
+    confidence: 0.7
+
+trust:
+  level: foundation-defined
+  score: 82
