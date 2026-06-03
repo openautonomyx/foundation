@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/agent.schema.json",
+  "title": "OpenAutonomyX Agent",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["agentType", "identity", "purpose", "owner", "autonomyLevel"],
+      "properties": {
+        "agentType": {
+          "type": "string",
+          "enum": ["personal-productivity", "team-assistant", "workflow", "knowledge", "governance", "security", "compliance", "customer-support", "engineering", "operations", "procurement", "finance", "executive-briefing", "custom"]
+        },
+        "identity": { "type": "string", "minLength": 1 },
+        "purpose": { "type": "string", "minLength": 1 },
+        "humanOwner": { "type": "string" },
+        "operator": { "type": "string" },
+        "capabilities": { "type": "array", "items": { "type": "string" } },
+        "skills": { "type": "array", "items": { "type": "string" } },
+        "allowedTools": { "type": "array", "items": { "type": "string" } },
+        "allowedDataScopes": { "type": "array", "items": { "type": "string" } },
+        "policyBindings": { "type": "array", "items": { "type": "string" } },
+        "trustRequirements": { "type": "array", "items": { "type": "string" } },
+        "autonomyLevel": {
+          "type": "string",
+          "enum": ["observe-only", "suggest-only", "draft-for-review", "execute-with-approval", "execute-within-policy", "execute-with-post-review", "autonomous-certified-scope"]
+        },
+        "approvalRequirements": { "type": "array", "items": { "type": "string" } },
+        "evaluationMethod": { "type": "string" },
+        "evaluationMetrics": { "type": "array", "items": { "type": "string" } },
+        "escalationPath": { "type": "array", "items": { "type": "string" } },
+        "suspensionConditions": { "type": "array", "items": { "type": "string" } },
+        "killSwitch": { "type": "boolean" },
+        "memoryPolicy": { "type": "string" },
+        "knowledgeSources": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
