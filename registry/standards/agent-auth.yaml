@@ -1,0 +1,29 @@
+id: standard.agent-auth
+type: standard
+name: "Agent-Auth"
+description: "Agent authentication project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: authentication
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Auth
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Auth
+documentationUrl: https://github.com/AGenNext/Agent-Auth
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - authentication
+  - auth
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 50

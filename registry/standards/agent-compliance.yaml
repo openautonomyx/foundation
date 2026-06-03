@@ -1,0 +1,28 @@
+id: standard.agent-compliance
+type: standard
+name: "Agent-Compliance"
+description: "Compliance for agents."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Compliance
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Compliance
+documentationUrl: https://github.com/AGenNext/Agent-Compliance
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - compliance
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50

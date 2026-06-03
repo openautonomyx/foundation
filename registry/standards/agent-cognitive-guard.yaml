@@ -1,0 +1,29 @@
+id: standard.agent-cognitive-guard
+type: standard
+name: "Agent-Cognitive-Guard"
+description: "Cognitive guardrails for agents (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Cognitive-Guard
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Cognitive-Guard
+documentationUrl: https://github.com/AGenNext/Agent-Cognitive-Guard
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - cognitive-guard
+  - guardrails
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility private"
+
+trust:
+  level: monitored
+  score: 50

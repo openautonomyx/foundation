@@ -1,0 +1,28 @@
+id: standard.agentcservices
+type: standard
+name: "AgentcServices"
+description: "AGenNext agentic services project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/AgentcServices
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/AgentcServices
+documentationUrl: https://github.com/AGenNext/AgentcServices
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - services
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

@@ -1,0 +1,29 @@
+id: standard.agent-evolve
+type: standard
+name: "Agent-Evolve"
+description: "Agent self-improvement project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Evolve
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Evolve
+documentationUrl: https://github.com/AGenNext/Agent-Evolve
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - self-improvement
+  - evolution
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 42

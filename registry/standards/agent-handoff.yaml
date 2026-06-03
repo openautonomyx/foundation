@@ -1,0 +1,29 @@
+id: standard.agent-handoff
+type: standard
+name: "Agent-Handoff"
+description: "Agent handoff / escalation project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Handoff
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Handoff
+documentationUrl: https://github.com/AGenNext/Agent-Handoff
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - handoff
+  - escalation
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 50

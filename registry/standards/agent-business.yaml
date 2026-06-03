@@ -1,0 +1,28 @@
+id: standard.agent-business
+type: standard
+name: "Agent-Business"
+description: "Agent business project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Business
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Business
+documentationUrl: https://github.com/AGenNext/Agent-Business
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - business
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

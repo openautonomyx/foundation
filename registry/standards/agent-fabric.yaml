@@ -1,0 +1,29 @@
+id: standard.agent-fabric
+type: standard
+name: "Agent-Fabric"
+description: "Agent fabric / mesh project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Fabric
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Fabric
+documentationUrl: https://github.com/AGenNext/Agent-Fabric
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - fabric
+  - mesh
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50

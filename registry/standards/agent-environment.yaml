@@ -1,0 +1,29 @@
+id: standard.agent-environment
+type: standard
+name: "Agent-Environment"
+description: "Agent environment project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Environment
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Environment
+documentationUrl: https://github.com/AGenNext/Agent-Environment
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - environment
+  - runtime
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 42

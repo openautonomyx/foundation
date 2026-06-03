@@ -1,0 +1,28 @@
+id: standard.agent-standard
+type: standard
+name: "Agent-Standard"
+description: "Agent standard project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Standard
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Standard
+documentationUrl: https://github.com/AGenNext/Agent-Standard
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - standard
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50

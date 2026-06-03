@@ -1,0 +1,29 @@
+id: standard.agent-swarm
+type: standard
+name: "Agent-Swarm"
+description: "Agent swarm / multi-agent coordination project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Swarm
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Swarm
+documentationUrl: https://github.com/AGenNext/Agent-Swarm
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - swarm
+  - multi-agent
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50
