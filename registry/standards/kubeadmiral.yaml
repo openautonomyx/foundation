@@ -1,0 +1,35 @@
+id: standard.kubeadmiral
+type: standard
+name: KubeAdmiral
+description: Next-generation multi-cluster orchestration engine based on Kubernetes (extends Kubernetes Federation), referenced for multi-cluster agent runtime orchestration.
+version: 1.0.0
+status: active
+owner: platform-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: CNCF / ByteDance
+specReference: https://github.com/kubewharf/kubeadmiral
+specVersion: "rolling"
+repositoryUrl: https://github.com/kubewharf/kubeadmiral
+documentationUrl: https://github.com/kubewharf/kubeadmiral
+upstreamMaturity: cncf-sandbox
+license: Apache-2.0
+adoptionPosture: evaluating
+mappedConcepts:
+  - multi-cluster-orchestration
+  - kubernetes-federation
+  - scheduling
+  - cloud-native-runtime
+
+provenance:
+  - "Open-sourced by ByteDance; next-generation multi-cluster orchestration based on Kubernetes Federation v2 (CNCF, 2023)"
+
+relationships:
+  - type: complements
+    target: standard.kubernetes
+
+trust:
+  level: monitored
+  score: 68
