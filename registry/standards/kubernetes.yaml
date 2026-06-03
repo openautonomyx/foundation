@@ -1,0 +1,32 @@
+id: standard.kubernetes
+type: standard
+name: Kubernetes
+description: Cloud-native container orchestration platform; the k8s-native runtime substrate for governed agents.
+version: 1.0.0
+status: active
+owner: platform-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: CNCF
+specReference: https://kubernetes.io/
+specVersion: "v1.35 (AI Conformance baseline)"
+repositoryUrl: https://github.com/kubernetes/kubernetes
+documentationUrl: https://kubernetes.io/docs/
+upstreamMaturity: cncf-graduated
+license: Apache-2.0
+adoptionPosture: canonical
+mappedConcepts:
+  - container-orchestration
+  - control-loop
+  - custom-resource
+  - operator-pattern
+  - ai-conformance
+
+provenance:
+  - "Kubernetes AI Conformance Program expanded to agentic workloads (2026), aligned to v1.35"
+
+trust:
+  level: foundation-defined
+  score: 90

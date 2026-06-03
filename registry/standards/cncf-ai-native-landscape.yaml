@@ -1,0 +1,31 @@
+id: standard.cncf-ai-native-landscape
+type: standard
+name: CNCF AI-Native Landscape
+description: CNCF interactive landscape catalog of AI-native and agentic projects, used as a reference for ecosystem alignment.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: CNCF
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+repositoryUrl: https://github.com/cncf/landscape
+documentationUrl: https://landscape.cncf.io/
+upstreamMaturity: cncf-reference
+license: Apache-2.0
+adoptionPosture: integration
+mappedConcepts:
+  - ecosystem-catalog
+  - ai-inference
+  - ml-orchestration
+  - agentic-platforms
+
+provenance:
+  - "CNCF Technology Landscape Radar Q4 2025"
+
+trust:
+  level: foundation-defined
+  score: 80
