@@ -1,0 +1,29 @@
+id: standard.agent-book
+type: standard
+name: "Agent-Book"
+description: "AGenNext agent book project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Book
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Book
+documentationUrl: https://github.com/AGenNext/Agent-Book
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - documentation
+  - knowledge
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 45

@@ -1,0 +1,28 @@
+id: standard.agent-services
+type: standard
+name: "Agent-Services"
+description: "AGenNext agent services project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Services
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Services
+documentationUrl: https://github.com/AGenNext/Agent-Services
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - agent-services
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 45

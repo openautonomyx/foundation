@@ -1,0 +1,28 @@
+id: standard.agent-aeft
+type: standard
+name: "Agent-AEFT"
+description: "AGenNext Agent-AEFT project (private)."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-AEFT
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-AEFT
+documentationUrl: https://github.com/AGenNext/Agent-AEFT
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - aeft
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 35

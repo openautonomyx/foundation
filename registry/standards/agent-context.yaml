@@ -1,0 +1,30 @@
+id: standard.agent-context
+type: standard
+name: "Agent-Context"
+description: "Context Kubernetes for the agent world."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Context
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Context
+documentationUrl: https://github.com/AGenNext/Agent-Context
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - context
+  - kubernetes
+  - memory
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 52

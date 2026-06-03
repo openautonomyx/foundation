@@ -1,0 +1,29 @@
+id: standard.agent-belief
+type: standard
+name: "Agent-Belief"
+description: "AGenNext agent belief project (private)."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Belief
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Belief
+documentationUrl: https://github.com/AGenNext/Agent-Belief
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - belief
+  - reasoning
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 35

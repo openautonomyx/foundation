@@ -1,0 +1,30 @@
+id: standard.agent-platform
+type: standard
+name: "Agent-Platform"
+description: "Open source cloud-native composable full-stack agent platform."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Platform
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Platform
+documentationUrl: https://github.com/AGenNext/Agent-Platform
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - agent-platform
+  - cloud-native
+  - composable
+
+provenance:
+  - "AGenNext org repository; primary language SurrealQL; visibility public-template"
+
+trust:
+  level: monitored
+  score: 55

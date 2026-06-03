@@ -1,0 +1,29 @@
+id: standard.projectionbench
+type: standard
+name: "ProjectionBench"
+description: "AGenNext projection benchmarking project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/projectionbench
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/projectionbench
+documentationUrl: https://github.com/AGenNext/projectionbench
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - benchmarking
+  - projection
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 40
