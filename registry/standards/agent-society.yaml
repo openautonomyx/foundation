@@ -1,0 +1,29 @@
+id: standard.agent-society
+type: standard
+name: "Agent-Society"
+description: "Interest and hobby based groups for agents."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Society
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Society
+documentationUrl: https://github.com/AGenNext/Agent-Society
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - society
+  - groups
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

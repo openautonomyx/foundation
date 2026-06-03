@@ -1,7 +1,7 @@
-id: standard.agent-grammar
+id: standard.agent-review
 type: standard
-name: "Agent-Grammar"
-description: "AGenNext agent grammar project."
+name: "Agent-Review"
+description: "Agent review project."
 version: 0.1.0
 status: active
 owner: enterprise-architecture
@@ -10,17 +10,15 @@ updatedAt: "2026-06-03T00:00:00Z"
 
 standardType: agent
 organization: AGenNext
-specReference: https://github.com/AGenNext/Agent-Grammar
+specReference: https://github.com/AGenNext/Agent-Review
 specVersion: "early-stage"
-repositoryUrl: https://github.com/AGenNext/Agent-Grammar
-documentationUrl: https://github.com/AGenNext/Agent-Grammar
+repositoryUrl: https://github.com/AGenNext/Agent-Review
+documentationUrl: https://github.com/AGenNext/Agent-Review
 upstreamMaturity: early-stage
 license: "unspecified"
 adoptionPosture: evaluating
 mappedConcepts:
-  - grammar
-  - syntax
-  - validation
+  - review
 
 provenance:
   - "AGenNext org repository; primary language SurrealQL; visibility public"

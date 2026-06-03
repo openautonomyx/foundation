@@ -1,0 +1,29 @@
+id: standard.agent-seed
+type: standard
+name: "Agent-Seed"
+description: "Agent seed project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Seed
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Seed
+documentationUrl: https://github.com/AGenNext/Agent-Seed
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - seed
+  - bootstrap
+
+provenance:
+  - "AGenNext org repository; primary language SurrealQL; visibility private"
+
+trust:
+  level: monitored
+  score: 42

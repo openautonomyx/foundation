@@ -1,0 +1,29 @@
+id: standard.agent-distro
+type: standard
+name: "Agent-Distro"
+description: "Agent distribution project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: packaging
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Distro
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Distro
+documentationUrl: https://github.com/AGenNext/Agent-Distro
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - distribution
+  - packaging
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

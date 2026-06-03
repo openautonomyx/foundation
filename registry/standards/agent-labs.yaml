@@ -1,7 +1,7 @@
-id: standard.agent-grammar
+id: standard.agent-labs
 type: standard
-name: "Agent-Grammar"
-description: "AGenNext agent grammar project."
+name: "Agent-Labs"
+description: "Agent labs / experiments project."
 version: 0.1.0
 status: active
 owner: enterprise-architecture
@@ -10,21 +10,20 @@ updatedAt: "2026-06-03T00:00:00Z"
 
 standardType: agent
 organization: AGenNext
-specReference: https://github.com/AGenNext/Agent-Grammar
+specReference: https://github.com/AGenNext/Agent-Labs
 specVersion: "early-stage"
-repositoryUrl: https://github.com/AGenNext/Agent-Grammar
-documentationUrl: https://github.com/AGenNext/Agent-Grammar
+repositoryUrl: https://github.com/AGenNext/Agent-Labs
+documentationUrl: https://github.com/AGenNext/Agent-Labs
 upstreamMaturity: early-stage
 license: "unspecified"
-adoptionPosture: evaluating
+adoptionPosture: experimental
 mappedConcepts:
-  - grammar
-  - syntax
-  - validation
+  - labs
+  - experiments
 
 provenance:
   - "AGenNext org repository; primary language SurrealQL; visibility public"
 
 trust:
   level: monitored
-  score: 50
+  score: 42

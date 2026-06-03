@@ -1,0 +1,29 @@
+id: standard.agent-kit
+type: standard
+name: "Agent-Kit"
+description: "Agent kit project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Kit
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Kit
+documentationUrl: https://github.com/AGenNext/Agent-Kit
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - kit
+  - sdk
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

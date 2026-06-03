@@ -1,0 +1,28 @@
+id: standard.agent-browser
+type: standard
+name: "Agent-Browser"
+description: "Agent browser project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Browser
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Browser
+documentationUrl: https://github.com/AGenNext/Agent-Browser
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - browser
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42
