@@ -1,0 +1,52 @@
+id: risk.unauthorized-agent-execution
+type: risk
+name: Unauthorized Agent Execution
+description: Risk that an agent performs an action without valid authorization, approval, policy scope, or accountable ownership.
+version: 1.0.0
+status: active
+owner: risk-compliance
+createdAt: "2026-06-02T00:00:00Z"
+updatedAt: "2026-06-02T00:00:00Z"
+
+riskType: agent
+source: agentic-execution
+affectedStakeholders:
+  - business-owners
+  - it-operations
+  - security
+  - compliance
+  - end-users
+impactedAssets:
+  - enterprise-data
+  - enterprise-systems
+  - governed-workspaces
+likelihood: possible
+impact: major
+inherentRiskRating: high
+existingControls:
+  - control.human-approval
+  - control.separation-of-duty
+residualRiskRating: medium
+treatment: reduce
+treatmentPlan: Require explicit agent identity, scoped tool access, policy checks, approval gates, audit events, and trust review.
+decisionOwner: governance-board
+reviewCadence: quarterly
+escalationPath:
+  - agent-owner
+  - security-operations
+  - governance-board
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/traceability.md
+    - policies/auditability.md
+    - policies/trust-review.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  reviewCadence: quarterly
+
+trust:
+  level: monitored
+  score: 70
