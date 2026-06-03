@@ -1,0 +1,28 @@
+id: standard.agent-access
+type: standard
+name: "Agent-Access"
+description: "AGenNext agent access project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: authorization
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Access
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Access
+documentationUrl: https://github.com/AGenNext/Agent-Access
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - access-control
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 45

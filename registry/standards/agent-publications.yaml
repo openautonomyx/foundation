@@ -1,0 +1,29 @@
+id: standard.agent-publications
+type: standard
+name: "Agent-Publications"
+description: "A publishing platform for autonomous agents."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Publications
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Publications
+documentationUrl: https://github.com/AGenNext/Agent-Publications
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - publishing
+  - knowledge
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 45

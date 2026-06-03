@@ -1,0 +1,30 @@
+id: standard.agent-gpa
+type: standard
+name: "Agent-GPA"
+description: "A framework for evaluating agent Goal-Plan-Action alignment."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-GPA
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-GPA
+documentationUrl: https://github.com/AGenNext/Agent-GPA
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - evaluation
+  - goal-plan-action
+  - alignment
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 52

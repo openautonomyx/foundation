@@ -1,0 +1,28 @@
+id: standard.agent-coral
+type: standard
+name: "AGENT-CORAL"
+description: "AGenNext AGENT-CORAL project (private)."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/AGENT-CORAL
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/AGENT-CORAL
+documentationUrl: https://github.com/AGenNext/AGENT-CORAL
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - coral
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 35

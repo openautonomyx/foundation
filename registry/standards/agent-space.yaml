@@ -1,7 +1,7 @@
-id: standard.agent-language
+id: standard.agent-space
 type: standard
-name: "Agent-Language (AGenNext)"
-description: "An agent with skill on the Language Server Protocol and Langium as a tool."
+name: "Agent-Space"
+description: "Workspace for agents."
 version: 0.1.0
 status: active
 owner: enterprise-architecture
@@ -10,21 +10,19 @@ updatedAt: "2026-06-03T00:00:00Z"
 
 standardType: agent
 organization: AGenNext
-specReference: https://github.com/AGenNext/Agent-Language
+specReference: https://github.com/AGenNext/Agent-Space
 specVersion: "early-stage"
-repositoryUrl: https://github.com/AGenNext/Agent-Language
-documentationUrl: https://github.com/AGenNext/Agent-Language
+repositoryUrl: https://github.com/AGenNext/Agent-Space
+documentationUrl: https://github.com/AGenNext/Agent-Space
 upstreamMaturity: early-stage
 license: "unspecified"
 adoptionPosture: evaluating
 mappedConcepts:
-  - language-server-protocol
-  - langium
-  - agent-language
+  - workspace
 
 provenance:
   - "AGenNext org repository; visibility public"
 
 trust:
   level: monitored
-  score: 50
+  score: 48

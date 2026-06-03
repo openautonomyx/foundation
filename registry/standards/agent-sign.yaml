@@ -1,0 +1,34 @@
+id: standard.agent-sign
+type: standard
+name: "Agent-Sign"
+description: "Vendor-neutral Sigstore/Cosign helper for signing and verifying OCI artifacts, agent runtimes, and WASM supply-chain releases."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: packaging
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Sign
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Sign
+documentationUrl: https://github.com/AGenNext/Agent-Sign
+upstreamMaturity: early-stage
+license: "Other"
+adoptionPosture: evaluating
+mappedConcepts:
+  - sigstore
+  - cosign
+  - supply-chain
+  - provenance
+  - sbom
+  - oci
+  - wasm
+
+provenance:
+  - "AGenNext org repository; primary language Shell; visibility public"
+
+trust:
+  level: monitored
+  score: 58
