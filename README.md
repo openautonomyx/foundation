@@ -55,12 +55,28 @@ Production-grade is the baseline, not the goal.
 ├── CODE_OF_CONDUCT.md
 ├── SECURITY.md
 ├── LICENSE
-├── docs/
+├── docs/            # published searchable catalog (GitHub Pages)
+├── registry/       # governed objects + INDEX.md catalog
+├── schemas/        # JSON schemas for every object type
+├── scripts/        # build_catalog.py (validate + generate catalog)
+├── taxonomies/
 ├── adr/
-├── schemas/
 ├── policies/
-└── .github/
+└── .github/        # auto-update workflow
 ```
+
+## Registry & Searchable Catalog
+
+All governed objects live in `registry/`, validated against JSON schemas in `schemas/`.
+
+- **Searchable catalog** — `docs/index.html` (published to GitHub Pages): full-text search and filters over every governed node.
+- **Index** — `registry/INDEX.md`: human-readable catalog grouped by type and standard domain.
+- **Machine-readable** — `docs/catalog.json`: the full node graph for external tooling.
+
+The catalog is regenerated and revalidated automatically on every push by
+`.github/workflows/catalog.yml` (which runs `scripts/build_catalog.py`); the
+build fails if any object is schema-invalid or any relationship edge is
+dangling.
 
 ## Foundation Contract
 
