@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/knowledge-asset.schema.json",
+  "title": "OpenAutonomyX Knowledge Asset",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["knowledgeType", "source", "validationState"],
+      "properties": {
+        "knowledgeType": {
+          "type": "string",
+          "enum": ["source-document", "raw-data", "fact", "claim", "assumption", "insight", "evidence", "policy", "procedure", "standard", "control", "decision-record", "architecture-record", "operating-procedure", "lesson-learned", "expert-knowledge", "institutional-memory", "approved-canonical-record"]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "provenance": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "validationState": {
+          "type": "string",
+          "enum": ["unverified", "extracted", "reviewed", "validated", "approved", "superseded", "deprecated", "archived"]
+        },
+        "approvalState": {
+          "type": "string",
+          "enum": ["not-required", "pending", "approved", "rejected", "expired"]
+        },
+        "sensitivityClassification": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential", "restricted", "secret"]
+        },
+        "relatedEntities": { "type": "array", "items": { "type": "string" } },
+        "relatedArtifacts": { "type": "array", "items": { "type": "string" } },
+        "relatedDecisions": { "type": "array", "items": { "type": "string" } },
+        "policyBindings": { "type": "array", "items": { "type": "string" } },
+        "retentionExpectation": { "type": "string" },
+        "reviewCadence": { "type": "string" },
+        "claims": { "type": "array", "items": { "type": "string" } },
+        "evidence": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
