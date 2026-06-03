@@ -1,0 +1,47 @@
+id: control.separation-of-duty
+type: control
+name: Separation of Duty
+description: Ensure consequential actions are not defined, approved, executed, and audited by the same actor without independent review.
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+controlDomain: agent-governance
+controlObjective: Distribute authority across requester, implementer, approver, and auditor so no single human, agent, or service unilaterally controls a high-impact action.
+riskAddressed:
+  - risk.unauthorized-agent-execution
+policyReferences:
+  - policies/separation-of-duty.md
+  - policies/human-approval.md
+  - policies/auditability.md
+operator: platform-operations
+reviewer: internal-audit
+frequency: per consequential action
+evidenceRequired:
+  - requester-identity
+  - implementer-identity
+  - approver-identity
+  - auditor-identity
+  - policy-context
+  - decision-record
+  - audit-trail
+testMethod: automated-check
+controlStatus: designed
+exceptions: []
+findings: []
+remediationPlan: ""
+
+governance:
+  policies:
+    - policies/separation-of-duty.md
+    - policies/exception-management.md
+  controls: []
+  approvers:
+    - governance-board
+  reviewCadence: quarterly
+
+trust:
+  level: foundation-defined
+  score: 85
