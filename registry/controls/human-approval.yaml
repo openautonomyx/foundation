@@ -1,0 +1,46 @@
+id: control.human-approval
+type: control
+name: Human Approval
+description: Require authorized human approval for consequential actions, high-risk automation, policy exceptions, and irreversible operations.
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-02T00:00:00Z"
+updatedAt: "2026-06-02T00:00:00Z"
+
+controlDomain: agent-governance
+controlObjective: Ensure consequential agent and system actions receive accountable human authorization before execution.
+riskAddressed:
+  - risk.unauthorized-agent-execution
+policyReferences:
+  - policies/human-approval.md
+  - policies/traceability.md
+  - policies/auditability.md
+operator: platform-operations
+reviewer: internal-audit
+frequency: per consequential action
+evidenceRequired:
+  - approval-request
+  - approver-identity
+  - policy-context
+  - decision-record
+  - action-event
+  - audit-trail
+testMethod: automated-check
+controlStatus: designed
+exceptions: []
+findings: []
+remediationPlan: ""
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/exception-management.md
+  controls: []
+  approvers:
+    - governance-board
+  reviewCadence: quarterly
+
+trust:
+  level: foundation-defined
+  score: 85
