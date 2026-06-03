@@ -1,0 +1,34 @@
+id: standard.kgateway
+type: standard
+name: "Kgateway"
+description: "Cloud-native API gateway and AI gateway (Envoy-powered, K8s-native)."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-sandbox-2025
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - interoperability
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 5.5k"
+  - "CNCF AI-native landscape"
+  - "cncf sandbox 2025"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

@@ -1,0 +1,34 @@
+id: standard.keda
+type: standard
+name: "KEDA"
+description: "Kubernetes-based event-driven autoscaling."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-graduated-2020
+license: "open-source"
+adoptionPosture: integration
+mappedConcepts:
+  - orchestration
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 10.2k"
+  - "CNCF AI-native landscape"
+  - "cncf graduated 2020"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

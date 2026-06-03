@@ -1,0 +1,34 @@
+id: standard.container-network-interface
+type: standard
+name: "Container Network Interface (CNI)"
+description: "Networking for Linux containers."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: transport
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-incubating-2017
+license: "open-source"
+adoptionPosture: integration
+mappedConcepts:
+  - transport
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 6k"
+  - "CNCF AI-native landscape"
+  - "cncf incubating 2017"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

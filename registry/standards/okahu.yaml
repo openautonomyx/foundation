@@ -1,0 +1,32 @@
+id: standard.okahu
+type: standard
+name: "Okahu"
+description: "AI observability as a service for LLM apps."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: open-source
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - observability
+  - ai-native
+
+provenance:
+  - "CNCF AI-native landscape"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

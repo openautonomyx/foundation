@@ -1,0 +1,34 @@
+id: standard.karmada
+type: standard
+name: "Karmada"
+description: "Open, multi-cloud, multi-cluster Kubernetes orchestration."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-incubating-2021
+license: "open-source"
+adoptionPosture: integration
+mappedConcepts:
+  - orchestration
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 5.5k"
+  - "CNCF AI-native landscape"
+  - "cncf incubating 2021"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

@@ -1,0 +1,32 @@
+id: standard.kubeflow-model-registry
+type: standard
+name: "Kubeflow Model Registry"
+description: "Store and manage models, versions, and artifacts metadata."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: packaging
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: open-source
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - packaging
+  - ai-native
+
+provenance:
+  - "CNCF AI-native landscape"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

@@ -1,0 +1,34 @@
+id: standard.kagent
+type: standard
+name: "kagent"
+description: "Open-source framework to run AI agents in Kubernetes."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-sandbox-2025
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - agent
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 2.9k"
+  - "CNCF AI-native landscape"
+  - "cncf sandbox 2025"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60
