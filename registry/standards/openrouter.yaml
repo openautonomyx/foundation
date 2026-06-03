@@ -1,0 +1,35 @@
+id: standard.openrouter
+type: standard
+name: OpenRouter
+description: Unified API gateway providing access to many LLM providers and models through a single interface; referenced as a model-routing and provider-abstraction layer for agents.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: OpenRouter
+specReference: https://openrouter.ai/
+specVersion: "service API"
+repositoryUrl: https://openrouter.ai/
+documentationUrl: https://openrouter.ai/docs
+upstreamMaturity: vendor-service
+license: proprietary-service
+adoptionPosture: evaluating
+mappedConcepts:
+  - model-routing
+  - unified-llm-api
+  - provider-abstraction
+  - llm-gateway
+
+provenance:
+  - "OpenRouter: single API across multiple LLM providers; pricing and availability vary by model"
+
+relationships:
+  - type: provider-abstraction-for
+    target: agent.contract-review-assistant
+
+trust:
+  level: monitored
+  score: 60
