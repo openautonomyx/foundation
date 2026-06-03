@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/workspace.schema.json",
+  "title": "OpenAutonomyX Workspace",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["workspaceType", "owner", "scope", "accessRules"],
+      "properties": {
+        "workspaceType": {
+          "type": "string",
+          "enum": ["personal", "team", "project", "product", "incident", "audit", "governance", "customer", "vendor", "executive", "agent"]
+        },
+        "sponsor": { "type": "string" },
+        "participants": { "type": "array", "items": { "type": "string" } },
+        "agents": { "type": "array", "items": { "type": "string" } },
+        "objectives": { "type": "array", "items": { "type": "string" } },
+        "scope": { "type": "string", "minLength": 1 },
+        "accessRules": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "policyBindings": { "type": "array", "items": { "type": "string" } },
+        "dataClassification": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential", "restricted", "secret"]
+        },
+        "trustRequirements": { "type": "array", "items": { "type": "string" } },
+        "approvalRequirements": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "integrations": { "type": "array", "items": { "type": "string" } },
+        "evidenceStore": { "type": "string" },
+        "reviewCadence": { "type": "string" },
+        "valueMetrics": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}
