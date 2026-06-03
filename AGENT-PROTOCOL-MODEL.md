@@ -10,6 +10,16 @@ A protocol is the contract that makes interaction between two parties attributab
 
 Protocols exist so that interoperability does not require shared ownership, and autonomy does not require blind trust.
 
+## Why This Matters
+
+Agent protocols must simultaneously serve three needs that often pull against each other:
+
+- **Adoption** — agents only deliver value when teams can discover, integrate, and reuse them with low friction across vendors, runtimes, and models. Open, versioned protocols make adoption portable instead of locked in.
+- **Governance** — autonomy at scale is only safe when every consequential exchange is identified, authorized, policy-bound, approved where required, and traceable. Governance must be native to the protocol, not bolted on after adoption.
+- **Security** — agents expand the attack surface (identity spoofing, ambient authority, prompt and tool abuse, supply-chain compromise). Protocols must authenticate both parties, enforce least authority, fail closed, and produce evidence.
+
+The foundation treats adoption, governance, and security as co-equal design constraints: a protocol that advances one at the expense of the others is not conformant.
+
 ## Protocol Principles
 
 1. Open over proprietary.
