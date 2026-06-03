@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/skill.schema.json",
+  "title": "OpenAutonomyX Agent Skill",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["skillType", "purpose"],
+      "properties": {
+        "skillType": {
+          "type": "string",
+          "enum": ["governance", "alignment", "incentive", "contracting", "evaluation", "monitoring", "negotiation", "reasoning", "planning", "perception", "tool-use", "action", "collaboration", "memory", "knowledge", "custom"]
+        },
+        "purpose": { "type": "string", "minLength": 1 },
+        "inputs": { "type": "array", "items": { "type": "string" } },
+        "outputs": { "type": "array", "items": { "type": "string" } },
+        "procedure": { "type": "string" },
+        "requiredTools": { "type": "array", "items": { "type": "string" } },
+        "requiredDataScopes": { "type": "array", "items": { "type": "string" } },
+        "autonomyLevel": {
+          "type": "string",
+          "enum": ["observe-only", "suggest-only", "draft-for-review", "execute-with-approval", "execute-within-policy", "execute-with-post-review", "autonomous-certified-scope"]
+        },
+        "policyBindings": { "type": "array", "items": { "type": "string" } },
+        "evaluationMethod": { "type": "string" },
+        "riskProfile": { "type": "string" },
+        "examples": { "type": "array", "items": { "type": "string" } },
+        "references": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  ]
+}

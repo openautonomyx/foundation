@@ -1,0 +1,29 @@
+id: skill.incentive-alignment
+type: skill
+name: "Incentive Alignment"
+description: "Change the rules so the agent's rational self-interest coincides with the principal's intent."
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+skillType: alignment
+purpose: "Change the rules so the agent's rational self-interest coincides with the principal's intent."
+autonomyLevel: suggest-only
+policyBindings:
+  - policies/human-approval.md
+  - policies/auditability.md
+riskProfile: "Misapplied incentives can distort behavior (gaming, risk-seeking, multitasking neglect)."
+references:
+  - "Principal-agent problem (agency theory), Jensen & Meckling 1976; Holmstrom 1979; Milgrom & Roberts 1992"
+
+relationships:
+  - type: supports-capability
+    target: capability.enterprise-agent-governance
+  - type: mitigates
+    target: risk.unauthorized-agent-execution
+
+trust:
+  level: foundation-defined
+  score: 75
