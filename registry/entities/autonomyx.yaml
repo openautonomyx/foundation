@@ -1,0 +1,17 @@
+id: entity.autonomyx
+type: entity
+name: "AutonomyX"
+description: "Agent operation model: how agents operate — identity, autonomy levels, delegation, evaluation, reconciliation — bridging governance and execution."
+lifecycleState: active
+version: 1.0.0
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+entityType: application
+identityBinding: "autonomyx"
+relationships:
+  - type: implemented-by
+    target: entity.agennext
+  - type: governed-by
+    target: entity.openautonomyx

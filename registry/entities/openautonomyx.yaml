@@ -1,0 +1,23 @@
+id: entity.openautonomyx
+type: entity
+name: "OpenAutonomyX"
+description: "Enterprise control plane: the governance foundation defining capabilities, risks, controls, policy, identity, trust, and the governed registry."
+lifecycleState: active
+version: 1.0.0
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+entityType: application
+identityBinding: "openautonomyx"
+relationships:
+  - type: governs
+    target: entity.agennext
+  - type: defines
+    target: entity.autonomyx
+  - type: oversees
+    target: entity.research-innovation
+  - type: oversees
+    target: entity.economy
+  - type: realizes-capability
+    target: capability.enterprise-agent-governance

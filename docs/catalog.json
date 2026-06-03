@@ -1,7 +1,8 @@
 {
  "generated": "auto",
- "total": 437,
+ "total": 442,
  "counts": {
+  "entities": 5,
   "capabilities": 1,
   "agents": 1,
   "identities": 1,
@@ -165,6 +166,138 @@
     {
      "type": "addresses-risk",
      "target": "risk.unauthorized-agent-execution"
+    }
+   ]
+  },
+  {
+   "id": "entity.agennext",
+   "dir": "entities",
+   "type": "entity",
+   "category": "Governance",
+   "tags": [],
+   "name": "AGenNext",
+   "description": "Agent control plane and agent builder platform: builds, deploys, runs, and reconciles agents within enterprise governance.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": [
+    {
+     "type": "governed-by",
+     "target": "entity.openautonomyx"
+    },
+    {
+     "type": "implements",
+     "target": "entity.autonomyx"
+    }
+   ]
+  },
+  {
+   "id": "entity.autonomyx",
+   "dir": "entities",
+   "type": "entity",
+   "category": "Governance",
+   "tags": [],
+   "name": "AutonomyX",
+   "description": "Agent operation model: how agents operate \u2014 identity, autonomy levels, delegation, evaluation, reconciliation \u2014 bridging governance and execution.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": [
+    {
+     "type": "implemented-by",
+     "target": "entity.agennext"
+    },
+    {
+     "type": "governed-by",
+     "target": "entity.openautonomyx"
+    }
+   ]
+  },
+  {
+   "id": "entity.economy",
+   "dir": "entities",
+   "type": "entity",
+   "category": "Governance",
+   "tags": [],
+   "name": "Agent Economy",
+   "description": "Economy pillar: value creation, metering, settlement, and economic governance of agent work.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": [
+    {
+     "type": "governed-by",
+     "target": "entity.openautonomyx"
+    },
+    {
+     "type": "relates-to",
+     "target": "standard.agent-economy"
+    }
+   ]
+  },
+  {
+   "id": "entity.openautonomyx",
+   "dir": "entities",
+   "type": "entity",
+   "category": "Governance",
+   "tags": [],
+   "name": "OpenAutonomyX",
+   "description": "Enterprise control plane: the governance foundation defining capabilities, risks, controls, policy, identity, trust, and the governed registry.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": [
+    {
+     "type": "governs",
+     "target": "entity.agennext"
+    },
+    {
+     "type": "defines",
+     "target": "entity.autonomyx"
+    },
+    {
+     "type": "oversees",
+     "target": "entity.research-innovation"
+    },
+    {
+     "type": "oversees",
+     "target": "entity.economy"
+    },
+    {
+     "type": "realizes-capability",
+     "target": "capability.enterprise-agent-governance"
+    }
+   ]
+  },
+  {
+   "id": "entity.research-innovation",
+   "dir": "entities",
+   "type": "entity",
+   "category": "Governance",
+   "tags": [],
+   "name": "Research & Innovation",
+   "description": "Research and innovation pillar: tracks external research and advances candidate capabilities before they become governed doctrine.",
+   "status": "active",
+   "standardType": "",
+   "adoptionPosture": "",
+   "organization": "",
+   "specReference": "",
+   "relationships": [
+    {
+     "type": "governed-by",
+     "target": "entity.openautonomyx"
+    },
+    {
+     "type": "relates-to",
+     "target": "standard.agent-research"
     }
    ]
   },

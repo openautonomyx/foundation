@@ -22,22 +22,23 @@ DIR_TO_SCHEMA = {
     "agents": "agent", "identities": "identity", "workspaces": "workspace",
     "decisions": "decision", "standards": "standard", "protocols": "protocol",
     "skills": "skill", "knowledge": "knowledge-asset", "twins": "digital-twin",
-    "taxonomies": "taxonomy",
+    "taxonomies": "taxonomy", "entities": "entity",
 }
 TITLE = {
     "capabilities": "Capabilities", "controls": "Controls", "risks": "Risks",
     "agents": "Agents", "identities": "Identities", "workspaces": "Workspaces",
     "decisions": "Decisions", "standards": "Standards", "protocols": "Protocols",
     "skills": "Skills", "knowledge": "Knowledge Assets", "twins": "Digital Twins",
-    "taxonomies": "Taxonomies",
+    "taxonomies": "Taxonomies", "entities": "Entities",
 }
-ORDER = ["capabilities", "agents", "identities", "workspaces", "decisions",
+ORDER = ["entities", "capabilities", "agents", "identities", "workspaces", "decisions",
          "risks", "controls", "protocols", "skills", "standards", "knowledge",
          "twins", "taxonomies"]
 
 # Category assignment. Non-standard objects map by directory; standards map
 # by their standardType domain.
 DIR_CATEGORY = {
+    "entities": "Governance",
     "capabilities": "Governance", "risks": "Governance", "controls": "Governance",
     "decisions": "Governance", "agents": "Agent", "identities": "Identity & Access",
     "workspaces": "Agent", "skills": "Agent", "protocols": "Interoperability",

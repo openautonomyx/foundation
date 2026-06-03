@@ -1,0 +1,17 @@
+id: entity.economy
+type: entity
+name: "Agent Economy"
+description: "Economy pillar: value creation, metering, settlement, and economic governance of agent work."
+lifecycleState: active
+version: 1.0.0
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+entityType: project
+identityBinding: "economy"
+relationships:
+  - type: governed-by
+    target: entity.openautonomyx
+  - type: relates-to
+    target: standard.agent-economy
