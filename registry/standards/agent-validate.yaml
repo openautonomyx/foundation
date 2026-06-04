@@ -1,0 +1,28 @@
+id: standard.agent-validate
+type: standard
+name: "Agent-Validate"
+description: "AGenNext agent validation project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Validate
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Validate
+documentationUrl: https://github.com/AGenNext/Agent-Validate
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - validation
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 40

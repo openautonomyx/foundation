@@ -1,0 +1,32 @@
+id: standard.model-context-protocol
+type: standard
+name: Model Context Protocol (MCP)
+description: Open standard for agent-to-tool/data/service integration (vertical integration, client-server).
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: Linux Foundation (Agentic AI Foundation)
+specReference: https://modelcontextprotocol.io/
+specVersion: "MCP (Linux Foundation, donated 2025-12)"
+repositoryUrl: https://github.com/modelcontextprotocol
+documentationUrl: https://modelcontextprotocol.io/docs
+upstreamMaturity: cncf-radar-adopt
+license: MIT
+adoptionPosture: canonical
+mappedConcepts:
+  - agent-to-tool
+  - context-integration
+  - client-server
+  - tool-invocation
+
+provenance:
+  - "Created by Anthropic; donated to Linux Foundation AAIF 2025-12"
+  - "CNCF Technology Radar: adopt"
+
+trust:
+  level: foundation-defined
+  score: 88

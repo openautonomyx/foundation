@@ -1,0 +1,35 @@
+id: standard.owasp-ai-agent-security
+type: standard
+name: OWASP AI Agent Security Cheat Sheet
+description: OWASP guidance on agentic AI security threats and controls (memory poisoning, tool misuse, prompt injection, human-in-the-loop, least privilege).
+version: 1.0.0
+status: active
+owner: security
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: OWASP
+specReference: https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html
+specVersion: "Cheat Sheet Series (2026)"
+repositoryUrl: https://github.com/OWASP/CheatSheetSeries
+documentationUrl: https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html
+upstreamMaturity: owasp-published
+license: CC-BY-SA-4.0
+adoptionPosture: canonical
+mappedConcepts:
+  - memory-poisoning
+  - tool-misuse
+  - prompt-injection
+  - human-in-the-loop
+  - least-privilege
+  - sandboxing
+  - egress-control
+
+provenance:
+  - "OWASP Cheat Sheet Series; related to OWASP Top 10 for Agentic Applications 2026"
+  - "Threats include T1 memory poisoning, T2 tool misuse; controls include human-in-the-loop"
+
+trust:
+  level: foundation-defined
+  score: 85

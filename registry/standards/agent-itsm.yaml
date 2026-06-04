@@ -1,0 +1,28 @@
+id: standard.agent-itsm
+type: standard
+name: "Agent-ITSM"
+description: "IT service management agent project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-ITSM
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-ITSM
+documentationUrl: https://github.com/AGenNext/Agent-ITSM
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - itsm
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

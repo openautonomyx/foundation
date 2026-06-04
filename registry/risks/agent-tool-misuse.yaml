@@ -1,0 +1,59 @@
+id: risk.agent-tool-misuse
+type: risk
+name: Agent Tool Misuse
+description: Risk that an agent is manipulated into abusing its integrated tools to perform unintended or destructive actions (OWASP agentic threat T2).
+version: 1.0.0
+status: active
+owner: security
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+riskType: agent
+source: agentic-tool-use
+affectedStakeholders:
+  - business-owners
+  - it-operations
+  - security
+impactedAssets:
+  - enterprise-systems
+  - enterprise-data
+  - external-services
+likelihood: possible
+impact: major
+inherentRiskRating: high
+existingControls:
+  - control.human-approval
+  - control.separation-of-duty
+residualRiskRating: medium
+treatment: reduce
+treatmentPlan: Enforce least-privilege tool grants (scope, rate limits, allowed data), validate tool arguments before execution, require confirmation for destructive actions, and sandbox tools with egress controls.
+decisionOwner: governance-board
+reviewCadence: quarterly
+escalationPath:
+  - agent-owner
+  - security-operations
+  - governance-board
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/separation-of-duty.md
+    - policies/auditability.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  reviewCadence: quarterly
+
+relationships:
+  - type: governed-by
+    target: capability.enterprise-agent-governance
+  - type: documented-by
+    target: standard.owasp-ai-agent-security
+  - type: affects
+    target: agent.contract-review-assistant
+  - type: mitigated-by
+    target: control.separation-of-duty
+
+trust:
+  level: monitored
+  score: 65

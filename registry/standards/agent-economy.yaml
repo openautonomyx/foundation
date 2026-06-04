@@ -1,0 +1,31 @@
+id: standard.agent-economy
+type: standard
+name: Agent-Economy (AGenNext)
+description: Placeholder repository anticipated to address agent-based economic modeling and value exchange; not yet populated.
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Economy
+specVersion: "placeholder (no content)"
+repositoryUrl: https://github.com/AGenNext/Agent-Economy
+documentationUrl: https://github.com/AGenNext/Agent-Economy
+upstreamMaturity: placeholder
+license: unspecified
+adoptionPosture: experimental
+mappedConcepts:
+  - agent-economy
+  - value-exchange
+  - metering
+  - settlement
+
+provenance:
+  - "Repository empty as of 2026-06-03; tracked for future evaluation"
+
+trust:
+  level: untrusted
+  score: 20

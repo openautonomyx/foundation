@@ -21,6 +21,18 @@ stakeholders:
   - business-owners
 maturityLevel: defined
 
+riskProfile: risk.unauthorized-agent-execution
+controlRequirements:
+  - control.human-approval
+  - control.separation-of-duty
+relationships:
+  - type: mitigates
+    target: risk.unauthorized-agent-execution
+  - type: requires-control
+    target: control.human-approval
+  - type: requires-control
+    target: control.separation-of-duty
+
 valueMetrics:
   - agent-policy-compliance
   - audit-readiness

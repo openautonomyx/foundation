@@ -1,0 +1,32 @@
+id: standard.agent2agent
+type: standard
+name: Agent2Agent Protocol (A2A)
+description: Open standard for agent-to-agent interoperability (horizontal coordination, peer-to-peer) across frameworks and vendors.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: Linux Foundation
+specReference: https://a2a-protocol.org/latest/
+specVersion: "A2A (Linux Foundation)"
+repositoryUrl: https://github.com/a2aproject
+documentationUrl: https://a2a-protocol.org/latest/
+upstreamMaturity: linux-foundation
+license: Apache-2.0
+adoptionPosture: canonical
+mappedConcepts:
+  - agent-to-agent
+  - agent-interoperability
+  - peer-to-peer-coordination
+  - agent-card
+
+provenance:
+  - "Launched by Google 2025-04; donated to Linux Foundation"
+  - "150+ partner organizations by 2026-04"
+
+trust:
+  level: foundation-defined
+  score: 85

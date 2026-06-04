@@ -1,0 +1,114 @@
+id: taxonomy.agent-vocabulary
+type: taxonomy
+name: Agent Vocabulary
+description: Canonical vocabulary of core agent-governance terms (the node terms of the foundation graph), with mappings to external standards.
+version: 1.0.0
+status: active
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: custom
+terms:
+  - id: agent
+    label: Agent
+    description: A governed actor that acts on behalf of a principal.
+    aliases: [autonomous-agent, ai-agent]
+    status: active
+  - id: principal
+    label: Principal
+    description: The human or organization on whose behalf an agent acts.
+    status: active
+  - id: autonomy
+    label: Autonomy
+    description: The degree to which an agent may act without human action.
+    status: active
+  - id: capability
+    label: Capability
+    status: active
+  - id: skill
+    label: Skill
+    description: Reusable, governed agent know-how.
+    status: active
+  - id: tool
+    label: Tool
+    description: An external function an agent may invoke.
+    status: active
+  - id: identity
+    label: Identity
+    status: active
+  - id: trust
+    label: Trust
+    description: Governed reliance based on evidence.
+    status: active
+  - id: policy
+    label: Policy
+    status: active
+  - id: control
+    label: Control
+    status: active
+  - id: risk
+    label: Risk
+    status: active
+  - id: approval
+    label: Approval
+    status: active
+  - id: delegation
+    label: Delegation
+    status: active
+  - id: escalation
+    label: Escalation
+    status: active
+  - id: evaluation
+    label: Evaluation
+    status: active
+  - id: evidence
+    label: Evidence
+    status: active
+  - id: memory
+    label: Memory
+    status: active
+  - id: workspace
+    label: Workspace
+    status: active
+  - id: decision
+    label: Decision
+    status: active
+  - id: protocol
+    label: Protocol
+    status: active
+  - id: drift
+    label: Drift
+    description: Divergence between approved and running agent state.
+    status: active
+  - id: reconciliation
+    label: Reconciliation
+    status: active
+  - id: digital-twin
+    label: Digital Twin
+    status: active
+  - id: constitution
+    label: Constitution
+    description: Inviolable principles an agent cannot override.
+    status: active
+mappings:
+  - sourceTerm: identity
+    targetStandard: standard.spiffe
+    targetTerm: spiffe-id
+    confidence: 0.85
+  - sourceTerm: policy
+    targetStandard: standard.open-policy-agent
+    targetTerm: rego-policy
+    confidence: 0.85
+  - sourceTerm: tool
+    targetStandard: standard.model-context-protocol
+    targetTerm: mcp-tool
+    confidence: 0.85
+  - sourceTerm: agent
+    targetStandard: standard.agent2agent
+    targetTerm: a2a-agent
+    confidence: 0.8
+
+trust:
+  level: foundation-defined
+  score: 88

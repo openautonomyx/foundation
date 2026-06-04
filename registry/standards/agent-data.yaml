@@ -1,0 +1,28 @@
+id: standard.agent-data
+type: standard
+name: "Agent-Data"
+description: "Agent data project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Data
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Data
+documentationUrl: https://github.com/AGenNext/Agent-Data
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - data
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 50

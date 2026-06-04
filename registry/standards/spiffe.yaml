@@ -1,0 +1,32 @@
+id: standard.spiffe
+type: standard
+name: SPIFFE / SPIRE
+description: Open standard for cryptographic workload and agent identity, used as the canonical agent identity foundation.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: identity
+organization: CNCF / SPIFFE
+specReference: https://spiffe.io/docs/latest/spiffe-about/spiffe-concepts/
+specVersion: "SPIFFE spec; SPIRE 1.14.1"
+repositoryUrl: https://github.com/spiffe/spire
+documentationUrl: https://spiffe.io/
+upstreamMaturity: cncf-graduated
+license: Apache-2.0
+adoptionPosture: canonical
+mappedConcepts:
+  - agent-identity
+  - workload-identity
+  - svid
+  - attestation
+  - trust-domain
+
+provenance:
+  - "SPIRE 1.14.1 released 2026-01-15"
+
+trust:
+  level: foundation-defined
+  score: 90

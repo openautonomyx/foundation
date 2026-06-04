@@ -1,0 +1,30 @@
+id: standard.agent-form
+type: standard
+name: "Agent-Form"
+description: "AGenNext agent frame automation workflow."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Form
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Form
+documentationUrl: https://github.com/AGenNext/Agent-Form
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - forms
+  - automation
+  - workflow
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

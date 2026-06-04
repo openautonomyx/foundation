@@ -1,0 +1,28 @@
+id: standard.agent-constraints
+type: standard
+name: "Agent-Constraints"
+description: "Agent constraints project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Constraints
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Constraints
+documentationUrl: https://github.com/AGenNext/Agent-Constraints
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - constraints
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

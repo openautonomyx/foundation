@@ -1,0 +1,29 @@
+id: standard.agent-deploy
+type: standard
+name: "Agent-Deploy"
+description: "AGenNext agent deployment project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-deploy
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-deploy
+documentationUrl: https://github.com/AGenNext/Agent-deploy
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - deployment
+  - release
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 48

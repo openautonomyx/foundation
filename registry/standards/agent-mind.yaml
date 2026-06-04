@@ -1,0 +1,29 @@
+id: standard.agent-mind
+type: standard
+name: "Agent-Mind"
+description: "Agent mind project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Mind
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Mind
+documentationUrl: https://github.com/AGenNext/Agent-Mind
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - mind
+  - cognition
+
+provenance:
+  - "AGenNext org repository; visibility private"
+
+trust:
+  level: monitored
+  score: 42

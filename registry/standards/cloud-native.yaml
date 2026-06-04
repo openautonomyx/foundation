@@ -1,0 +1,32 @@
+id: standard.cloud-native
+type: standard
+name: Cloud Native (CNCF Definition)
+description: The CNCF definition of cloud-native computing; foundational posture now extended to AI-native and agentic workloads.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: CNCF
+specReference: https://github.com/cncf/toc/blob/main/DEFINITION.md
+specVersion: "CNCF Cloud Native Definition v1.1"
+repositoryUrl: https://github.com/cncf/toc
+documentationUrl: https://www.cncf.io/
+upstreamMaturity: cncf-defined
+license: CC-BY-4.0
+adoptionPosture: canonical
+mappedConcepts:
+  - containers
+  - microservices
+  - declarative-apis
+  - resilient-manageable-observable
+  - ai-native
+
+provenance:
+  - "CNCF: cloud native is now AI-native (2026)"
+
+trust:
+  level: foundation-defined
+  score: 88

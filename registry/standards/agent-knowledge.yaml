@@ -1,0 +1,28 @@
+id: standard.agent-knowledge
+type: standard
+name: "Agent-Knowledge"
+description: "Agent knowledge project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Knowledge
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Knowledge
+documentationUrl: https://github.com/AGenNext/Agent-Knowledge
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - knowledge
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility private"
+
+trust:
+  level: monitored
+  score: 50

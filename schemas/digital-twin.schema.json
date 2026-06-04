@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openautonomyx.org/schemas/digital-twin.schema.json",
+  "title": "OpenAutonomyX Digital Twin",
+  "allOf": [
+    { "$ref": "registry-object.schema.json" },
+    {
+      "type": "object",
+      "required": ["twinType", "twinFidelity", "subject", "dataBinding"],
+      "properties": {
+        "twinType": {
+          "type": "string",
+          "enum": ["asset", "product", "process", "system", "infrastructure", "environment", "organization", "agent"]
+        },
+        "twinFidelity": {
+          "type": "string",
+          "enum": ["digital-model", "digital-shadow", "digital-twin"]
+        },
+        "subject": { "type": "string", "minLength": 1 },
+        "desiredState": { "type": "string" },
+        "observedStateSource": { "type": "string" },
+        "dataBinding": {
+          "type": "string",
+          "enum": ["manual", "one-way-automatic", "two-way-automatic"]
+        },
+        "telemetrySources": { "type": "array", "items": { "type": "string" } },
+        "syncCadence": { "type": "string" },
+        "simulationCapabilities": { "type": "array", "items": { "type": "string" } },
+        "driftDetection": { "type": "boolean" },
+        "reconciliation": { "type": "string" },
+        "fidelityScore": { "type": "number", "minimum": 0, "maximum": 1 },
+        "classification": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential", "restricted", "secret"]
+        }
+      }
+    }
+  ]
+}

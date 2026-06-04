@@ -1,0 +1,84 @@
+id: taxonomy.knowledge-domains
+type: taxonomy
+name: Knowledge Domains
+description: Classification of foundation knowledge into theory, models, and best practices, locating where each topic fits in the graph.
+version: 1.0.0
+status: active
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: custom
+terms:
+  - id: theory
+    label: Theory
+    description: Foundational theory grounding agent governance.
+    status: active
+  - id: principal-agent-theory
+    label: Principal-Agent Theory
+    parent: theory
+    status: active
+  - id: control-theory
+    label: Control Theory
+    parent: theory
+    status: active
+  - id: game-theory-mechanism-design
+    label: Game Theory & Mechanism Design
+    parent: theory
+    status: proposed
+  - id: distributed-systems-theory
+    label: Distributed Systems Theory
+    parent: theory
+    status: proposed
+  - id: information-theory-epistemics
+    label: Information Theory & Epistemics
+    parent: theory
+    status: proposed
+  - id: speech-act-theory
+    label: Speech Act Theory
+    parent: theory
+    status: proposed
+  - id: models
+    label: Models
+    description: Structural and behavioral models of the foundation.
+    status: active
+  - id: agent-models
+    label: Agent Models
+    parent: models
+    status: active
+  - id: governance-models
+    label: Governance Models
+    parent: models
+    status: active
+  - id: interoperability-models
+    label: Interoperability Models
+    parent: models
+    status: active
+  - id: best-practices
+    label: Best Practices
+    description: Actionable guidance, patterns, and checklists.
+    status: active
+  - id: patterns
+    label: Patterns
+    parent: best-practices
+    status: active
+  - id: anti-patterns
+    label: Anti-Patterns
+    parent: best-practices
+    status: active
+  - id: threat-model
+    label: Threat Model
+    parent: best-practices
+    status: active
+  - id: maturity-model
+    label: Maturity Model
+    parent: best-practices
+    status: active
+  - id: testing-evaluation
+    label: Testing & Evaluation
+    parent: best-practices
+    status: active
+
+trust:
+  level: foundation-defined
+  score: 85

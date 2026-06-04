@@ -1,0 +1,34 @@
+id: standard.cubefs
+type: standard
+name: "CubeFS"
+description: "Cloud-native distributed storage."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-graduated-2019
+license: "open-source"
+adoptionPosture: integration
+mappedConcepts:
+  - data
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 5.6k"
+  - "CNCF AI-native landscape"
+  - "cncf graduated 2019"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

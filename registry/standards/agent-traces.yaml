@@ -1,0 +1,29 @@
+id: standard.agent-traces
+type: standard
+name: "Agent-Traces"
+description: "Agent trace / evidence project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Traces
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Traces
+documentationUrl: https://github.com/AGenNext/Agent-Traces
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - traces
+  - evidence
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50

@@ -1,0 +1,34 @@
+id: standard.hami
+type: standard
+name: "HAMi"
+description: "Heterogeneous AI computing virtualization middleware."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf-sandbox-2024
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - orchestration
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 3.5k"
+  - "CNCF AI-native landscape"
+  - "cncf sandbox 2024"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

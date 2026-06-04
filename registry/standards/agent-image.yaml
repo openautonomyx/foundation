@@ -1,0 +1,29 @@
+id: standard.agent-image
+type: standard
+name: "Agent-Image"
+description: "Image generation and processing agent for visual workflows."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Image
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Image
+documentationUrl: https://github.com/AGenNext/Agent-Image
+upstreamMaturity: early-stage
+license: "MIT"
+adoptionPosture: experimental
+mappedConcepts:
+  - image-generation
+  - visual
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 42

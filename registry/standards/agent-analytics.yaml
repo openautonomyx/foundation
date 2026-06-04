@@ -1,0 +1,29 @@
+id: standard.agent-analytics
+type: standard
+name: "Agent-Analytics"
+description: "AGenNext agent analytics project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Analytics
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Analytics
+documentationUrl: https://github.com/AGenNext/Agent-Analytics
+upstreamMaturity: early-stage
+license: "MIT"
+adoptionPosture: experimental
+mappedConcepts:
+  - analytics
+  - metrics
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 48

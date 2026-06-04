@@ -1,0 +1,29 @@
+id: standard.agent-improvement
+type: standard
+name: "Agent-Improvement"
+description: "Agent improvement project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Improvement-
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Improvement-
+documentationUrl: https://github.com/AGenNext/Agent-Improvement-
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - improvement
+  - self-improvement
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

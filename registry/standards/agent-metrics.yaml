@@ -1,0 +1,28 @@
+id: standard.agent-metrics
+type: standard
+name: "Agent-Metrics"
+description: "AGenNext agent metrics project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Metrics
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Metrics
+documentationUrl: https://github.com/AGenNext/Agent-Metrics
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - metrics
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 38

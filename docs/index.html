@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAutonomyX Foundation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+  .hero { padding: 2.5rem 0 1rem; }
+  .hero h1 { font-size: 2.2rem; margin: 0; }
+  .tagline { font-size: 1.1rem; opacity: .85; }
+  .beliefs { columns: 2; gap: 2rem; font-size: .95rem; }
+  @media (max-width: 640px){ .beliefs { columns: 1; } }
+  .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+  .stat { font-size: 2rem; font-weight: 700; }
+  .muted { opacity: .7; font-size: .85rem; }
+  article { margin: 0; }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <section class="hero">
+    <h1>OpenAutonomyX</h1>
+    <p class="tagline">A governed foundation for reliable, transparent, human-aligned autonomous systems.</p>
+    <p><a href="./catalog.html" role="button">Browse the Catalog</a>
+       <a href="./graph.html" role="button" class="secondary">Knowledge Graph</a>
+       <a href="https://github.com/openautonomyx/foundation" role="button" class="contrast outline">GitHub</a></p>
+  </section>
+
+  <section class="grid-cards" id="stats">
+    <article><div class="stat" id="s-nodes">—</div><div class="muted">governed nodes</div></article>
+    <article><div class="stat" id="s-standards">—</div><div class="muted">standards pinned</div></article>
+    <article><div class="stat" id="s-types">—</div><div class="muted">object types</div></article>
+    <article><div class="stat" id="s-valid">—</div><div class="muted">graph valid · no dangling edges</div></article>
+  </section>
+
+  <section>
+    <h2>Core beliefs</h2>
+    <div class="beliefs">
+      <p>Everything is data, temporal, governed, observable, traceable, replayable, composable.<br>
+      Everything interoperates through open protocols.</p>
+      <p>Current state is a projection, not truth.<br>
+      Time is a first-class primitive.<br>
+      Append over overwrite.<br>
+      Humans approve; systems reconcile.<br>
+      Governance is native, not bolted on.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <div class="grid-cards">
+      <article>
+        <hgroup><h3>Doctrine</h3><p class="muted">Models &amp; principles</p></hgroup>
+        <p>Agent protocol, lifecycle, evaluation, interaction, memory, constitution, control theory, principal–agent, digital twin, Internet of Agents, and more.</p>
+      </article>
+      <article>
+        <hgroup><h3>Registry</h3><p class="muted">Governed objects</p></hgroup>
+        <p>Capabilities, risks, controls, agents, identities, workspaces, decisions, protocols, skills, standards, taxonomies — each schema-validated.</p>
+        <p><a href="./catalog.html">Search the catalog →</a></p>
+      </article>
+      <article>
+        <hgroup><h3>Open standards</h3><p class="muted">Pinned &amp; versioned</p></hgroup>
+        <p>SPIFFE, OpenID AuthZEN, OPA, OpenFGA, MCP, A2A, Kubernetes, OpenTelemetry, the IETF IoA draft, and the full CNCF AI-native landscape.</p>
+      </article>
+      <article>
+        <hgroup><h3>Knowledge graph</h3><p class="muted">Typed nodes &amp; edges</p></hgroup>
+        <p>The registry is one typed graph: a vocabulary of node terms connected by a grammar of edge types.</p>
+        <p><a href="./graph.html">Explore the graph →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="muted">
+    <p>The catalog auto-updates on every push via GitHub Actions; every object is schema-validated with no dangling relationship edges.</p>
+  </footer>
+
+</main>
+<script>
+fetch('./catalog.json').then(r=>r.json()).then(c=>{
+  document.getElementById('s-nodes').textContent = c.total;
+  document.getElementById('s-standards').textContent = c.counts.standards;
+  document.getElementById('s-types').textContent = Object.values(c.counts).filter(v=>v>0).length;
+  document.getElementById('s-valid').textContent = c.valid ? '✓' : '✗';
+}).catch(()=>{});
+</script>
+</body>
+</html>

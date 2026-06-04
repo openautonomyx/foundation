@@ -1,0 +1,30 @@
+id: standard.agent-crawl
+type: standard
+name: "Agent-Crawl"
+description: "A simple web crawler agent using Firecrawl and Crawl4AI."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Crawl
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Crawl
+documentationUrl: https://github.com/AGenNext/Agent-Crawl
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - web-crawler
+  - firecrawl
+  - crawl4ai
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 45

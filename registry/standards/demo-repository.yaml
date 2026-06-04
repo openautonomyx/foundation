@@ -1,0 +1,28 @@
+id: standard.demo-repository
+type: standard
+name: "Demo-Repository"
+description: "Demonstration repository (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/demo-repository
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/demo-repository
+documentationUrl: https://github.com/AGenNext/demo-repository
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - demo
+
+provenance:
+  - "AGenNext org repository; primary language HTML; visibility private"
+
+trust:
+  level: monitored
+  score: 42

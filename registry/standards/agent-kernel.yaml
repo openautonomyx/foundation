@@ -1,0 +1,29 @@
+id: standard.agent-kernel
+type: standard
+name: "Agent-Kernel"
+description: "Agent kernel project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Kernel
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Kernel
+documentationUrl: https://github.com/AGenNext/Agent-Kernel
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - kernel
+  - core
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility private"
+
+trust:
+  level: monitored
+  score: 50

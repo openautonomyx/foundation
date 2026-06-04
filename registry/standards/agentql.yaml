@@ -1,0 +1,29 @@
+id: standard.agentql
+type: standard
+name: "AgentQL"
+description: "AgentQL is the official structured query language of the AGenNext platform."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/AgentQL
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/AgentQL
+documentationUrl: https://github.com/AGenNext/AgentQL
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - query-language
+  - agentql
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 50

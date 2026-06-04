@@ -1,0 +1,29 @@
+id: standard.agent-drift
+type: standard
+name: "Agent-Drift"
+description: "AGenNext agent drift project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Drift
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Drift
+documentationUrl: https://github.com/AGenNext/Agent-Drift
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - drift
+  - reconciliation
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 40

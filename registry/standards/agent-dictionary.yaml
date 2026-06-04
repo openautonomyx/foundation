@@ -1,0 +1,29 @@
+id: standard.agent-dictionary
+type: standard
+name: "Agent-Dictionary"
+description: "Agent dictionary project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Dictionary
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Dictionary
+documentationUrl: https://github.com/AGenNext/Agent-Dictionary
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - dictionary
+  - vocabulary
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 42

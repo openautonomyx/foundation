@@ -1,0 +1,30 @@
+id: standard.agent-vocabulary
+type: standard
+name: "Agent-Vocabulary"
+description: "Machine-loadable vocabulary of terms an AGenNext agent understands, using schema.org DefinedTermSet and DefinedTerm."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Vocabulary
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Vocabulary
+documentationUrl: https://github.com/AGenNext/Agent-Vocabulary
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - vocabulary
+  - schema-org
+  - defined-term
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 55

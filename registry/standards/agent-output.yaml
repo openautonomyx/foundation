@@ -1,0 +1,28 @@
+id: standard.agent-output
+type: standard
+name: "Agent-Output"
+description: "Agent output project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Output
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Output
+documentationUrl: https://github.com/AGenNext/Agent-Output
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - output
+
+provenance:
+  - "AGenNext org repository; primary language SurrealQL; visibility public"
+
+trust:
+  level: monitored
+  score: 42

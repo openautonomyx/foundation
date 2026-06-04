@@ -1,0 +1,29 @@
+id: standard.agent-lifecycle-management
+type: standard
+name: "Agent Lifecycle Management"
+description: "Agent identity lifecycle management."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: identity
+organization: AGenNext
+specReference: https://github.com/AGenNext/agent-lifecycle-management
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/agent-lifecycle-management
+documentationUrl: https://github.com/AGenNext/agent-lifecycle-management
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - lifecycle
+  - identity-lifecycle
+
+provenance:
+  - "AGenNext org repository; primary language Python; visibility public"
+
+trust:
+  level: monitored
+  score: 50

@@ -1,0 +1,34 @@
+id: standard.envoy-ai-gateway
+type: standard
+name: "Envoy AI Gateway"
+description: "Unified access to generative AI services built on Envoy Gateway."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: cncf
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - interoperability
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 1.7k"
+  - "CNCF AI-native landscape"
+  - "cncf"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

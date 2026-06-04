@@ -1,0 +1,17 @@
+id: entity.agennext
+type: entity
+name: "AGenNext"
+description: "Agent control plane and agent builder platform: builds, deploys, runs, and reconciles agents within enterprise governance, implementing the OpenAutonomyX operation model."
+lifecycleState: active
+version: 1.0.0
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+entityType: application
+identityBinding: "agennext"
+relationships:
+  - type: governed-by
+    target: entity.openautonomyx
+  - type: implements
+    target: entity.openautonomyx

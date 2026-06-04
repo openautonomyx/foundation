@@ -1,0 +1,29 @@
+id: knowledge.ai-agent-orchestration
+type: knowledge-asset
+name: "AI Agent Orchestration (reference)"
+description: "Reference explainer on AI agent orchestration: coordinating multiple agents, tools, and workflows toward a goal; external source treated as reviewed guidance."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+knowledgeType: source-document
+source: "https://github.com/resources/articles/what-is-ai-agent-orchestration"
+confidence: 0.7
+validationState: reviewed
+approvalState: not-required
+sensitivityClassification: public
+provenance:
+  - "GitHub Resources article: What is AI agent orchestration"
+policyBindings:
+  - policies/traceability.md
+reviewCadence: annual
+
+relationships:
+  - type: informs
+    target: protocol.orchestration
+
+trust:
+  level: monitored
+  score: 55

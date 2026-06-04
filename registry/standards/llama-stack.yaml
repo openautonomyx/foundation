@@ -1,0 +1,31 @@
+id: standard.llama-stack
+type: standard
+name: Llama Stack
+description: Open agentic application stack; reached "adopt" in the CNCF agentic AI radar.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: Meta / open source
+specReference: https://github.com/meta-llama/llama-stack
+specVersion: "rolling"
+repositoryUrl: https://github.com/meta-llama/llama-stack
+documentationUrl: https://github.com/meta-llama/llama-stack
+upstreamMaturity: cncf-radar-adopt
+license: MIT
+adoptionPosture: evaluating
+mappedConcepts:
+  - agentic-stack
+  - inference
+  - agents-api
+  - tooling
+
+provenance:
+  - "CNCF Technology Landscape Radar: adopt (agentic AI)"
+
+trust:
+  level: monitored
+  score: 70

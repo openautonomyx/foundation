@@ -1,0 +1,67 @@
+id: decision.approve-contract-review-assistant
+type: decision
+name: Approve Contract Review Assistant Deployment
+description: Human-approval decision authorizing the contract-review assistant to operate at execute-with-approval autonomy within the contract governance workspace.
+owner: governance-board
+lifecycleState: approved
+version: 1.0.0
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+decisionType: automation-approval
+decisionMaker: governance-board
+affectedStakeholders:
+  - legal-operations
+  - risk-compliance
+  - internal-audit
+  - security
+context: Legal operations requested an agent to accelerate contract review under enterprise agent governance.
+problemStatement: Determine whether to authorize the contract-review assistant to operate, and at what autonomy level, given the unauthorized-agent-execution risk.
+objectives:
+  - accelerate-contract-review
+  - keep-consequential-actions-under-human-approval
+  - maintain-audit-readiness
+optionsConsidered:
+  - option: deny
+    summary: Do not deploy the agent.
+  - option: execute-within-policy
+    summary: Allow autonomous execution within policy scope.
+  - option: execute-with-approval
+    summary: Allow execution with human approval on consequential actions.
+constraints:
+  - must-bind-human-approval-control
+  - must-enforce-separation-of-duty
+assumptions:
+  - identity-is-verified
+  - tool-access-is-scoped
+risks:
+  - risk.unauthorized-agent-execution
+confidence: 0.8
+recommendation: Approve at execute-with-approval autonomy with human-approval and separation-of-duty controls bound.
+approvalState: approved
+decisionStatus: approved
+implementationPlan: Register agent, bind controls, enable kill switch, route consequential actions through approval gate.
+reviewDate: "2026-09-03T00:00:00Z"
+outcome: Agent authorized at execute-with-approval autonomy.
+rollbackPath: Suspend agent via kill switch and revoke identity.
+
+relationships:
+  - type: authorizes
+    target: agent.contract-review-assistant
+  - type: applies-control
+    target: control.human-approval
+  - type: addresses-risk
+    target: risk.unauthorized-agent-execution
+
+policyBindings:
+  - policies/human-approval.md
+  - policies/separation-of-duty.md
+  - policies/auditability.md
+
+evidence:
+  - approval-request
+  - approver-identity
+  - decision-record
+  - audit-trail
+
+trustState: foundation-defined

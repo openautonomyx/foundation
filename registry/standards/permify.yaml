@@ -1,0 +1,33 @@
+id: standard.permify
+type: standard
+name: "Permify"
+description: "Open-source authorization as a service inspired by Google Zanzibar."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: authorization
+organization: "CNCF AI-native landscape"
+specReference: https://landscape.cncf.io/?group=ai-native
+specVersion: "rolling"
+documentationUrl: https://landscape.cncf.io/?group=ai-native
+upstreamMaturity: open-source
+license: "open-source"
+adoptionPosture: evaluating
+mappedConcepts:
+  - authorization
+  - ai-native
+
+provenance:
+  - "GitHub stars approx 5.9k"
+  - "CNCF AI-native landscape"
+
+relationships:
+  - type: cataloged-in
+    target: standard.cncf-ai-native-landscape
+
+trust:
+  level: monitored
+  score: 60

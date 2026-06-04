@@ -1,0 +1,28 @@
+id: standard.artifact-hub
+type: standard
+name: Artifact Hub
+description: CNCF discovery and distribution hub for cloud-native packages, referenced for agent capability discovery and distribution.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: packaging
+organization: CNCF
+specReference: https://artifacthub.io/
+specVersion: "rolling release"
+repositoryUrl: https://github.com/artifacthub/hub
+documentationUrl: https://artifacthub.io/docs/
+upstreamMaturity: cncf-incubating
+license: Apache-2.0
+adoptionPosture: integration
+mappedConcepts:
+  - discovery
+  - distribution
+  - packaging
+  - capability-catalog
+
+trust:
+  level: foundation-defined
+  score: 80

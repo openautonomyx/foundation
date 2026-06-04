@@ -1,0 +1,31 @@
+id: knowledge.internet-of-agents
+type: knowledge-asset
+name: "Internet of Agents (survey)"
+description: "Peer-reviewed survey framing the Internet of Agents: capability discovery, adaptive communication, dynamic task matching, consensus, and incentive models."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+knowledgeType: claim
+source: "arXiv:2505.07176 (Wang et al., Internet of Agents: Fundamentals, Applications, and Challenges)"
+confidence: 0.8
+validationState: reviewed
+approvalState: not-required
+sensitivityClassification: public
+provenance:
+  - "arXiv:2505.07176v2; accepted IEEE TCCN, Oct 2025; DOI 10.1109/TCCN.2025.3623369"
+policyBindings:
+  - policies/traceability.md
+reviewCadence: annual
+
+relationships:
+  - type: informs
+    target: protocol.capability-discovery
+  - type: informs
+    target: standard.agent2agent
+
+trust:
+  level: monitored
+  score: 70

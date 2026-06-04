@@ -1,0 +1,28 @@
+id: standard.agent-framework
+type: standard
+name: "Agent-Framework"
+description: "Agent framework project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Framework
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Framework
+documentationUrl: https://github.com/AGenNext/Agent-Framework
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - framework
+
+provenance:
+  - "AGenNext org repository; primary language SurrealQL; visibility public"
+
+trust:
+  level: monitored
+  score: 50

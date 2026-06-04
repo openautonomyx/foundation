@@ -1,0 +1,31 @@
+id: standard.open-policy-agent
+type: standard
+name: Open Policy Agent (OPA)
+description: General-purpose policy engine used as the canonical policy decision engine for agent governance.
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: CNCF
+specReference: https://www.openpolicyagent.org/
+specVersion: "1.14.0"
+repositoryUrl: https://github.com/open-policy-agent/opa
+documentationUrl: https://www.openpolicyagent.org/docs/
+upstreamMaturity: cncf-graduated
+license: Apache-2.0
+adoptionPosture: canonical
+mappedConcepts:
+  - policy-decision
+  - rego
+  - policy-as-code
+  - decision-logging
+
+provenance:
+  - "OPA 1.14.0 released 2026-02-26"
+
+trust:
+  level: foundation-defined
+  score: 90

@@ -1,0 +1,33 @@
+id: standard.agent-control
+type: standard
+name: Agent-Control (AGenNext)
+description: Drift detection and reconciliation service that checks whether a running agent still matches its approved definition.
+version: 1.0.0
+status: review
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Control
+specVersion: "v0.1 (early-stage)"
+repositoryUrl: https://github.com/AGenNext/Agent-Control
+documentationUrl: https://github.com/AGenNext/Agent-Control
+upstreamMaturity: early-stage
+license: unspecified
+adoptionPosture: experimental
+mappedConcepts:
+  - agent-drift
+  - observe-compare-classify-score
+  - reconciliation
+  - risk-scoring
+  - remediation
+
+provenance:
+  - "Detects 10 drift categories: capability, tool, prompt, memory, knowledge, workflow, policy, objective, model, configuration"
+  - "Core loop: Observe -> Compare -> Classify -> Score -> Explain -> Recommend -> Verify"
+
+trust:
+  level: monitored
+  score: 55

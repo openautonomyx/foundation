@@ -1,0 +1,28 @@
+id: standard.agent-instructor
+type: standard
+name: "Agent-Instructor"
+description: "AGenNext agent instructor project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Instructor
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Instructor
+documentationUrl: https://github.com/AGenNext/Agent-Instructor
+upstreamMaturity: early-stage
+license: "Apache-2.0"
+adoptionPosture: experimental
+mappedConcepts:
+  - agent-instruction
+
+provenance:
+  - "AGenNext org repository; primary language Go; visibility private"
+
+trust:
+  level: monitored
+  score: 45

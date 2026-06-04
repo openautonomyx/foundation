@@ -1,0 +1,28 @@
+id: standard.agent-identity-agennext
+type: standard
+name: "Agent-Identity (AGenNext)"
+description: "AGenNext agent identity project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: identity
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Identity
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Identity
+documentationUrl: https://github.com/AGenNext/Agent-Identity
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - agent-identity
+
+provenance:
+  - "AGenNext org repository; primary language SurrealQL; visibility public"
+
+trust:
+  level: monitored
+  score: 55

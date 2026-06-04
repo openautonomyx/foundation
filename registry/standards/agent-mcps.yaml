@@ -1,0 +1,30 @@
+id: standard.agent-mcps
+type: standard
+name: "Agent-MCPs"
+description: "Registry of Model Context Protocol servers and integrations."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-MCPs
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-MCPs
+documentationUrl: https://github.com/AGenNext/Agent-MCPs
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - mcp
+  - registry
+  - integrations
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 55

@@ -1,0 +1,29 @@
+id: standard.agennext-com
+type: standard
+name: "AGenNext.com"
+description: "The Commerce Control Plane of AGenNext."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/agennext.com
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/agennext.com
+documentationUrl: https://github.com/AGenNext/agennext.com
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - commerce
+  - control-plane
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 45

@@ -1,0 +1,31 @@
+id: standard.autonomous-governance-agent
+type: standard
+name: "Autonomous-Governance-Agent"
+description: "Governance agent with a kill switch; AI security and governance on autopilot."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: AGenNext
+specReference: https://github.com/AGenNext/Autonomous-Governance-Agent
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Autonomous-Governance-Agent
+documentationUrl: https://github.com/AGenNext/Autonomous-Governance-Agent
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - governance
+  - kill-switch
+  - security
+  - autopilot
+
+provenance:
+  - "AGenNext org repository; primary language Go; visibility public"
+
+trust:
+  level: monitored
+  score: 50

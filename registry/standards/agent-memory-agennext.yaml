@@ -1,0 +1,28 @@
+id: standard.agent-memory-agennext
+type: standard
+name: "Agent-Memory (AGenNext)"
+description: "AGenNext agent memory project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Memory
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Memory
+documentationUrl: https://github.com/AGenNext/Agent-Memory
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - agent-memory
+
+provenance:
+  - "AGenNext org repository; primary language Rust; visibility public"
+
+trust:
+  level: monitored
+  score: 52

@@ -1,0 +1,67 @@
+id: protocol.agent-collaboration
+type: protocol
+name: Agent Collaboration Protocol
+description: Internet-of-Agents collaboration protocol for heterogeneous, distributed agents — registration/discovery, autonomous nested team formation, FSM session control, and structured messaging. Grounded in the IETF IoA Protocol draft.
+version: 0.1.0
+status: review
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: interaction
+purpose: Enable heterogeneous agents across devices and frameworks to register, discover collaborators, form nested teams, and coordinate tasks under a session state machine.
+participants:
+  - agent
+  - ioa-server
+  - sub-agent
+messagePatterns:
+  - agent-registration
+  - capability-discovery
+  - autonomous-team-formation
+  - discussion
+  - synchronous-task-assignment
+  - asynchronous-task-assignment
+  - pause-and-trigger
+  - conclusion
+envelopeFields:
+  - sender
+  - group-id
+  - state
+  - message-type
+  - next-speaker
+  - task-id
+  - team-members
+  - team-up-depth
+authentication: oauth2-token
+authorizationModel: role-and-session-context
+openStandard: true
+specReference: https://www.ietf.org/archive/id/draft-yang-ioa-protocol-00.html
+interoperability: experimental
+conformanceRequirements:
+  - register-capability-description-before-collaboration
+  - semantic-capability-matching-for-team-formation
+  - fsm-governed-session-state-transitions
+  - authenticate-peers-via-oauth2-before-processing
+  - encrypt-transport-with-tls-1-3
+  - emit-evidence-per-state-transition
+failureMode: fail-closed
+evidenceRequired:
+  - registration-record
+  - team-formation-record
+  - session-transcript
+  - task-assignment-record
+versioningPolicy: draft-subject-to-change
+
+relationships:
+  - type: pins-standard
+    target: standard.ioa-protocol-ietf
+  - type: composes-with
+    target: protocol.orchestration
+  - type: composes-with
+    target: protocol.capability-discovery
+  - type: complements
+    target: standard.agent2agent
+
+trust:
+  level: monitored
+  score: 60

@@ -1,0 +1,32 @@
+id: standard.agent-vision
+type: standard
+name: "Agent-Vision"
+description: "AutonomyX Vision AI: unified API for object detection (YOLO26), OCR (Tesseract), speech-to-text (Whisper), image classification (CLIP), and background removal."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Vision
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Vision
+documentationUrl: https://github.com/AGenNext/Agent-Vision
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - vision
+  - object-detection
+  - ocr
+  - speech-to-text
+  - classification
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 50

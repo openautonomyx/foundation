@@ -1,0 +1,100 @@
+id: taxonomy.registry-object-types
+type: taxonomy
+name: Registry Object Types
+description: The canonical governed object types of the OpenAutonomyX foundation meta-model.
+version: 1.0.0
+status: active
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+taxonomyType: custom
+terms:
+  - id: capability
+    label: Capability
+    description: What the enterprise can do.
+    status: active
+  - id: risk
+    label: Risk
+    description: A potential adverse outcome to be governed.
+    status: active
+  - id: control
+    label: Control
+    description: A measure that reduces risk.
+    status: active
+  - id: policy
+    label: Policy
+    description: A governing rule or standard.
+    status: active
+  - id: agent
+    label: Agent
+    description: A governed autonomous or semi-autonomous actor.
+    status: active
+  - id: identity
+    label: Identity
+    description: A verifiable identity of a human, agent, or system.
+    status: active
+  - id: entity
+    label: Entity
+    description: A first-class actor or object with an identity binding.
+    status: active
+  - id: workspace
+    label: Workspace
+    description: A governed space where work happens.
+    status: active
+  - id: decision
+    label: Decision
+    description: An accountable choice with context and approval.
+    status: active
+  - id: action
+    label: Action
+    description: An intentional, attributable unit of change.
+    status: active
+  - id: event
+    label: Event
+    description: An observed, recorded occurrence.
+    status: active
+  - id: artifact
+    label: Artifact
+    description: A lifecycle-managed produced thing.
+    status: active
+  - id: knowledge-asset
+    label: Knowledge Asset
+    description: Governed knowledge with provenance and validation state.
+    status: active
+  - id: context-record
+    label: Context Record
+    description: Governed context with retention and disposition rules.
+    status: active
+  - id: trust
+    label: Trust
+    description: Governed reliance based on evidence.
+    status: active
+  - id: standard
+    label: Standard
+    description: An external standard or project referenced by the foundation.
+    status: active
+  - id: protocol
+    label: Protocol
+    description: A governed contract for interaction between parties.
+    status: active
+  - id: skill
+    label: Skill
+    description: Reusable, governed agent know-how.
+    status: active
+  - id: digital-twin
+    label: Digital Twin
+    description: A synchronized virtual projection of a real entity.
+    status: active
+  - id: taxonomy
+    label: Taxonomy
+    description: A governed classification of terms.
+    status: active
+  - id: relationship
+    label: Relationship
+    description: A typed, governed edge between objects.
+    status: active
+
+trust:
+  level: foundation-defined
+  score: 90

@@ -1,0 +1,30 @@
+id: knowledge.digital-twin
+type: knowledge-asset
+name: "Digital Twin (reference)"
+description: "Reference knowledge on digital twins (virtual representation synchronized with a real entity; fidelity levels: digital model, digital shadow, digital twin); external source treated as claims."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+knowledgeType: source-document
+source: "https://en.wikipedia.org/wiki/Digital_twin"
+confidence: 0.6
+validationState: reviewed
+approvalState: not-required
+sensitivityClassification: public
+provenance:
+  - "Digital twin concept attributed to Michael Grieves (2002, PLM); term popularized via NASA (John Vickers, 2010)"
+  - "Wikipedia, CC BY-SA 4.0; user-generated content"
+policyBindings:
+  - policies/traceability.md
+reviewCadence: annual
+
+relationships:
+  - type: informs
+    target: twin.contract-review-assistant
+
+trust:
+  level: monitored
+  score: 55

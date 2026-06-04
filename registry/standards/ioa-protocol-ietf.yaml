@@ -1,0 +1,46 @@
+id: standard.ioa-protocol-ietf
+type: standard
+name: IETF Internet of Agents Protocol (draft)
+description: IETF Internet-Draft defining an Internet of Agents Protocol for distributed, heterogeneous agent collaboration (dynamic team formation, adaptive task coordination, structured communication); part of the DMSC effort, 6G-oriented.
+version: 0.1.0
+status: review
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: IETF (Internet-Draft, DMSC)
+specReference: https://www.ietf.org/archive/id/draft-yang-ioa-protocol-00.html
+specVersion: "draft-yang-ioa-protocol-00 (2025-07-20)"
+repositoryUrl: https://datatracker.ietf.org/doc/draft-yang-ioa-protocol/
+documentationUrl: https://datatracker.ietf.org/doc/draft-yang-ioa-protocol/
+upstreamMaturity: ietf-internet-draft
+license: IETF-Trust
+adoptionPosture: experimental
+mappedConcepts:
+  - internet-of-agents
+  - heterogeneous-agent-collaboration
+  - dynamic-team-formation
+  - adaptive-task-coordination
+  - layered-architecture
+  - session-state-machine
+  - agent-registry-discovery
+  - message-protocol
+  - oauth2
+  - tls-1-3
+  - quic
+  - 6g
+
+provenance:
+  - "Authors: C. Yang (BUPT), Z. Liu (Tsinghua), A. Wang (China Telecom); Dispatch WG; Standards Track; published 2025-07-20, expires 2026-01-21"
+  - "Three-layer server/client architecture (interaction, data, foundation); 5-state session FSM; OAuth2 + TLS 1.3 security; complements A2A"
+  - "Related drafts: IoA Task Protocol (draft-yang-dmsc-ioa-task-protocol), semantic interaction, IPv6 for IoA"
+  - "Internet-Draft; not yet a standard; subject to change or expiry"
+
+relationships:
+  - type: complements
+    target: standard.agent2agent
+
+trust:
+  level: monitored
+  score: 50

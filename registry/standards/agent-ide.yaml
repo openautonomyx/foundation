@@ -1,0 +1,29 @@
+id: standard.agent-ide
+type: standard
+name: "Agent-IDE"
+description: "AGenNext agent IDE project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-IDE
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-IDE
+documentationUrl: https://github.com/AGenNext/Agent-IDE
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - ide
+  - developer-tooling
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 45

@@ -1,0 +1,29 @@
+id: standard.agent-commit
+type: standard
+name: "Agent-Commit"
+description: "AGenNext agent commit project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Commit
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Commit
+documentationUrl: https://github.com/AGenNext/Agent-Commit
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - commit
+  - version-control
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 38

@@ -1,0 +1,29 @@
+id: standard.agent-channel
+type: standard
+name: "Agent-Channel"
+description: "Agent channel / messaging project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Channel
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Channel
+documentationUrl: https://github.com/AGenNext/Agent-Channel
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - channel
+  - messaging
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

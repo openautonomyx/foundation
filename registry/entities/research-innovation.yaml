@@ -1,0 +1,17 @@
+id: entity.research-innovation
+type: entity
+name: "Research & Innovation"
+description: "Research and innovation pillar: tracks external research and advances candidate capabilities before they become governed doctrine."
+lifecycleState: active
+version: 1.0.0
+owner: architecture-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+entityType: project
+identityBinding: "research-innovation"
+relationships:
+  - type: governed-by
+    target: entity.openautonomyx
+  - type: relates-to
+    target: standard.agent-research

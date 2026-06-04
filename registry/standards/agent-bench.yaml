@@ -1,0 +1,30 @@
+id: standard.agent-bench
+type: standard
+name: "Agent-Bench"
+description: "Agent Performance Benchmarking Platform."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Bench
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Bench
+documentationUrl: https://github.com/AGenNext/Agent-Bench
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - benchmarking
+  - performance
+  - evaluation
+
+provenance:
+  - "AGenNext org repository; primary language Rust; visibility public"
+
+trust:
+  level: monitored
+  score: 50

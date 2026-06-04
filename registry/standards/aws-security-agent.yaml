@@ -1,0 +1,30 @@
+id: standard.aws-security-agent
+type: standard
+name: AWS Security Agent
+description: AWS agentic security offering referenced for agent security tooling and integration. Product details not independently verified (page not retrieved).
+version: 1.0.0
+status: review
+owner: security
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: Amazon Web Services
+specReference: https://aws.amazon.com/security-agent/
+specVersion: "vendor offering"
+repositoryUrl: https://aws.amazon.com/security-agent/
+documentationUrl: https://aws.amazon.com/security-agent/
+upstreamMaturity: vendor-product
+license: proprietary
+adoptionPosture: evaluating
+mappedConcepts:
+  - agent-security
+  - cloud-security
+  - vendor-tooling
+
+provenance:
+  - "Vendor page not retrievable at registration time (HTTP 403); capabilities to be verified before adoption"
+
+trust:
+  level: monitored
+  score: 55

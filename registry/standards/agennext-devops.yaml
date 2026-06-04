@@ -1,0 +1,29 @@
+id: standard.agennext-devops
+type: standard
+name: "AGenNext-DevOps"
+description: "AGenNext DevOps tooling (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: orchestration
+organization: AGenNext
+specReference: https://github.com/AGenNext/AGenNext-DevOps
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/AGenNext-DevOps
+documentationUrl: https://github.com/AGenNext/AGenNext-DevOps
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - devops
+  - ci-cd
+
+provenance:
+  - "AGenNext org repository; primary language Dockerfile; visibility private"
+
+trust:
+  level: monitored
+  score: 40

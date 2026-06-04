@@ -1,0 +1,28 @@
+id: standard.agent-risk
+type: standard
+name: "Agent-Risk"
+description: "AGenNext agent risk project."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: policy
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Risk
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Risk
+documentationUrl: https://github.com/AGenNext/Agent-Risk
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - risk
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 40

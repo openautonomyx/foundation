@@ -1,0 +1,29 @@
+id: standard.agent-library
+type: standard
+name: "Agent-Library"
+description: "Learning resources for humans and agents."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Library
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Library
+documentationUrl: https://github.com/AGenNext/Agent-Library
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - library
+  - learning
+
+provenance:
+  - "AGenNext org repository; primary language TypeScript; visibility public"
+
+trust:
+  level: monitored
+  score: 42

@@ -1,0 +1,29 @@
+id: standard.surreal-agent
+type: standard
+name: "Surreal-Agent"
+description: "Agent to manage SurrealDB tenants."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: data
+organization: AGenNext
+specReference: https://github.com/AGenNext/Surreal-Agent-
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Surreal-Agent-
+documentationUrl: https://github.com/AGenNext/Surreal-Agent-
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - surrealdb
+  - tenant-management
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

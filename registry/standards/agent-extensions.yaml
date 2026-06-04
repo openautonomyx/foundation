@@ -1,0 +1,29 @@
+id: standard.agent-extensions
+type: standard
+name: "Agent-Extensions"
+description: "Agent extensions project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Extensions
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Extensions
+documentationUrl: https://github.com/AGenNext/Agent-Extensions
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - extensions
+  - plugins
+
+provenance:
+  - "AGenNext org repository; primary language JavaScript; visibility public"
+
+trust:
+  level: monitored
+  score: 42

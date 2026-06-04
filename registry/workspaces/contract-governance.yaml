@@ -1,0 +1,70 @@
+id: workspace.contract-governance
+type: workspace
+name: Contract Governance Workspace
+description: Governed workspace where the contract-review assistant operates under policy, approval, and audit controls.
+version: 1.0.0
+status: active
+owner: legal-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+workspaceType: agent
+sponsor: legal-operations-lead
+participants:
+  - legal-operations
+  - risk-compliance
+  - internal-audit
+agents:
+  - agent.contract-review-assistant
+objectives:
+  - safe-contract-review
+  - auditable-agent-actions
+scope: Contract review and risk-summary drafting for in-scope contract repository, with human approval on consequential actions.
+accessRules:
+  - role:contract-reviewer can read contract-repository
+  - role:approver required for consequential actions
+  - separation-of-duty enforced across requester, implementer, approver, auditor
+policyBindings:
+  - policies/human-approval.md
+  - policies/separation-of-duty.md
+  - policies/traceability.md
+  - policies/auditability.md
+dataClassification: confidential
+trustRequirements:
+  - verified-identity
+  - scoped-tool-access
+approvalRequirements:
+  - control.human-approval
+  - control.separation-of-duty
+tools:
+  - document-reader
+  - clause-classifier
+evidenceStore: governed-audit-log
+reviewCadence: quarterly
+valueMetrics:
+  - audit-readiness
+  - reduced-unauthorized-execution-risk
+
+governance:
+  policies:
+    - policies/human-approval.md
+    - policies/separation-of-duty.md
+    - policies/auditability.md
+  controls:
+    - control.human-approval
+    - control.separation-of-duty
+  approvers:
+    - governance-board
+  reviewCadence: quarterly
+
+relationships:
+  - type: hosts-agent
+    target: agent.contract-review-assistant
+  - type: governed-by-control
+    target: control.human-approval
+  - type: governed-by-control
+    target: control.separation-of-duty
+
+trust:
+  level: monitored
+  score: 78

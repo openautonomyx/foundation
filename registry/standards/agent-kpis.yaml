@@ -1,0 +1,29 @@
+id: standard.agent-kpis
+type: standard
+name: "Agent-KPIs"
+description: "AGenNext agent KPIs project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: observability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-KPIs
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-KPIs
+documentationUrl: https://github.com/AGenNext/Agent-KPIs
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - kpi
+  - metrics
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 40

@@ -36,6 +36,14 @@ escalationPath:
   - security-operations
   - governance-board
 
+relationships:
+  - type: governed-by
+    target: capability.enterprise-agent-governance
+  - type: mitigated-by
+    target: control.human-approval
+  - type: mitigated-by
+    target: control.separation-of-duty
+
 governance:
   policies:
     - policies/human-approval.md

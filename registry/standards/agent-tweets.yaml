@@ -1,0 +1,29 @@
+id: standard.agent-tweets
+type: standard
+name: "Agent-Tweets"
+description: "Twitter for AgentNXT."
+version: 0.1.0
+status: proposed
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Tweets
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Tweets
+documentationUrl: https://github.com/AGenNext/Agent-Tweets
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - social
+  - communication
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 36

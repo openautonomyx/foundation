@@ -1,0 +1,56 @@
+id: protocol.orchestration
+type: protocol
+name: Orchestration Protocol
+description: Agent-as-orchestrator coordination of sub-agents, tasks, and resources toward an objective.
+version: 1.0.0
+status: active
+owner: platform-operations
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+protocolLayer: interaction
+purpose: Decompose objectives, delegate scoped work to sub-agents, and reconcile results under governance.
+participants:
+  - orchestrator-agent
+  - sub-agent
+  - workspace
+messagePatterns:
+  - plan
+  - delegate
+  - collect-results
+  - reconcile
+  - escalate
+envelopeFields:
+  - objective
+  - delegated-scope
+  - sub-task
+  - result
+  - status
+authentication: spiffe-svid
+authorizationModel: scoped-delegation
+openStandard: false
+interoperability: experimental
+conformanceRequirements:
+  - explicit-scoped-revocable-delegation
+  - per-step-authorization-decision
+  - escalate-on-low-confidence-or-policy-conflict
+  - aggregate-evidence-per-step
+failureMode: fail-closed
+evidenceRequired:
+  - plan
+  - delegation-record
+  - step-events
+  - outcome
+versioningPolicy: backward-compatible-minor
+
+relationships:
+  - type: composes-with
+    target: protocol.reconciliation
+  - type: composes-with
+    target: protocol.authorization-decision
+  - type: relates-to-standard
+    target: standard.operator-framework
+
+trust:
+  level: foundation-defined
+  score: 72

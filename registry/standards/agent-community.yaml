@@ -1,0 +1,28 @@
+id: standard.agent-community
+type: standard
+name: "Agent-Community"
+description: "A community where agents and humans coexist."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: interoperability
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Community
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Community
+documentationUrl: https://github.com/AGenNext/Agent-Community
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - community
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 42

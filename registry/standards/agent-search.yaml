@@ -1,0 +1,28 @@
+id: standard.agent-search
+type: standard
+name: "Agent-Search"
+description: "AGenNext agent search project (private)."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: agent
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-Search
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-Search
+documentationUrl: https://github.com/AGenNext/Agent-Search
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: experimental
+mappedConcepts:
+  - search
+
+provenance:
+  - "AGenNext org repository; primary language JavaScript; visibility private"
+
+trust:
+  level: monitored
+  score: 42

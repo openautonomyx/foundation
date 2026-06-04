@@ -1,0 +1,29 @@
+id: skill.trust-and-reciprocity
+type: skill
+name: "Trust and Reciprocity"
+description: "Use repeated interaction and reputation (trust game dynamics) to sustain trustworthy agent behavior."
+version: 1.0.0
+status: active
+owner: governance-board
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+skillType: alignment
+purpose: "Use repeated interaction and reputation (trust game dynamics) to sustain trustworthy agent behavior."
+autonomyLevel: suggest-only
+policyBindings:
+  - policies/human-approval.md
+  - policies/auditability.md
+riskProfile: "Misapplied incentives can distort behavior (gaming, risk-seeking, multitasking neglect)."
+references:
+  - "Principal-agent problem (agency theory), Jensen & Meckling 1976; Holmstrom 1979; Milgrom & Roberts 1992"
+
+relationships:
+  - type: supports-capability
+    target: capability.enterprise-agent-governance
+  - type: mitigates
+    target: risk.unauthorized-agent-execution
+
+trust:
+  level: foundation-defined
+  score: 75

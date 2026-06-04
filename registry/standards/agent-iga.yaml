@@ -1,0 +1,29 @@
+id: standard.agent-iga
+type: standard
+name: "Agent-IGA"
+description: "Agent identity governance and administration project."
+version: 0.1.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+standardType: identity
+organization: AGenNext
+specReference: https://github.com/AGenNext/Agent-IGA
+specVersion: "early-stage"
+repositoryUrl: https://github.com/AGenNext/Agent-IGA
+documentationUrl: https://github.com/AGenNext/Agent-IGA
+upstreamMaturity: early-stage
+license: "unspecified"
+adoptionPosture: evaluating
+mappedConcepts:
+  - iga
+  - identity-governance
+
+provenance:
+  - "AGenNext org repository; visibility public"
+
+trust:
+  level: monitored
+  score: 50

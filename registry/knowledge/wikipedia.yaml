@@ -1,0 +1,29 @@
+id: knowledge.wikipedia
+type: knowledge-asset
+name: "Wikipedia"
+description: "Wikipedia as an external knowledge / retrieval-augmented-generation source; user-edited and treated as unverified claims requiring validation."
+version: 1.0.0
+status: active
+owner: enterprise-architecture
+createdAt: "2026-06-03T00:00:00Z"
+updatedAt: "2026-06-03T00:00:00Z"
+
+knowledgeType: source-document
+source: "https://en.wikipedia.org/wiki/Main_Page"
+confidence: 0.6
+validationState: unverified
+approvalState: not-required
+sensitivityClassification: public
+provenance:
+  - "Wikipedia, the free encyclopedia (CC BY-SA 4.0); user-generated content"
+policyBindings:
+  - policies/traceability.md
+reviewCadence: continuous
+
+relationships:
+  - type: knowledge-source-for
+    target: protocol.capability-discovery
+
+trust:
+  level: monitored
+  score: 50
